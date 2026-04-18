@@ -1,6 +1,6 @@
 {
   "date": "2026-04-18",
-  "generated_at": "2026-04-18T02:46:27.493679Z",
+  "generated_at": "2026-04-18T03:47:13.001231Z",
   "total_games": 15,
   "season_blend": {
     "current": 1.0,
@@ -122,6 +122,12 @@
                 "line": 4.5,
                 "price": 100
               }
+            },
+            "pitcher_outs_under": {
+              "prophetx": {
+                "line": 15.5,
+                "price": -110
+              }
             }
           },
           "edges": {}
@@ -197,21 +203,21 @@
             "pitcher_strikeouts_over": {
               "fanduel": {
                 "line": 4.5,
-                "price": -110
+                "price": -130
               },
               "bovada": {
                 "line": 4.5,
-                "price": 100
+                "price": -130
               }
             },
             "pitcher_strikeouts_under": {
               "fanduel": {
                 "line": 4.5,
-                "price": -120
+                "price": -102
               },
               "bovada": {
                 "line": 4.5,
-                "price": -130
+                "price": 100
               }
             }
           },
@@ -321,33 +327,33 @@
             "pitcher_strikeouts_over": {
               "draftkings": {
                 "line": 4.5,
-                "price": -103
+                "price": -108
               }
             },
             "pitcher_strikeouts_under": {
               "draftkings": {
                 "line": 4.5,
-                "price": -124
+                "price": -118
               }
             },
             "pitcher_outs_over": {
               "bovada": {
-                "line": 15.5,
-                "price": -110
+                "line": 16.5,
+                "price": -115
               },
               "draftkings": {
-                "line": 15.5,
-                "price": -105
+                "line": 16.5,
+                "price": -109
               }
             },
             "pitcher_outs_under": {
               "bovada": {
-                "line": 15.5,
-                "price": -130
+                "line": 16.5,
+                "price": -125
               },
               "draftkings": {
-                "line": 15.5,
-                "price": -127
+                "line": 16.5,
+                "price": -121
               }
             }
           },
@@ -443,23 +449,27 @@
               }
             },
             "pitcher_outs_over": {
+              "prophetx": {
+                "line": 17.5,
+                "price": 112
+              },
               "bovada": {
                 "line": 17.5,
-                "price": -130
+                "price": -135
               },
               "draftkings": {
                 "line": 17.5,
-                "price": -125
+                "price": -130
               }
             },
             "pitcher_outs_under": {
               "bovada": {
                 "line": 17.5,
-                "price": -110
+                "price": -105
               },
               "draftkings": {
                 "line": 17.5,
-                "price": -106
+                "price": -102
               }
             }
           },
@@ -726,23 +736,27 @@
             "pitcher_strikeouts_over": {
               "draftkings": {
                 "line": 4.5,
-                "price": -142
+                "price": -137
               }
             },
             "pitcher_strikeouts_under": {
               "draftkings": {
                 "line": 4.5,
-                "price": 111
+                "price": 107
               }
             },
             "pitcher_outs_over": {
+              "prophetx": {
+                "line": 17.5,
+                "price": -120
+              },
               "bovada": {
                 "line": 17.5,
                 "price": -150
               },
               "draftkings": {
                 "line": 17.5,
-                "price": -148
+                "price": -139
               }
             },
             "pitcher_outs_under": {
@@ -752,7 +766,7 @@
               },
               "draftkings": {
                 "line": 17.5,
-                "price": 112
+                "price": 105
               }
             }
           },
@@ -1399,8 +1413,31 @@
             "quality_start_prob": 93.0,
             "gs": 4
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "fanduel": {
+                "line": 7.5,
+                "price": -122
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "fanduel": {
+                "line": 7.5,
+                "price": -108
+              }
+            }
+          },
+          "edges": {
+            "K_under": {
+              "proj": 5.0,
+              "line": 7.5,
+              "diff": -2.5,
+              "edge_pct": -33.3,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "fanduel"
+            }
+          }
         },
         "home": {
           "id": 678394,
@@ -1470,15 +1507,71 @@
             "quality_start_prob": 58.0,
             "gs": 3
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "fanduel": {
+                "line": 4.5,
+                "price": -112
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "fanduel": {
+                "line": 4.5,
+                "price": -118
+              }
+            }
+          },
+          "edges": {
+            "K_under": {
+              "proj": 2.9,
+              "line": 4.5,
+              "diff": -1.6,
+              "edge_pct": -35.6,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "fanduel"
+            }
+          }
         }
       },
       "projected_boxscore": {
         "away": [],
         "home": []
       },
-      "top_edges": [],
+      "top_edges": [
+        {
+          "player": "Brayan Bello",
+          "player_id": 678394,
+          "team": "BOS",
+          "position": "SP",
+          "game": "DET @ BOS",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 2.9,
+          "line": 4.5,
+          "diff": -1.6,
+          "edge_pct": -35.6,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "fanduel"
+        },
+        {
+          "player": "Tarik Skubal",
+          "player_id": 669373,
+          "team": "DET",
+          "position": "SP",
+          "game": "DET @ BOS",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 5.0,
+          "line": 7.5,
+          "diff": -2.5,
+          "edge_pct": -33.3,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "fanduel"
+        }
+      ],
       "game_score": {},
       "game_line_edges": {}
     },
@@ -1591,6 +1684,10 @@
               "draftkings": {
                 "line": 17.5,
                 "price": -111
+              },
+              "prophetx": {
+                "line": 17.5,
+                "price": -110
               },
               "bovada": {
                 "line": 17.5,
@@ -1868,8 +1965,51 @@
             "quality_start_prob": 83.0,
             "gs": 1
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "draftkings": {
+                "line": 4.5,
+                "price": -109
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "draftkings": {
+                "line": 4.5,
+                "price": -117
+              }
+            },
+            "pitcher_outs_over": {
+              "draftkings": {
+                "line": 15.5,
+                "price": 117
+              },
+              "bovada": {
+                "line": 15.5,
+                "price": 105
+              }
+            },
+            "pitcher_outs_under": {
+              "draftkings": {
+                "line": 15.5,
+                "price": -155
+              },
+              "bovada": {
+                "line": 15.5,
+                "price": -145
+              }
+            }
+          },
+          "edges": {
+            "K_over": {
+              "proj": 7.1,
+              "line": 4.5,
+              "diff": 2.6,
+              "edge_pct": 57.8,
+              "lean": "OVER",
+              "flag": true,
+              "best_book": "draftkings"
+            }
+          }
         },
         "home": {
           "id": 668909,
@@ -1938,7 +2078,44 @@
             "quality_start_prob": 63.0,
             "gs": 4
           },
-          "prop_lines": {},
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "draftkings": {
+                "line": 6.5,
+                "price": -137
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "draftkings": {
+                "line": 6.5,
+                "price": 107
+              }
+            },
+            "pitcher_outs_over": {
+              "draftkings": {
+                "line": 17.5,
+                "price": -103
+              },
+              "prophetx": {
+                "line": 17.5,
+                "price": -110
+              },
+              "bovada": {
+                "line": 17.5,
+                "price": -115
+              }
+            },
+            "pitcher_outs_under": {
+              "draftkings": {
+                "line": 17.5,
+                "price": -128
+              },
+              "bovada": {
+                "line": 17.5,
+                "price": -125
+              }
+            }
+          },
           "edges": {}
         }
       },
@@ -1946,7 +2123,24 @@
         "away": [],
         "home": []
       },
-      "top_edges": [],
+      "top_edges": [
+        {
+          "player": "Dean Kremer",
+          "player_id": 665152,
+          "team": "BAL",
+          "position": "SP",
+          "game": "BAL @ CLE",
+          "type": "K_over",
+          "is_pitcher": true,
+          "proj": 7.1,
+          "line": 4.5,
+          "diff": 2.6,
+          "edge_pct": 57.8,
+          "lean": "OVER",
+          "flag": true,
+          "best_book": "draftkings"
+        }
+      ],
       "game_score": {},
       "game_line_edges": {}
     },
@@ -2389,8 +2583,39 @@
             "quality_start_prob": 79.0,
             "gs": 4
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "fanduel": {
+                "line": 7.5,
+                "price": 100
+              },
+              "bovada": {
+                "line": 7.5,
+                "price": 110
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "fanduel": {
+                "line": 7.5,
+                "price": -132
+              },
+              "bovada": {
+                "line": 7.5,
+                "price": -145
+              }
+            }
+          },
+          "edges": {
+            "K_under": {
+              "proj": 5.0,
+              "line": 7.5,
+              "diff": -2.5,
+              "edge_pct": -33.3,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "fanduel"
+            }
+          }
         },
         "home": {
           "id": 650911,
@@ -2465,7 +2690,24 @@
         "away": [],
         "home": []
       },
-      "top_edges": [],
+      "top_edges": [
+        {
+          "player": "Chris Sale",
+          "player_id": 519242,
+          "team": "ATL",
+          "position": "SP",
+          "game": "ATL @ PHI",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 5.0,
+          "line": 7.5,
+          "diff": -2.5,
+          "edge_pct": -33.3,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "fanduel"
+        }
+      ],
       "game_score": {},
       "game_line_edges": {}
     },
