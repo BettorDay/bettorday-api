@@ -1,6 +1,6 @@
 {
   "date": "2026-06-04",
-  "generated_at": "2026-06-04T00:25:36.780736Z",
+  "generated_at": "2026-06-04T02:05:12.790855Z",
   "total_games": 9,
   "season_blend": {
     "current": 1.0,
@@ -105,8 +105,59 @@
             "quality_start_prob": 18.0,
             "gs": 3
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "draftkings": {
+                "line": 3.5,
+                "price": -167
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "draftkings": {
+                "line": 3.5,
+                "price": 131
+              }
+            },
+            "pitcher_outs_over": {
+              "bovada": {
+                "line": 14.5,
+                "price": -145
+              },
+              "draftkings": {
+                "line": 14.5,
+                "price": -138
+              },
+              "prophetx": {
+                "line": 14.5,
+                "price": -142
+              }
+            },
+            "pitcher_outs_under": {
+              "bovada": {
+                "line": 14.5,
+                "price": 105
+              },
+              "draftkings": {
+                "line": 14.5,
+                "price": 104
+              },
+              "prophetx": {
+                "line": 14.5,
+                "price": 108
+              }
+            }
+          },
+          "edges": {
+            "K_under": {
+              "proj": 2.5,
+              "line": 3.5,
+              "diff": -1.0,
+              "edge_pct": -28.6,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "draftkings"
+            }
+          }
         },
         "home": {
           "id": 554430,
@@ -176,15 +227,99 @@
             "quality_start_prob": 85.0,
             "gs": 7
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "draftkings": {
+                "line": 6.5,
+                "price": 102
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "draftkings": {
+                "line": 6.5,
+                "price": -130
+              }
+            },
+            "pitcher_outs_over": {
+              "bovada": {
+                "line": 18.5,
+                "price": 135
+              },
+              "draftkings": {
+                "line": 18.5,
+                "price": 130
+              },
+              "prophetx": {
+                "line": 18.5,
+                "price": 132
+              }
+            },
+            "pitcher_outs_under": {
+              "bovada": {
+                "line": 18.5,
+                "price": -175
+              },
+              "draftkings": {
+                "line": 18.5,
+                "price": -173
+              },
+              "prophetx": {
+                "line": 18.5,
+                "price": -184
+              }
+            }
+          },
+          "edges": {
+            "K_under": {
+              "proj": 4.8,
+              "line": 6.5,
+              "diff": -1.7,
+              "edge_pct": -26.2,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "draftkings"
+            }
+          }
         }
       },
       "projected_boxscore": {
         "away": [],
         "home": []
       },
-      "top_edges": [],
+      "top_edges": [
+        {
+          "player": "Lucas Giolito",
+          "player_id": 608337,
+          "team": "SD",
+          "position": "SP",
+          "game": "SD @ PHI",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 2.5,
+          "line": 3.5,
+          "diff": -1.0,
+          "edge_pct": -28.6,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
+          "player": "Zack Wheeler",
+          "player_id": 554430,
+          "team": "PHI",
+          "position": "SP",
+          "game": "SD @ PHI",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 4.8,
+          "line": 6.5,
+          "diff": -1.7,
+          "edge_pct": -26.2,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        }
+      ],
       "game_score": {},
       "game_line_edges": {}
     },
