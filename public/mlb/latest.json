@@ -1,6 +1,6 @@
 {
   "date": "2026-06-09",
-  "generated_at": "2026-06-09T04:47:10.601893Z",
+  "generated_at": "2026-06-09T05:01:11.742327Z",
   "total_games": 15,
   "season_blend": {
     "current": 1.0,
@@ -117,6 +117,10 @@
               "bovada": {
                 "line": 6.5,
                 "price": 120
+              },
+              "draftkings": {
+                "line": 6.5,
+                "price": 101
               }
             },
             "pitcher_strikeouts_under": {
@@ -128,9 +132,41 @@
                 "line": 6.5,
                 "price": -160
               },
+              "draftkings": {
+                "line": 6.5,
+                "price": -128
+              },
               "prophetx": {
                 "line": 6.5,
                 "price": -162
+              }
+            },
+            "pitcher_outs_over": {
+              "bovada": {
+                "line": 16.5,
+                "price": -125
+              },
+              "draftkings": {
+                "line": 16.5,
+                "price": -122
+              },
+              "williamhill_us": {
+                "line": 16.5,
+                "price": -122
+              }
+            },
+            "pitcher_outs_under": {
+              "bovada": {
+                "line": 16.5,
+                "price": -115
+              },
+              "draftkings": {
+                "line": 16.5,
+                "price": -108
+              },
+              "williamhill_us": {
+                "line": 16.5,
+                "price": -109
               }
             }
           },
@@ -217,25 +253,53 @@
             "pitcher_strikeouts_over": {
               "fanduel": {
                 "line": 4.5,
-                "price": -144
+                "price": -132
               },
               "bovada": {
                 "line": 4.5,
                 "price": -150
+              },
+              "draftkings": {
+                "line": 4.5,
+                "price": -149
               }
             },
             "pitcher_strikeouts_under": {
               "fanduel": {
                 "line": 4.5,
-                "price": 118
+                "price": 108
               },
               "bovada": {
                 "line": 4.5,
                 "price": 115
               },
+              "draftkings": {
+                "line": 4.5,
+                "price": 117
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": 104
+                "price": -104
+              }
+            },
+            "pitcher_outs_over": {
+              "bovada": {
+                "line": 16.5,
+                "price": -105
+              },
+              "draftkings": {
+                "line": 16.5,
+                "price": -102
+              }
+            },
+            "pitcher_outs_under": {
+              "bovada": {
+                "line": 16.5,
+                "price": -135
+              },
+              "draftkings": {
+                "line": 16.5,
+                "price": -130
               }
             }
           },
@@ -423,7 +487,7 @@
             "pitcher_outs_over": {
               "prophetx": {
                 "line": 16.5,
-                "price": 138
+                "price": 140
               }
             }
           },
@@ -709,7 +773,7 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -114
+                "price": -113
               }
             },
             "pitcher_strikeouts_under": {
@@ -1463,7 +1527,7 @@
               },
               "prophetx": {
                 "line": 17.5,
-                "price": -120
+                "price": -136
               }
             },
             "pitcher_outs_under": {
@@ -1477,7 +1541,7 @@
               },
               "prophetx": {
                 "line": 17.5,
-                "price": 104
+                "price": 120
               }
             }
           },
@@ -1724,6 +1788,18 @@
                 "line": 4.5,
                 "price": -162
               }
+            },
+            "pitcher_earned_runs_over": {
+              "bovada": {
+                "line": 2.5,
+                "price": -140
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "bovada": {
+                "line": 2.5,
+                "price": 100
+              }
             }
           },
           "edges": {
@@ -1735,6 +1811,15 @@
               "lean": "UNDER",
               "flag": true,
               "best_book": "fanduel"
+            },
+            "ER_under": {
+              "proj": 1.2,
+              "line": 2.5,
+              "diff": -1.3,
+              "edge_pct": -52.0,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "bovada"
             }
           }
         }
@@ -1744,6 +1829,22 @@
         "home": []
       },
       "top_edges": [
+        {
+          "player": "Slade Cecconi",
+          "player_id": 677944,
+          "team": "CLE",
+          "position": "SP",
+          "game": "NYY @ CLE",
+          "type": "ER_under",
+          "is_pitcher": true,
+          "proj": 1.2,
+          "line": 2.5,
+          "diff": -1.3,
+          "edge_pct": -52.0,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "bovada"
+        },
         {
           "player": "Slade Cecconi",
           "player_id": 677944,
@@ -3590,10 +3691,6 @@
               "bovada": {
                 "line": 6.5,
                 "price": -115
-              },
-              "prophetx": {
-                "line": 6.5,
-                "price": -102
               }
             },
             "pitcher_strikeouts_under": {
@@ -3607,7 +3704,7 @@
               },
               "prophetx": {
                 "line": 6.5,
-                "price": -122
+                "price": 102
               }
             }
           },
@@ -4123,8 +4220,43 @@
             "quality_start_prob": 52.0,
             "gs": 3
           },
-          "prop_lines": {},
-          "edges": {}
+          "prop_lines": {
+            "pitcher_strikeouts_over": {
+              "fanduel": {
+                "line": 4.5,
+                "price": 124
+              },
+              "bovada": {
+                "line": 4.5,
+                "price": 120
+              }
+            },
+            "pitcher_strikeouts_under": {
+              "fanduel": {
+                "line": 4.5,
+                "price": -152
+              },
+              "bovada": {
+                "line": 4.5,
+                "price": -160
+              },
+              "prophetx": {
+                "line": 4.5,
+                "price": -170
+              }
+            }
+          },
+          "edges": {
+            "K_under": {
+              "proj": 3.1,
+              "line": 4.5,
+              "diff": -1.4,
+              "edge_pct": -31.1,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "fanduel"
+            }
+          }
         },
         "home": {
           "id": 669372,
@@ -4201,7 +4333,24 @@
         "away": [],
         "home": []
       },
-      "top_edges": [],
+      "top_edges": [
+        {
+          "player": "Robert Gasser",
+          "player_id": 688107,
+          "team": "MIL",
+          "position": "SP",
+          "game": "MIL @ ATH",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 3.1,
+          "line": 4.5,
+          "diff": -1.4,
+          "edge_pct": -31.1,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "fanduel"
+        }
+      ],
       "game_score": {},
       "game_line_edges": {}
     }
