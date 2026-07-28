@@ -1,6 +1,6 @@
 {
   "date": "2026-07-28",
-  "generated_at": "2026-07-28T05:37:36.217756Z",
+  "generated_at": "2026-07-28T06:24:48.740628Z",
   "total_games": 15,
   "season_blend": {
     "current": 1.0,
@@ -111,7 +111,7 @@
             "pitcher_strikeouts_over": {
               "fanduel": {
                 "line": 4.5,
-                "price": -156
+                "price": -146
               },
               "draftkings": {
                 "line": 4.5,
@@ -119,17 +119,17 @@
               },
               "bovada": {
                 "line": 4.5,
-                "price": -160
+                "price": -150
               },
               "prophetx": {
                 "line": 4.5,
-                "price": -146
+                "price": -122
               }
             },
             "pitcher_strikeouts_under": {
               "fanduel": {
                 "line": 4.5,
-                "price": 124
+                "price": 114
               },
               "draftkings": {
                 "line": 4.5,
@@ -137,11 +137,11 @@
               },
               "bovada": {
                 "line": 4.5,
-                "price": 120
+                "price": 115
               },
               "prophetx": {
                 "line": 4.5,
-                "price": 112
+                "price": 104
               }
             },
             "pitcher_outs_over": {
@@ -569,9 +569,13 @@
                 "line": 4.5,
                 "price": -160
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": -141
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": -156
+                "price": -154
               }
             },
             "pitcher_strikeouts_under": {
@@ -586,6 +590,10 @@
               "bovada": {
                 "line": 4.5,
                 "price": 120
+              },
+              "pinnacle": {
+                "line": 4.5,
+                "price": 104
               },
               "prophetx": {
                 "line": 4.5,
@@ -604,6 +612,10 @@
               "bovada": {
                 "line": 15.5,
                 "price": -115
+              },
+              "pinnacle": {
+                "line": 15.5,
+                "price": -108
               }
             },
             "pitcher_outs_under": {
@@ -619,13 +631,39 @@
                 "line": 15.5,
                 "price": -125
               },
+              "pinnacle": {
+                "line": 15.5,
+                "price": -122
+              },
               "prophetx": {
                 "line": 15.5,
                 "price": -190
               }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -125
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -106
+              }
             }
           },
-          "edges": {}
+          "edges": {
+            "ER_under": {
+              "proj": 1.7,
+              "line": 2.5,
+              "diff": -0.8,
+              "edge_pct": -32.0,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "pinnacle"
+            }
+          }
         },
         "home": {
           "id": 675512,
@@ -708,6 +746,14 @@
               "bovada": {
                 "line": 5.5,
                 "price": 115
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": 116
+              },
+              "prophetx": {
+                "line": 5.5,
+                "price": -104
               }
             },
             "pitcher_strikeouts_under": {
@@ -722,6 +768,10 @@
               "bovada": {
                 "line": 5.5,
                 "price": -150
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -160
               },
               "prophetx": {
                 "line": 5.5,
@@ -740,6 +790,10 @@
               "bovada": {
                 "line": 17.5,
                 "price": 100
+              },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -108
               }
             },
             "pitcher_outs_under": {
@@ -755,20 +809,79 @@
                 "line": 17.5,
                 "price": -140
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -122
+              },
               "prophetx": {
                 "line": 17.5,
                 "price": -200
               }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": 114
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -152
+              }
             }
           },
-          "edges": {}
+          "edges": {
+            "ER_under": {
+              "proj": 1.5,
+              "line": 2.5,
+              "diff": -1.0,
+              "edge_pct": -40.0,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "pinnacle"
+            }
+          }
         }
       },
       "projected_boxscore": {
         "away": [],
         "home": []
       },
-      "top_edges": [],
+      "top_edges": [
+        {
+          "player": "Troy Melton",
+          "player_id": 675512,
+          "team": "DET",
+          "position": "SP",
+          "game": "BAL @ DET",
+          "type": "ER_under",
+          "is_pitcher": true,
+          "proj": 1.5,
+          "line": 2.5,
+          "diff": -1.0,
+          "edge_pct": -40.0,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "pinnacle"
+        },
+        {
+          "player": "Dean Kremer",
+          "player_id": 665152,
+          "team": "BAL",
+          "position": "SP",
+          "game": "BAL @ DET",
+          "type": "ER_under",
+          "is_pitcher": true,
+          "proj": 1.7,
+          "line": 2.5,
+          "diff": -0.8,
+          "edge_pct": -32.0,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "pinnacle"
+        }
+      ],
       "game_score": {},
       "game_line_edges": {}
     },
@@ -875,7 +988,7 @@
               },
               "draftkings": {
                 "line": 4.5,
-                "price": 129
+                "price": 125
               },
               "bovada": {
                 "line": 3.5,
@@ -893,21 +1006,17 @@
               },
               "draftkings": {
                 "line": 4.5,
-                "price": -165
+                "price": -160
               },
               "bovada": {
                 "line": 3.5,
                 "price": 115
-              },
-              "prophetx": {
-                "line": 3.5,
-                "price": 148
               }
             },
             "pitcher_outs_over": {
               "draftkings": {
                 "line": 15.5,
-                "price": -114
+                "price": -115
               },
               "bovada": {
                 "line": 15.5,
@@ -1009,53 +1118,71 @@
             "pitcher_strikeouts_over": {
               "fanduel": {
                 "line": 3.5,
-                "price": -172
+                "price": -142
+              },
+              "draftkings": {
+                "line": 4.5,
+                "price": 129
               },
               "bovada": {
                 "line": 3.5,
-                "price": -170
+                "price": -145
               },
               "prophetx": {
                 "line": 4.5,
-                "price": -117
+                "price": -120
               }
             },
             "pitcher_strikeouts_under": {
               "fanduel": {
                 "line": 3.5,
-                "price": 134
+                "price": 112
+              },
+              "draftkings": {
+                "line": 4.5,
+                "price": -165
               },
               "bovada": {
                 "line": 3.5,
-                "price": 130
+                "price": 110
               },
               "prophetx": {
-                "line": 3.5,
-                "price": 140
+                "line": 4.5,
+                "price": -178
               }
             },
             "pitcher_outs_over": {
               "draftkings": {
                 "line": 15.5,
-                "price": -116
+                "price": -101
               },
               "bovada": {
                 "line": 15.5,
-                "price": -115
+                "price": -105
               }
             },
             "pitcher_outs_under": {
               "draftkings": {
                 "line": 15.5,
-                "price": -114
+                "price": -131
               },
               "bovada": {
                 "line": 15.5,
-                "price": -125
+                "price": -135
               }
             }
           },
-          "edges": {}
+          "edges": {
+            "K_under": {
+              "proj": 3.4,
+              "line": 4.5,
+              "diff": -1.1,
+              "edge_pct": -24.4,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "draftkings"
+            }
+          }
         }
       },
       "projected_boxscore": {
@@ -1076,6 +1203,22 @@
           "diff": 5.5,
           "edge_pct": 35.5,
           "lean": "OVER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
+          "player": "Bubba Chandler",
+          "player_id": 696149,
+          "team": "PIT",
+          "position": "SP",
+          "game": "AZ @ PIT",
+          "type": "K_under",
+          "is_pitcher": true,
+          "proj": 3.4,
+          "line": 4.5,
+          "diff": -1.1,
+          "edge_pct": -24.4,
+          "lean": "UNDER",
           "flag": true,
           "best_book": "draftkings"
         }
@@ -1229,18 +1372,6 @@
                 "line": 15.5,
                 "price": -149
               }
-            },
-            "pitcher_earned_runs_over": {
-              "bovada": {
-                "line": 1.5,
-                "price": -145
-              }
-            },
-            "pitcher_earned_runs_under": {
-              "bovada": {
-                "line": 1.5,
-                "price": 105
-              }
             }
           },
           "edges": {}
@@ -1363,6 +1494,10 @@
                 "line": 5.5,
                 "price": 125
               },
+              "pinnacle": {
+                "line": 5.5,
+                "price": 118
+              },
               "prophetx": {
                 "line": 5.5,
                 "price": 126
@@ -1381,9 +1516,13 @@
                 "line": 5.5,
                 "price": -165
               },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -157
+              },
               "prophetx": {
                 "line": 5.5,
-                "price": -182
+                "price": -166
               }
             },
             "pitcher_outs_over": {
@@ -1398,6 +1537,10 @@
               "bovada": {
                 "line": 16.5,
                 "price": -115
+              },
+              "pinnacle": {
+                "line": 16.5,
+                "price": -128
               }
             },
             "pitcher_outs_under": {
@@ -1413,18 +1556,26 @@
                 "line": 16.5,
                 "price": -125
               },
-              "prophetx": {
+              "pinnacle": {
                 "line": 16.5,
-                "price": -186
+                "price": -104
               }
             },
             "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -125
+              },
               "prophetx": {
                 "line": 2.5,
                 "price": 108
               }
             },
             "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -106
+              },
               "prophetx": {
                 "line": 2.5,
                 "price": -120
@@ -1448,7 +1599,7 @@
               "edge_pct": -40.0,
               "lean": "UNDER",
               "flag": true,
-              "best_book": "prophetx"
+              "best_book": "pinnacle"
             }
           }
         },
@@ -1535,9 +1686,13 @@
                 "line": 5.5,
                 "price": 125
               },
+              "pinnacle": {
+                "line": 5.5,
+                "price": 131
+              },
               "prophetx": {
                 "line": 5.5,
-                "price": 111
+                "price": 126
               }
             },
             "pitcher_strikeouts_under": {
@@ -1553,9 +1708,13 @@
                 "line": 5.5,
                 "price": -165
               },
-              "prophetx": {
+              "pinnacle": {
                 "line": 5.5,
-                "price": -225
+                "price": -175
+              },
+              "prophetx": {
+                "line": 4.5,
+                "price": 150
               }
             },
             "pitcher_outs_over": {
@@ -1570,6 +1729,10 @@
               "bovada": {
                 "line": 18.5,
                 "price": -110
+              },
+              "pinnacle": {
+                "line": 18.5,
+                "price": -107
               },
               "prophetx": {
                 "line": 18.5,
@@ -1589,12 +1752,26 @@
                 "line": 18.5,
                 "price": -130
               },
+              "pinnacle": {
+                "line": 18.5,
+                "price": -125
+              },
               "prophetx": {
                 "line": 18.5,
                 "price": -140
               }
             },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -113
+              }
+            },
             "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -118
+              },
               "prophetx": {
                 "line": 2.5,
                 "price": -120
@@ -1633,7 +1810,7 @@
           "edge_pct": -40.0,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "prophetx"
+          "best_book": "pinnacle"
         },
         {
           "player": "Sandy Alcantara",
@@ -1772,6 +1949,10 @@
                 "line": 3.5,
                 "price": -170
               },
+              "pinnacle": {
+                "line": 3.5,
+                "price": -151
+              },
               "prophetx": {
                 "line": 4.5,
                 "price": 158
@@ -1782,21 +1963,25 @@
                 "line": 3.5,
                 "price": 132
               },
+              "pinnacle": {
+                "line": 3.5,
+                "price": 111
+              },
               "prophetx": {
                 "line": 4.5,
                 "price": -180
               }
             },
             "pitcher_earned_runs_over": {
-              "prophetx": {
+              "pinnacle": {
                 "line": 2.5,
-                "price": -105
+                "price": -147
               }
             },
             "pitcher_earned_runs_under": {
-              "prophetx": {
+              "pinnacle": {
                 "line": 2.5,
-                "price": -146
+                "price": 108
               }
             }
           },
@@ -1886,9 +2071,13 @@
                 "line": 4.5,
                 "price": 106
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": 108
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": 100
+                "price": 106
               }
             },
             "pitcher_strikeouts_under": {
@@ -1896,13 +2085,39 @@
                 "line": 4.5,
                 "price": -135
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": -143
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": -106
+                "price": -140
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": 128
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -171
               }
             }
           },
-          "edges": {}
+          "edges": {
+            "ER_under": {
+              "proj": 1.3,
+              "line": 2.5,
+              "diff": -1.2,
+              "edge_pct": -48.0,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "pinnacle"
+            }
+          }
         }
       },
       "projected_boxscore": {
@@ -1910,6 +2125,22 @@
         "home": []
       },
       "top_edges": [
+        {
+          "player": "Cade Cavalli",
+          "player_id": 676917,
+          "team": "WSH",
+          "position": "SP",
+          "game": "TOR @ WSH",
+          "type": "ER_under",
+          "is_pitcher": true,
+          "proj": 1.3,
+          "line": 2.5,
+          "diff": -1.2,
+          "edge_pct": -48.0,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "pinnacle"
+        },
         {
           "player": "Shane Bieber",
           "player_id": 669456,
@@ -2031,7 +2262,7 @@
               },
               "draftkings": {
                 "line": 7.5,
-                "price": 115
+                "price": 119
               },
               "bovada": {
                 "line": 7.5,
@@ -2039,7 +2270,11 @@
               },
               "prophetx": {
                 "line": 7.5,
-                "price": -144
+                "price": 105
+              },
+              "pinnacle": {
+                "line": 7.5,
+                "price": 115
               }
             },
             "pitcher_strikeouts_under": {
@@ -2049,7 +2284,7 @@
               },
               "draftkings": {
                 "line": 7.5,
-                "price": -147
+                "price": -153
               },
               "bovada": {
                 "line": 7.5,
@@ -2057,7 +2292,23 @@
               },
               "prophetx": {
                 "line": 7.5,
-                "price": -164
+                "price": -162
+              },
+              "pinnacle": {
+                "line": 7.5,
+                "price": -152
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 1.5,
+                "price": -134
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 1.5,
+                "price": 101
               }
             }
           },
@@ -2149,7 +2400,7 @@
               },
               "draftkings": {
                 "line": 5.5,
-                "price": -101
+                "price": -102
               },
               "bovada": {
                 "line": 5.5,
@@ -2157,7 +2408,11 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": 128
+                "price": 120
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": 102
               }
             },
             "pitcher_strikeouts_under": {
@@ -2175,7 +2430,23 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -174
+                "price": -148
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -136
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 1.5,
+                "price": -177
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 1.5,
+                "price": 132
               }
             },
             "pitcher_walks_over": {
@@ -2330,6 +2601,10 @@
                 "line": 4.5,
                 "price": 115
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": 114
+              },
               "prophetx": {
                 "line": 4.5,
                 "price": 146
@@ -2348,9 +2623,13 @@
                 "line": 4.5,
                 "price": -150
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": -156
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": -182
+                "price": -240
               }
             },
             "pitcher_outs_over": {
@@ -2366,9 +2645,13 @@
                 "line": 17.5,
                 "price": -125
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -124
+              },
               "prophetx": {
                 "line": 17.5,
-                "price": 108
+                "price": -190
               }
             },
             "pitcher_outs_under": {
@@ -2384,9 +2667,25 @@
                 "line": 17.5,
                 "price": -115
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -107
+              },
               "prophetx": {
                 "line": 17.5,
                 "price": -470
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -160
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": 120
               }
             }
           },
@@ -2472,9 +2771,13 @@
                 "line": 6.5,
                 "price": 105
               },
+              "pinnacle": {
+                "line": 6.5,
+                "price": 104
+              },
               "prophetx": {
                 "line": 6.5,
-                "price": -110
+                "price": -103
               }
             },
             "pitcher_strikeouts_under": {
@@ -2489,6 +2792,10 @@
               "bovada": {
                 "line": 6.5,
                 "price": -135
+              },
+              "pinnacle": {
+                "line": 6.5,
+                "price": -140
               },
               "prophetx": {
                 "line": 6.5,
@@ -2508,6 +2815,10 @@
                 "line": 17.5,
                 "price": -175
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -183
+              },
               "prophetx": {
                 "line": 17.5,
                 "price": -245
@@ -2526,15 +2837,33 @@
                 "line": 17.5,
                 "price": 135
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": 136
+              },
               "prophetx": {
                 "line": 17.5,
                 "price": 120
               }
             },
             "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -105
+              },
               "prophetx": {
                 "line": 2.5,
                 "price": 125
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -127
+              },
+              "prophetx": {
+                "line": 2.5,
+                "price": -192
               }
             }
           },
@@ -2547,6 +2876,15 @@
               "lean": "UNDER",
               "flag": true,
               "best_book": "fanduel"
+            },
+            "ER_under": {
+              "proj": 1.4,
+              "line": 2.5,
+              "diff": -1.1,
+              "edge_pct": -44.0,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "pinnacle"
             }
           }
         }
@@ -2556,6 +2894,22 @@
         "home": []
       },
       "top_edges": [
+        {
+          "player": "Taj Bradley",
+          "player_id": 671737,
+          "team": "MIN",
+          "position": "SP",
+          "game": "KC @ MIN",
+          "type": "ER_under",
+          "is_pitcher": true,
+          "proj": 1.4,
+          "line": 2.5,
+          "diff": -1.1,
+          "edge_pct": -44.0,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "pinnacle"
+        },
         {
           "player": "Taj Bradley",
           "player_id": 671737,
@@ -2684,9 +3038,13 @@
                 "line": 6.5,
                 "price": 100
               },
+              "pinnacle": {
+                "line": 6.5,
+                "price": 107
+              },
               "prophetx": {
                 "line": 6.5,
-                "price": 125
+                "price": 110
               }
             },
             "pitcher_strikeouts_under": {
@@ -2701,6 +3059,10 @@
               "bovada": {
                 "line": 6.5,
                 "price": -130
+              },
+              "pinnacle": {
+                "line": 6.5,
+                "price": -142
               },
               "prophetx": {
                 "line": 6.5,
@@ -2720,6 +3082,10 @@
                 "line": 17.5,
                 "price": -110
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -118
+              },
               "prophetx": {
                 "line": 17.5,
                 "price": -115
@@ -2738,13 +3104,39 @@
                 "line": 17.5,
                 "price": -130
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -112
+              },
               "prophetx": {
                 "line": 17.5,
-                "price": -176
+                "price": -122
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -107
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -124
               }
             }
           },
-          "edges": {}
+          "edges": {
+            "ER_under": {
+              "proj": 1.4,
+              "line": 2.5,
+              "diff": -1.1,
+              "edge_pct": -44.0,
+              "lean": "UNDER",
+              "flag": true,
+              "best_book": "pinnacle"
+            }
+          }
         },
         "home": {
           "id": 641743,
@@ -2827,6 +3219,14 @@
               "bovada": {
                 "line": 4.5,
                 "price": -125
+              },
+              "pinnacle": {
+                "line": 4.5,
+                "price": -126
+              },
+              "prophetx": {
+                "line": 4.5,
+                "price": -154
               }
             },
             "pitcher_strikeouts_under": {
@@ -2842,9 +3242,13 @@
                 "line": 4.5,
                 "price": -105
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": -106
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": 128
+                "price": 123
               }
             },
             "pitcher_outs_over": {
@@ -2859,6 +3263,10 @@
               "bovada": {
                 "line": 14.5,
                 "price": -155
+              },
+              "pinnacle": {
+                "line": 14.5,
+                "price": -188
               },
               "prophetx": {
                 "line": 14.5,
@@ -2877,6 +3285,26 @@
               "bovada": {
                 "line": 14.5,
                 "price": 115
+              },
+              "pinnacle": {
+                "line": 14.5,
+                "price": 133
+              },
+              "prophetx": {
+                "line": 14.5,
+                "price": 148
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": 109
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -145
               }
             }
           },
@@ -2898,6 +3326,22 @@
         "home": []
       },
       "top_edges": [
+        {
+          "player": "Gerrit Cole",
+          "player_id": 543037,
+          "team": "NYY",
+          "position": "SP",
+          "game": "NYY @ CWS",
+          "type": "ER_under",
+          "is_pitcher": true,
+          "proj": 1.4,
+          "line": 2.5,
+          "diff": -1.1,
+          "edge_pct": -44.0,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "pinnacle"
+        },
         {
           "player": "Anthony Kay",
           "player_id": 641743,
@@ -3026,6 +3470,24 @@
                 "line": 3.5,
                 "price": -215
               }
+            },
+            "pitcher_outs_over": {
+              "prophetx": {
+                "line": 15.5,
+                "price": 120
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "bovada": {
+                "line": 2.5,
+                "price": -115
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "bovada": {
+                "line": 2.5,
+                "price": -125
+              }
             }
           },
           "edges": {}
@@ -3147,9 +3609,13 @@
               },
               "draftkings": {
                 "line": 5.5,
-                "price": 109
+                "price": -104
               },
               "bovada": {
+                "line": 5.5,
+                "price": 100
+              },
+              "pinnacle": {
                 "line": 5.5,
                 "price": 100
               },
@@ -3165,27 +3631,35 @@
               },
               "draftkings": {
                 "line": 5.5,
-                "price": -139
+                "price": -122
               },
               "bovada": {
                 "line": 5.5,
                 "price": -130
               },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -132
+              },
               "prophetx": {
                 "line": 5.5,
-                "price": -134
+                "price": -124
               }
             },
             "pitcher_outs_over": {
               "draftkings": {
                 "line": 17.5,
-                "price": -149
+                "price": -143
               },
               "williamhill_us": {
                 "line": 17.5,
-                "price": -150
+                "price": -148
               },
               "bovada": {
+                "line": 17.5,
+                "price": -145
+              },
+              "pinnacle": {
                 "line": 17.5,
                 "price": -150
               },
@@ -3197,25 +3671,33 @@
             "pitcher_outs_under": {
               "draftkings": {
                 "line": 17.5,
-                "price": 112
+                "price": 108
               },
               "williamhill_us": {
                 "line": 17.5,
-                "price": 113
+                "price": 111
               },
               "bovada": {
+                "line": 17.5,
+                "price": 105
+              },
+              "pinnacle": {
                 "line": 17.5,
                 "price": 110
               },
               "prophetx": {
                 "line": 17.5,
-                "price": 110
+                "price": 115
               }
             },
             "pitcher_earned_runs_over": {
               "draftkings": {
                 "line": 2.5,
-                "price": -120
+                "price": -115
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -134
               },
               "prophetx": {
                 "line": 2.5,
@@ -3225,11 +3707,15 @@
             "pitcher_earned_runs_under": {
               "draftkings": {
                 "line": 2.5,
-                "price": -110
+                "price": -115
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": 100
               },
               "prophetx": {
                 "line": 2.5,
-                "price": -235
+                "price": -128
               }
             }
           },
@@ -3319,11 +3805,15 @@
               },
               "draftkings": {
                 "line": 6.5,
-                "price": 106
+                "price": -103
               },
               "bovada": {
                 "line": 6.5,
                 "price": 100
+              },
+              "pinnacle": {
+                "line": 6.5,
+                "price": 103
               }
             },
             "pitcher_strikeouts_under": {
@@ -3333,11 +3823,15 @@
               },
               "draftkings": {
                 "line": 6.5,
-                "price": -136
+                "price": -124
               },
               "bovada": {
                 "line": 6.5,
                 "price": -130
+              },
+              "pinnacle": {
+                "line": 6.5,
+                "price": -136
               },
               "prophetx": {
                 "line": 6.5,
@@ -3357,6 +3851,10 @@
                 "line": 17.5,
                 "price": -150
               },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -141
+              },
               "prophetx": {
                 "line": 17.5,
                 "price": -120
@@ -3374,18 +3872,42 @@
               "bovada": {
                 "line": 17.5,
                 "price": 110
+              },
+              "pinnacle": {
+                "line": 17.5,
+                "price": 106
+              },
+              "prophetx": {
+                "line": 17.5,
+                "price": 101
               }
             },
             "pitcher_earned_runs_over": {
               "draftkings": {
                 "line": 2.5,
-                "price": 117
+                "price": 121
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": 119
+              },
+              "prophetx": {
+                "line": 2.5,
+                "price": 118
               }
             },
             "pitcher_earned_runs_under": {
               "draftkings": {
                 "line": 2.5,
-                "price": -156
+                "price": -161
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -158
+              },
+              "prophetx": {
+                "line": 2.5,
+                "price": -166
               }
             },
             "pitcher_walks_over": {
@@ -3577,15 +4099,19 @@
               },
               "draftkings": {
                 "line": 3.5,
-                "price": -150
+                "price": -163
               },
               "bovada": {
                 "line": 3.5,
                 "price": -145
               },
+              "pinnacle": {
+                "line": 3.5,
+                "price": -166
+              },
               "prophetx": {
                 "line": 4.5,
-                "price": 142
+                "price": 140
               }
             },
             "pitcher_strikeouts_under": {
@@ -3595,11 +4121,15 @@
               },
               "draftkings": {
                 "line": 3.5,
-                "price": 118
+                "price": 127
               },
               "bovada": {
                 "line": 3.5,
                 "price": 110
+              },
+              "pinnacle": {
+                "line": 3.5,
+                "price": 120
               },
               "prophetx": {
                 "line": 3.5,
@@ -3609,38 +4139,70 @@
             "pitcher_outs_over": {
               "draftkings": {
                 "line": 16.5,
-                "price": -107
+                "price": -129
               },
               "williamhill_us": {
                 "line": 16.5,
-                "price": -113
+                "price": -128
               },
               "bovada": {
                 "line": 16.5,
-                "price": -110
+                "price": -135
+              },
+              "pinnacle": {
+                "line": 16.5,
+                "price": -126
+              },
+              "prophetx": {
+                "line": 16.5,
+                "price": -112
               }
             },
             "pitcher_outs_under": {
               "draftkings": {
                 "line": 16.5,
-                "price": -124
+                "price": -103
               },
               "williamhill_us": {
                 "line": 16.5,
-                "price": -118
+                "price": -107
               },
               "bovada": {
                 "line": 16.5,
-                "price": -130
+                "price": -105
+              },
+              "pinnacle": {
+                "line": 16.5,
+                "price": -105
+              },
+              "prophetx": {
+                "line": 16.5,
+                "price": 108
               }
             },
             "pitcher_earned_runs_over": {
+              "draftkings": {
+                "line": 2.5,
+                "price": -115
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -117
+              },
               "prophetx": {
                 "line": 2.5,
-                "price": 120
+                "price": -124
               }
             },
             "pitcher_earned_runs_under": {
+              "draftkings": {
+                "line": 2.5,
+                "price": -115
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -113
+              },
               "prophetx": {
                 "line": 2.5,
                 "price": -192
@@ -3655,7 +4217,7 @@
               "edge_pct": -36.0,
               "lean": "UNDER",
               "flag": true,
-              "best_book": "prophetx"
+              "best_book": "draftkings"
             }
           }
         },
@@ -3735,11 +4297,15 @@
               },
               "draftkings": {
                 "line": 5.5,
-                "price": 102
+                "price": -105
               },
               "bovada": {
                 "line": 5.5,
                 "price": -105
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": 110
               }
             },
             "pitcher_strikeouts_under": {
@@ -3749,11 +4315,15 @@
               },
               "draftkings": {
                 "line": 5.5,
-                "price": -130
+                "price": -121
               },
               "bovada": {
                 "line": 5.5,
                 "price": -125
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -147
               },
               "prophetx": {
                 "line": 5.5,
@@ -3763,13 +4333,17 @@
             "pitcher_outs_over": {
               "draftkings": {
                 "line": 15.5,
-                "price": 134
+                "price": 138
               },
               "williamhill_us": {
                 "line": 15.5,
                 "price": 135
               },
               "bovada": {
+                "line": 15.5,
+                "price": 145
+              },
+              "pinnacle": {
                 "line": 15.5,
                 "price": 140
               },
@@ -3781,7 +4355,7 @@
             "pitcher_outs_under": {
               "draftkings": {
                 "line": 15.5,
-                "price": -179
+                "price": -186
               },
               "williamhill_us": {
                 "line": 15.5,
@@ -3789,7 +4363,39 @@
               },
               "bovada": {
                 "line": 15.5,
-                "price": -180
+                "price": -190
+              },
+              "pinnacle": {
+                "line": 15.5,
+                "price": -188
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "draftkings": {
+                "line": 2.5,
+                "price": -146
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -150
+              },
+              "prophetx": {
+                "line": 2.5,
+                "price": -154
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "draftkings": {
+                "line": 2.5,
+                "price": 110
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": 113
+              },
+              "prophetx": {
+                "line": 2.5,
+                "price": 110
               }
             }
           },
@@ -3825,7 +4431,7 @@
           "edge_pct": -36.0,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "prophetx"
+          "best_book": "draftkings"
         },
         {
           "player": "Gage Jump",
@@ -3960,6 +4566,10 @@
               "prophetx": {
                 "line": 3.5,
                 "price": -128
+              },
+              "pinnacle": {
+                "line": 3.5,
+                "price": -143
               }
             },
             "pitcher_strikeouts_under": {
@@ -3978,6 +4588,10 @@
               "prophetx": {
                 "line": 3.5,
                 "price": -104
+              },
+              "pinnacle": {
+                "line": 3.5,
+                "price": 108
               }
             },
             "pitcher_outs_over": {
@@ -3996,6 +4610,10 @@
               "prophetx": {
                 "line": 15.5,
                 "price": -194
+              },
+              "pinnacle": {
+                "line": 15.5,
+                "price": -120
               }
             },
             "pitcher_outs_under": {
@@ -4013,19 +4631,31 @@
               },
               "prophetx": {
                 "line": 15.5,
-                "price": -176
+                "price": -117
+              },
+              "pinnacle": {
+                "line": 15.5,
+                "price": -110
               }
             },
             "pitcher_earned_runs_over": {
               "bovada": {
                 "line": 2.5,
                 "price": -115
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -109
               }
             },
             "pitcher_earned_runs_under": {
               "bovada": {
                 "line": 2.5,
                 "price": -125
+              },
+              "pinnacle": {
+                "line": 2.5,
+                "price": -121
               }
             }
           },
@@ -4121,11 +4751,11 @@
             "pitcher_strikeouts_over": {
               "fanduel": {
                 "line": 5.5,
-                "price": 108
+                "price": 110
               },
               "draftkings": {
                 "line": 5.5,
-                "price": 111
+                "price": 107
               },
               "bovada": {
                 "line": 5.5,
@@ -4133,17 +4763,21 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": 108
+                "price": 110
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": 106
               }
             },
             "pitcher_strikeouts_under": {
               "fanduel": {
                 "line": 5.5,
-                "price": -138
+                "price": -140
               },
               "draftkings": {
                 "line": 5.5,
-                "price": -142
+                "price": -137
               },
               "bovada": {
                 "line": 5.5,
@@ -4151,7 +4785,11 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -196
+                "price": -119
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -141
               }
             },
             "pitcher_outs_over": {
@@ -4170,6 +4808,10 @@
               "prophetx": {
                 "line": 17.5,
                 "price": -134
+              },
+              "pinnacle": {
+                "line": 17.5,
+                "price": -157
               }
             },
             "pitcher_outs_under": {
@@ -4187,19 +4829,31 @@
               },
               "prophetx": {
                 "line": 17.5,
-                "price": -148
+                "price": -176
+              },
+              "pinnacle": {
+                "line": 17.5,
+                "price": 118
               }
             },
             "pitcher_earned_runs_over": {
               "bovada": {
                 "line": 1.5,
                 "price": -170
+              },
+              "pinnacle": {
+                "line": 1.5,
+                "price": -176
               }
             },
             "pitcher_earned_runs_under": {
               "bovada": {
                 "line": 1.5,
                 "price": 130
+              },
+              "pinnacle": {
+                "line": 1.5,
+                "price": 131
               }
             }
           },
@@ -4395,7 +5049,7 @@
             "pitcher_strikeouts_over": {
               "fanduel": {
                 "line": 4.5,
-                "price": -172
+                "price": -170
               },
               "draftkings": {
                 "line": 5.5,
@@ -4405,6 +5059,10 @@
                 "line": 4.5,
                 "price": -170
               },
+              "pinnacle": {
+                "line": 4.5,
+                "price": -179
+              },
               "prophetx": {
                 "line": 5.5,
                 "price": 118
@@ -4413,7 +5071,7 @@
             "pitcher_strikeouts_under": {
               "fanduel": {
                 "line": 4.5,
-                "price": 134
+                "price": 132
               },
               "draftkings": {
                 "line": 5.5,
@@ -4422,6 +5080,10 @@
               "bovada": {
                 "line": 4.5,
                 "price": 130
+              },
+              "pinnacle": {
+                "line": 4.5,
+                "price": 128
               },
               "prophetx": {
                 "line": 5.5,
@@ -4433,9 +5095,17 @@
                 "line": 15.5,
                 "price": 119
               },
+              "williamhill_us": {
+                "line": 15.5,
+                "price": 124
+              },
               "bovada": {
                 "line": 15.5,
                 "price": 120
+              },
+              "pinnacle": {
+                "line": 15.5,
+                "price": 146
               }
             },
             "pitcher_outs_under": {
@@ -4443,9 +5113,29 @@
                 "line": 15.5,
                 "price": -158
               },
+              "williamhill_us": {
+                "line": 15.5,
+                "price": -170
+              },
               "bovada": {
                 "line": 15.5,
                 "price": -160
+              },
+              "pinnacle": {
+                "line": 15.5,
+                "price": -198
+              }
+            },
+            "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 1.5,
+                "price": -159
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 1.5,
+                "price": 120
               }
             }
           },
@@ -4531,6 +5221,10 @@
               "bovada": {
                 "line": 5.5,
                 "price": -125
+              },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -125
               }
             },
             "pitcher_strikeouts_under": {
@@ -4546,9 +5240,13 @@
                 "line": 5.5,
                 "price": -105
               },
+              "pinnacle": {
+                "line": 5.5,
+                "price": -106
+              },
               "prophetx": {
                 "line": 5.5,
-                "price": -110
+                "price": -113
               }
             },
             "pitcher_outs_over": {
@@ -4561,6 +5259,10 @@
                 "price": -117
               },
               "bovada": {
+                "line": 16.5,
+                "price": -120
+              },
+              "pinnacle": {
                 "line": 16.5,
                 "price": -120
               }
@@ -4577,12 +5279,26 @@
               "bovada": {
                 "line": 16.5,
                 "price": -120
+              },
+              "pinnacle": {
+                "line": 16.5,
+                "price": -110
               }
             },
             "pitcher_earned_runs_over": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": 106
+              },
               "prophetx": {
                 "line": 2.5,
                 "price": 140
+              }
+            },
+            "pitcher_earned_runs_under": {
+              "pinnacle": {
+                "line": 2.5,
+                "price": -141
               }
             }
           },
