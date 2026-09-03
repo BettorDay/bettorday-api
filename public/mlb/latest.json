@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "generated_at": "2026-09-03T19:23:50.400196Z",
+  "generated_at": "2026-09-03T19:37:29.238822Z",
   "total_games": 9,
   "season_blend": {
     "current": 1.0,
@@ -216,7 +216,7 @@
       "edge_pct": -37.1,
       "lean": "UNDER",
       "flag": true,
-      "best_book": "betmgm"
+      "best_book": "bovada"
     },
     {
       "player": "Michael Wacha",
@@ -458,7 +458,7 @@
       "edge_pct": -37.1,
       "lean": "UNDER",
       "flag": true,
-      "best_book": "betmgm"
+      "best_book": "bovada"
     },
     {
       "player": "Michael Wacha",
@@ -872,7 +872,7 @@
             "k_proj": 0.67,
             "bb_proj": 0.45,
             "hrr_proj": 2.03,
-            "sb_proj": 0.073,
+            "sb_proj": 0.071,
             "xba": 0.279,
             "xslg": 0.51,
             "xwoba": 0.365,
@@ -883,14 +883,7 @@
             "chase_rate": 20.7,
             "babip": 0.233,
             "data_source": "statcast+season",
-            "prop_lines": {
-              "batter_home_runs_over": {
-                "williamhill_us": {
-                  "line": 0.5,
-                  "price": 4000
-                }
-              }
-            },
+            "prop_lines": {},
             "edges": {}
           },
           {
@@ -1060,14 +1053,7 @@
             "chase_rate": 36.0,
             "babip": 0.164,
             "data_source": "statcast+season",
-            "prop_lines": {
-              "batter_home_runs_under": {
-                "prophetx": {
-                  "line": 0.5,
-                  "price": -900
-                }
-              }
-            },
+            "prop_lines": {},
             "edges": {}
           },
           {
@@ -1268,32 +1254,7 @@
           }
         ]
       },
-      "top_edges": [
-        {
-          "player": "GAME",
-          "type": "game_run_line",
-          "proj_diff": 0.82,
-          "line": 2.5,
-          "cover_margin": -1.68,
-          "edge_pct": -67.2,
-          "lean": "HOME",
-          "flag": true,
-          "early_season": false,
-          "best_book": "DK"
-        },
-        {
-          "player": "GAME",
-          "type": "game_moneyline",
-          "proj_prob": 55.9,
-          "implied_prob": 2.9,
-          "prob_diff": 53.0,
-          "lean": "AWAY",
-          "flag": true,
-          "early_season": false,
-          "price": 3300,
-          "best_book": "MGM"
-        }
-      ],
+      "top_edges": [],
       "game_score": {
         "away_runs": 3.87,
         "home_runs": 3.05,
@@ -1312,28 +1273,7 @@
         "park_factor_weather": null,
         "data_quality": "full"
       },
-      "game_line_edges": {
-        "run_line": {
-          "proj_diff": 0.82,
-          "line": 2.5,
-          "cover_margin": -1.68,
-          "edge_pct": -67.2,
-          "lean": "HOME",
-          "flag": true,
-          "early_season": false,
-          "best_book": "DK"
-        },
-        "moneyline": {
-          "proj_prob": 55.9,
-          "implied_prob": 2.9,
-          "prob_diff": 53.0,
-          "lean": "AWAY",
-          "flag": true,
-          "early_season": false,
-          "price": 3300,
-          "best_book": "MGM"
-        }
-      }
+      "game_line_edges": {}
     },
     {
       "game_pk": 824388,
@@ -1520,7 +1460,7 @@
             "k_proj": 0.86,
             "bb_proj": 0.35,
             "hrr_proj": 1.65,
-            "sb_proj": 0.132,
+            "sb_proj": 0.131,
             "xba": 0.201,
             "xslg": 0.378,
             "xwoba": 0.271,
@@ -1532,38 +1472,124 @@
             "babip": 0.231,
             "data_source": "statcast+season",
             "prop_lines": {
+              "batter_hits_over": {
+                "draftkings": {
+                  "line": 3.5,
+                  "price": 320
+                }
+              },
+              "batter_hits_under": {
+                "draftkings": {
+                  "line": 3.5,
+                  "price": -475
+                }
+              },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 2600
+                  "price": 4000
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1550
+                  "price": 4900
+                }
+              },
+              "batter_rbis_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": 950
+                }
+              },
+              "batter_rbis_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -1800
                 }
               },
               "batter_total_bases_over": {
-                "williamhill_us": {
-                  "line": 2.5,
-                  "price": 141
+                "draftkings": {
+                  "line": 3.5,
+                  "price": 320
                 }
               },
               "batter_total_bases_under": {
+                "draftkings": {
+                  "line": 3.5,
+                  "price": -475
+                }
+              },
+              "batter_hits_runs_rbis_over": {
+                "draftkings": {
+                  "line": 4.5,
+                  "price": 255
+                },
                 "williamhill_us": {
-                  "line": 2.5,
-                  "price": -190
+                  "line": 4.5,
+                  "price": 250
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "draftkings": {
+                  "line": 4.5,
+                  "price": -360
+                },
+                "williamhill_us": {
+                  "line": 4.5,
+                  "price": -380
+                }
+              },
+              "batter_stolen_bases_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": 2200
+                }
+              },
+              "batter_stolen_bases_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -8000
+                }
+              },
+              "batter_walks_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": 550
+                }
+              },
+              "batter_walks_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -900
                 }
               }
             },
             "edges": {
-              "TB_under": {
-                "proj": 0.94,
-                "line": 2.5,
-                "diff": -1.56,
-                "edge_pct": -62.4,
+              "hits_under": {
+                "proj": 0.88,
+                "line": 3.5,
+                "diff": -2.62,
+                "edge_pct": -74.9,
                 "lean": "UNDER",
                 "flag": true,
-                "best_book": "williamhill_us"
+                "best_book": "draftkings"
+              },
+              "TB_under": {
+                "proj": 0.94,
+                "line": 3.5,
+                "diff": -2.56,
+                "edge_pct": -73.1,
+                "lean": "UNDER",
+                "flag": true,
+                "best_book": "draftkings"
+              },
+              "HRR_under": {
+                "proj": 1.65,
+                "line": 4.5,
+                "diff": -2.85,
+                "edge_pct": -63.3,
+                "lean": "UNDER",
+                "flag": true,
+                "best_book": "draftkings"
               }
             }
           },
@@ -1596,67 +1622,87 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 165
+                  "price": 340
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -225
+                  "price": -500
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 1500
+                  "price": 4000
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 2400
+                  "price": 3300
+                }
+              },
+              "batter_rbis_over": {
+                "draftkings": {
+                  "line": 2.5,
+                  "price": 950
+                }
+              },
+              "batter_rbis_under": {
+                "draftkings": {
+                  "line": 2.5,
+                  "price": -2000
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 165
+                  "price": 340
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 152
+                  "price": 325
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -225
+                  "price": -500
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -209
+                  "price": -500
                 }
               },
               "batter_hits_runs_rbis_over": {
+                "draftkings": {
+                  "line": 4.5,
+                  "price": 285
+                },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": 127
+                  "price": 290
                 }
               },
               "batter_hits_runs_rbis_under": {
+                "draftkings": {
+                  "line": 4.5,
+                  "price": -400
+                },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": -170
+                  "price": -440
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 450
+                  "price": 800
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -750
+                  "price": -1600
                 }
               }
             },
@@ -1686,7 +1732,7 @@
                 "edge_pct": -63.3,
                 "lean": "UNDER",
                 "flag": true,
-                "best_book": "williamhill_us"
+                "best_book": "draftkings"
               }
             }
           },
@@ -1719,79 +1765,79 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 130
+                  "price": 290
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -175
+                  "price": -425
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 950
+                  "price": 1500
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1350
+                  "price": 1900
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 390
+                  "price": 700
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -600
+                  "price": -1400
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 100
+                  "price": 240
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -103
+                  "price": 225
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -135
+                  "price": -330
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -130
+                  "price": -325
                 }
               },
               "batter_stolen_bases_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 1600
+                  "price": 2500
                 }
               },
               "batter_stolen_bases_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -4000
+                  "price": -10000
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 310
+                  "price": 600
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -475
+                  "price": -1100
                 }
               }
             },
@@ -1864,13 +1910,13 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 265
+                  "price": 250
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -370
+                  "price": -350
                 }
               },
               "batter_home_runs_over": {
@@ -1880,25 +1926,25 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1400
+                  "price": 1600
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 600
+                  "price": 650
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -1000
+                  "price": -1100
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 265
+                  "price": 250
                 },
                 "williamhill_us": {
                   "line": 1.5,
@@ -1908,7 +1954,7 @@
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -370
+                  "price": -350
                 },
                 "williamhill_us": {
                   "line": 1.5,
@@ -1918,19 +1964,27 @@
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
+                  "price": 190
+                },
+                "williamhill_us": {
+                  "line": 2.5,
                   "price": 200
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -275
+                  "price": -260
+                },
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": -290
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 500
+                  "price": 475
                 }
               },
               "batter_walks_under": {
@@ -1981,7 +2035,7 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 265
+                  "price": 260
                 }
               },
               "batter_hits_under": {
@@ -1993,7 +2047,7 @@
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 1500
+                  "price": 2000
                 },
                 "prophetx": {
                   "line": 0.5,
@@ -2003,43 +2057,43 @@
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 550
+                  "price": 700
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -1000
+                  "price": -1400
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 205
+                  "price": 210
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -285
+                  "price": -290
                 }
               },
               "batter_stolen_bases_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 2500
+                  "price": 1400
                 }
               },
               "batter_stolen_bases_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -10000
+                  "price": -3500
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 550
+                  "price": 500
                 }
               },
               "batter_walks_under": {
@@ -2108,19 +2162,19 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 210
+                  "price": 225
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -295
+                  "price": -320
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 2000
+                  "price": 2600
                 },
                 "prophetx": {
                   "line": 0.5,
@@ -2130,33 +2184,33 @@
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 650
+                  "price": 600
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -1200
+                  "price": -1100
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 185
+                  "price": 195
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 167
+                  "price": 183
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -255
+                  "price": -265
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -230
+                  "price": -260
                 }
               }
             },
@@ -2191,31 +2245,29 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 320
+                  "price": 370
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -450
+                  "price": -550
                 }
               },
               "batter_home_runs_over": {
+                "williamhill_us": {
+                  "line": 0.5,
+                  "price": 2600
+                },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 146
-                }
-              },
-              "batter_home_runs_under": {
-                "prophetx": {
-                  "line": 0.5,
-                  "price": -4900
+                  "price": 2400
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 800
+                  "price": 850
                 }
               },
               "batter_rbis_under": {
@@ -2227,25 +2279,33 @@
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 250
+                  "price": 290
+                },
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": 280
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -350
+                  "price": -425
+                },
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": -420
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 600
+                  "price": 550
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -1100
+                  "price": -1000
                 }
               }
             },
@@ -2282,99 +2342,95 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 120
+                  "price": 260
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -165
+                  "price": -370
                 }
               },
               "batter_home_runs_over": {
-                "williamhill_us": {
-                  "line": 0.5,
-                  "price": 2600
-                },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 4900
+                  "price": 1550
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 700
+                  "price": 900
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -1400
+                  "price": -1800
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 120
+                  "price": 260
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 120
+                  "price": 245
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -165
+                  "price": -370
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -162
+                  "price": -360
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -105
+                  "price": 205
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -106
+                  "price": 200
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -125
+                  "price": -285
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -125
+                  "price": -290
                 }
               },
               "batter_stolen_bases_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 1100
+                  "price": 3000
                 }
               },
               "batter_stolen_bases_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -2500
+                  "price": -20000
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 360
+                  "price": 600
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -575
+                  "price": -1100
                 }
               }
             },
@@ -2437,105 +2493,79 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 120
+                  "price": 270
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -165
+                  "price": -380
                 }
               },
               "batter_home_runs_over": {
-                "williamhill_us": {
-                  "line": 0.5,
-                  "price": 1300
-                },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 780
-                }
-              },
-              "batter_home_runs_under": {
-                "prophetx": {
-                  "line": 0.5,
-                  "price": -24500
+                  "price": 1150
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 500
+                  "price": 700
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -900
+                  "price": -1400
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 120
-                },
-                "williamhill_us": {
-                  "line": 2.5,
-                  "price": 119
+                  "price": 270
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -165
-                },
-                "williamhill_us": {
-                  "line": 2.5,
-                  "price": -159
+                  "price": -380
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -110
-                },
-                "williamhill_us": {
-                  "line": 1.5,
-                  "price": -110
+                  "price": 210
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -125
-                },
-                "williamhill_us": {
-                  "line": 1.5,
-                  "price": -121
+                  "price": -290
                 }
               },
               "batter_stolen_bases_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 1300
+                  "price": 3500
                 }
               },
               "batter_stolen_bases_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -3000
+                  "price": -20000
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 350
+                  "price": 600
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -550
+                  "price": -1100
                 }
               }
             },
@@ -2617,7 +2647,7 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 145
+                  "price": 150
                 }
               },
               "batter_hits_under": {
@@ -2633,29 +2663,23 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 890
+                  "price": 800
                 }
               },
-              "batter_rbis_over": {
-                "draftkings": {
+              "batter_home_runs_under": {
+                "prophetx": {
                   "line": 0.5,
-                  "price": 380
-                }
-              },
-              "batter_rbis_under": {
-                "draftkings": {
-                  "line": 0.5,
-                  "price": -575
+                  "price": -4300
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 145
+                  "price": 150
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 148
+                  "price": 146
                 }
               },
               "batter_total_bases_under": {
@@ -2665,27 +2689,19 @@
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -200
+                  "price": -197
                 }
               },
               "batter_hits_runs_rbis_over": {
-                "draftkings": {
-                  "line": 3.5,
-                  "price": 120
-                },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": 114
+                  "price": 125
                 }
               },
               "batter_hits_runs_rbis_under": {
-                "draftkings": {
-                  "line": 3.5,
-                  "price": -160
-                },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": -152
+                  "price": -170
                 }
               },
               "batter_walks_over": {
@@ -2697,7 +2713,7 @@
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -900
+                  "price": -800
                 }
               }
             },
@@ -2718,7 +2734,7 @@
                 "edge_pct": -29.1,
                 "lean": "UNDER",
                 "flag": true,
-                "best_book": "draftkings"
+                "best_book": "williamhill_us"
               }
             }
           },
@@ -2751,13 +2767,13 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 165
+                  "price": 175
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -225
+                  "price": -240
                 }
               },
               "batter_home_runs_over": {
@@ -2773,29 +2789,29 @@
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 475
+                  "price": 650
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -800
+                  "price": -1200
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 165
+                  "price": 175
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 167
+                  "price": 166
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -225
+                  "price": -240
                 },
                 "williamhill_us": {
                   "line": 1.5,
@@ -2805,7 +2821,7 @@
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 135
+                  "price": 145
                 },
                 "williamhill_us": {
                   "line": 1.5,
@@ -2815,7 +2831,7 @@
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -180
+                  "price": -195
                 },
                 "williamhill_us": {
                   "line": 1.5,
@@ -2825,13 +2841,13 @@
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 425
+                  "price": 450
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -700
+                  "price": -750
                 }
               }
             },
@@ -2876,19 +2892,19 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 155
+                  "price": 175
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -210
+                  "price": -240
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 2000
+                  "price": 2600
                 },
                 "prophetx": {
                   "line": 0.5,
@@ -2898,77 +2914,77 @@
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 550
+                  "price": 650
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -1000
+                  "price": -1200
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 155
+                  "price": 175
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 154
+                  "price": 162
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -210
+                  "price": -240
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -209
+                  "price": -225
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 3.5,
-                  "price": 130
+                  "price": 145
                 },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": 129
+                  "price": 138
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 3.5,
-                  "price": -175
+                  "price": -200
                 },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": -173
+                  "price": -190
                 }
               },
               "batter_stolen_bases_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 1600
+                  "price": 1800
                 }
               },
               "batter_stolen_bases_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -4000
+                  "price": -5000
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 450
+                  "price": 475
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -750
+                  "price": -800
                 }
               }
             },
@@ -3050,13 +3066,13 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 400
+                  "price": 450
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -600
+                  "price": -700
                 }
               },
               "batter_home_runs_over": {
@@ -3066,35 +3082,35 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1950
+                  "price": 3300
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 1000
+                  "price": 1100
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -2000
+                  "price": -2500
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 400
+                  "price": 450
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 380
+                  "price": 370
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -600
+                  "price": -700
                 },
                 "williamhill_us": {
                   "line": 1.5,
@@ -3104,17 +3120,17 @@
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 3.5,
-                  "price": 310
+                  "price": 350
                 },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": 295
+                  "price": 300
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 3.5,
-                  "price": -450
+                  "price": -525
                 },
                 "williamhill_us": {
                   "line": 3.5,
@@ -3124,13 +3140,13 @@
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 950
+                  "price": 1000
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -1800
+                  "price": -2000
                 }
               }
             },
@@ -3193,13 +3209,13 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 245
+                  "price": 255
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -340
+                  "price": -360
                 }
               },
               "batter_home_runs_over": {
@@ -3209,39 +3225,39 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1750
+                  "price": 3300
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 650
+                  "price": 700
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -1200
+                  "price": -1400
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 190
+                  "price": 210
                 },
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 179
+                  "price": 198
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -265
+                  "price": -285
                 },
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": -250
+                  "price": -280
                 }
               },
               "batter_stolen_bases_over": {
@@ -3259,13 +3275,13 @@
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 750
+                  "price": 800
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -1400
+                  "price": -1600
                 }
               }
             },
@@ -3287,6 +3303,38 @@
           "diff": 1.2,
           "edge_pct": 80.0,
           "lean": "OVER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
+          "player": "Brett Bateman",
+          "player_id": 703520,
+          "team": "TOR",
+          "position": "CF",
+          "game": "TOR @ CLE",
+          "type": "hits_under",
+          "is_pitcher": false,
+          "proj": 0.88,
+          "line": 3.5,
+          "diff": -2.62,
+          "edge_pct": -74.9,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
+          "player": "Brett Bateman",
+          "player_id": 703520,
+          "team": "TOR",
+          "position": "CF",
+          "game": "TOR @ CLE",
+          "type": "TB_under",
+          "is_pitcher": false,
+          "proj": 0.94,
+          "line": 3.5,
+          "diff": -2.56,
+          "edge_pct": -73.1,
+          "lean": "UNDER",
           "flag": true,
           "best_book": "draftkings"
         },
@@ -3339,6 +3387,22 @@
           "best_book": "draftkings"
         },
         {
+          "player": "Brett Bateman",
+          "player_id": 703520,
+          "team": "TOR",
+          "position": "CF",
+          "game": "TOR @ CLE",
+          "type": "HRR_under",
+          "is_pitcher": false,
+          "proj": 1.65,
+          "line": 4.5,
+          "diff": -2.85,
+          "edge_pct": -63.3,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
           "player": "Nathan Lukes",
           "player_id": 664770,
           "team": "TOR",
@@ -3352,7 +3416,7 @@
           "edge_pct": -63.3,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "williamhill_us"
+          "best_book": "draftkings"
         },
         {
           "player": "Austin Hedges",
@@ -3369,22 +3433,6 @@
           "lean": "UNDER",
           "flag": true,
           "best_book": "draftkings"
-        },
-        {
-          "player": "Brett Bateman",
-          "player_id": 703520,
-          "team": "TOR",
-          "position": "CF",
-          "game": "TOR @ CLE",
-          "type": "TB_under",
-          "is_pitcher": false,
-          "proj": 0.94,
-          "line": 2.5,
-          "diff": -1.56,
-          "edge_pct": -62.4,
-          "lean": "UNDER",
-          "flag": true,
-          "best_book": "williamhill_us"
         },
         {
           "player": "Steven Kwan",
@@ -3428,7 +3476,7 @@
           "lean": "AWAY",
           "flag": true,
           "early_season": false,
-          "best_book": "FD"
+          "best_book": "BR"
         },
         {
           "player": "Nathan Lukes",
@@ -3504,18 +3552,18 @@
           "lean": "UNDER",
           "flag": true,
           "early_season": false,
-          "best_book": "FD"
+          "best_book": "PX"
         },
         {
           "player": "GAME",
           "type": "game_moneyline",
           "proj_prob": 40.4,
-          "implied_prob": 74.0,
-          "prob_diff": -33.6,
+          "implied_prob": 78.8,
+          "prob_diff": -38.4,
           "lean": "HOME",
           "flag": true,
           "early_season": false,
-          "price": -285,
+          "price": -372,
           "best_book": "PIN"
         },
         {
@@ -3548,7 +3596,7 @@
           "edge_pct": -29.1,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "draftkings"
+          "best_book": "williamhill_us"
         },
         {
           "player": "Vladimir Guerrero Jr.",
@@ -3642,7 +3690,7 @@
           "lean": "UNDER",
           "flag": true,
           "early_season": false,
-          "best_book": "FD"
+          "best_book": "PX"
         },
         "run_line": {
           "proj_diff": -1.27,
@@ -3652,16 +3700,16 @@
           "lean": "AWAY",
           "flag": true,
           "early_season": false,
-          "best_book": "FD"
+          "best_book": "BR"
         },
         "moneyline": {
           "proj_prob": 40.4,
-          "implied_prob": 74.0,
-          "prob_diff": -33.6,
+          "implied_prob": 78.8,
+          "prob_diff": -38.4,
           "lean": "HOME",
           "flag": true,
           "early_season": false,
-          "price": -285,
+          "price": -372,
           "best_book": "PIN"
         }
       }
@@ -3703,10 +3751,10 @@
             "season": {
               "era": 5.6,
               "whip": 1.5,
-              "ip": 125.0,
+              "ip": 126.0,
               "gs": 23,
-              "k_pct": 19.4,
-              "bb_pct": 6.9,
+              "k_pct": 19.2,
+              "bb_pct": 7.1,
               "xera": null,
               "xfip": null,
               "swstr": null,
@@ -3744,12 +3792,12 @@
             "ip_proj": 5.0,
             "outs_proj": 15.0,
             "k_proj": 3.2,
-            "bb_proj": 1.1,
+            "bb_proj": 1.2,
             "hits_proj": 5.2,
             "era_proj": 3.5,
             "runs_proj": 1.9,
             "er_proj": 1.9,
-            "k_pct_adj": 19.4,
+            "k_pct_adj": 19.3,
             "csw_pct": 27.0,
             "xwoba_against": 0.361,
             "barrel_against": 2.2,
@@ -3772,10 +3820,10 @@
             "season": {
               "era": 3.4,
               "whip": 1.3,
-              "ip": 84.0,
+              "ip": 85.0,
               "gs": 16,
-              "k_pct": 25.6,
-              "bb_pct": 12.6,
+              "k_pct": 25.3,
+              "bb_pct": 12.5,
               "xera": null,
               "xfip": null,
               "swstr": null,
@@ -3811,88 +3859,68 @@
             }
           },
           "projection": {
-            "ip_proj": 5.2,
-            "outs_proj": 15.6,
-            "k_proj": 4.6,
+            "ip_proj": 5.3,
+            "outs_proj": 15.9,
+            "k_proj": 4.7,
             "bb_proj": 2.2,
-            "hits_proj": 4.3,
+            "hits_proj": 4.4,
             "era_proj": 3.9,
             "runs_proj": 2.3,
             "er_proj": 2.3,
-            "k_pct_adj": 26.0,
+            "k_pct_adj": 25.8,
             "csw_pct": 28.0,
             "xwoba_against": 0.281,
             "barrel_against": 0.7,
             "hard_hit_against": 18.9,
             "swstr_pct": 8.0,
             "xfip": 3.9,
-            "quality_start_prob": 65.0,
+            "quality_start_prob": 66.0,
             "gs": 16
           },
           "prop_lines": {
             "pitcher_strikeouts_over": {
               "draftkings": {
                 "line": 6.5,
-                "price": -180
+                "price": -110
               }
             },
             "pitcher_strikeouts_under": {
               "draftkings": {
                 "line": 6.5,
-                "price": 130
-              }
-            },
-            "pitcher_outs_over": {
-              "draftkings": {
-                "line": 14.5,
-                "price": -150
-              },
-              "williamhill_us": {
-                "line": 14.5,
-                "price": -150
-              }
-            },
-            "pitcher_outs_under": {
-              "draftkings": {
-                "line": 14.5,
-                "price": 110
-              },
-              "williamhill_us": {
-                "line": 14.5,
-                "price": 112
+                "price": -125
               }
             },
             "pitcher_earned_runs_over": {
               "draftkings": {
                 "line": 2.5,
-                "price": 155
+                "price": 215
               }
             },
             "pitcher_earned_runs_under": {
               "draftkings": {
                 "line": 2.5,
-                "price": -220
+                "price": -300
               }
             },
             "pitcher_walks_over": {
               "draftkings": {
                 "line": 1.5,
-                "price": -160
+                "price": -110
               }
             },
             "pitcher_walks_under": {
               "draftkings": {
                 "line": 1.5,
-                "price": 115
+                "price": -130
               }
             }
           },
           "edges": {
             "K_under": {
-              "proj": 4.6,
+              "proj": 4.7,
               "line": 6.5,
-              "diff": -1.9,
-              "edge_pct": -29.2,
+              "diff": -1.8,
+              "edge_pct": -27.7,
               "lean": "UNDER",
               "flag": true,
               "best_book": "draftkings"
@@ -3938,61 +3966,105 @@
             "data_source": "statcast+season",
             "prop_lines": {
               "batter_hits_over": {
-                "betmgm": {
+                "draftkings": {
                   "line": 1.5,
-                  "price": -105
+                  "price": 165
                 }
               },
               "batter_hits_under": {
-                "betmgm": {
+                "draftkings": {
                   "line": 1.5,
-                  "price": -125
+                  "price": -225
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 1300
+                  "price": 2000
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1900
+                  "price": 1950
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 1400
+                  "price": 2000
                 }
               },
               "batter_rbis_over": {
-                "betmgm": {
+                "draftkings": {
                   "line": 1.5,
-                  "price": 360
+                  "price": 600
                 }
               },
               "batter_rbis_under": {
-                "betmgm": {
+                "draftkings": {
                   "line": 1.5,
-                  "price": -550
+                  "price": -1100
                 }
               },
               "batter_total_bases_over": {
+                "draftkings": {
+                  "line": 1.5,
+                  "price": 165
+                },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -105
-                },
-                "betmgm": {
-                  "line": 1.5,
-                  "price": -105
+                  "price": 168
                 }
               },
               "batter_total_bases_under": {
+                "draftkings": {
+                  "line": 1.5,
+                  "price": -225
+                },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -127
+                  "price": -235
+                }
+              },
+              "batter_hits_runs_rbis_over": {
+                "draftkings": {
+                  "line": 2.5,
+                  "price": 135
                 },
-                "betmgm": {
-                  "line": 1.5,
-                  "price": -125
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": 140
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "draftkings": {
+                  "line": 2.5,
+                  "price": -180
+                },
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": -190
+                }
+              },
+              "batter_stolen_bases_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": 3500
+                }
+              },
+              "batter_stolen_bases_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -20000
+                }
+              },
+              "batter_walks_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": 360
+                }
+              },
+              "batter_walks_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -550
                 }
               }
             },
@@ -4004,7 +4076,7 @@
                 "edge_pct": -50.7,
                 "lean": "UNDER",
                 "flag": true,
-                "best_book": "betmgm"
+                "best_book": "draftkings"
               },
               "TB_under": {
                 "proj": 0.93,
@@ -4013,7 +4085,16 @@
                 "edge_pct": -38.0,
                 "lean": "UNDER",
                 "flag": true,
-                "best_book": "williamhill_us"
+                "best_book": "draftkings"
+              },
+              "HRR_under": {
+                "proj": 1.63,
+                "line": 2.5,
+                "diff": -0.87,
+                "edge_pct": -34.8,
+                "lean": "UNDER",
+                "flag": true,
+                "best_book": "draftkings"
               }
             }
           },
@@ -4046,71 +4127,83 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 130
+                  "price": 140
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": 140
+                  "price": 145
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -175
+                  "price": -190
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": -190
+                  "price": -200
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 6000
-                },
-                "prophetx": {
-                  "line": 0.5,
-                  "price": 530
+                  "price": 8000
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 575
+                  "price": 600
                 }
               },
               "batter_rbis_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": 380
+                },
                 "betmgm": {
                   "line": 0.5,
-                  "price": 275
+                  "price": 340
                 }
               },
               "batter_rbis_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -600
+                },
                 "betmgm": {
                   "line": 0.5,
-                  "price": -400
+                  "price": -525
                 }
               },
               "batter_total_bases_over": {
                 "betmgm": {
                   "line": 0.5,
-                  "price": 140
+                  "price": 150
                 }
               },
               "batter_total_bases_under": {
                 "betmgm": {
                   "line": 0.5,
-                  "price": -190
+                  "price": -200
                 }
               },
               "batter_hits_runs_rbis_over": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -110
+                },
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": -109
+                  "price": -105
                 }
               },
               "batter_hits_runs_rbis_under": {
+                "draftkings": {
+                  "line": 0.5,
+                  "price": -125
+                },
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": -122
+                  "price": -127
                 }
               },
               "batter_walks_over": {
@@ -4157,127 +4250,127 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 110
+                  "price": 105
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": 105
+                  "price": 110
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -150
+                  "price": -145
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": -140
+                  "price": -150
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 450
+                  "price": 625
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 580
+                  "price": 530
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 650
+                  "price": 700
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 320
+                  "price": 340
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": 260
+                  "price": 325
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -500
+                  "price": -525
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": -375
+                  "price": -500
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 110
+                  "price": 105
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 104
+                  "price": 110
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": 105
+                  "price": 110
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -150
+                  "price": -145
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -139
+                  "price": -148
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": -140
+                  "price": -150
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -120
+                  "price": -125
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -132
+                  "price": -118
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -115
+                  "price": -110
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 100
+                  "price": -113
                 }
               },
               "batter_stolen_bases_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 3000
+                  "price": 2200
                 }
               },
               "batter_stolen_bases_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -20000
+                  "price": -8000
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 175
+                  "price": 180
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -255
+                  "price": -260
                 }
               }
             },
@@ -4322,7 +4415,7 @@
             "hr_proj": 0.025,
             "rbi_proj": 0.33,
             "runs_proj": 0.36,
-            "k_proj": 0.95,
+            "k_proj": 0.94,
             "bb_proj": 0.34,
             "hrr_proj": 1.43,
             "sb_proj": 0.01,
@@ -4344,27 +4437,27 @@
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": 140
+                  "price": 150
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -200
+                  "price": -195
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": -190
+                  "price": -200
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 950
+                  "price": 1100
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1150
+                  "price": 1200
                 },
                 "betrivers": {
                   "line": 0.5,
@@ -4374,33 +4467,33 @@
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 475
+                  "price": 450
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": 360
+                  "price": 390
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -800
+                  "price": -750
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": -550
+                  "price": -625
                 }
               },
               "batter_total_bases_over": {
                 "betmgm": {
                   "line": 0.5,
-                  "price": 140
+                  "price": 150
                 }
               },
               "batter_total_bases_under": {
                 "betmgm": {
                   "line": 0.5,
-                  "price": -190
+                  "price": -200
                 }
               },
               "batter_hits_runs_rbis_over": {
@@ -4418,13 +4511,13 @@
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 340
+                  "price": 360
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -525
+                  "price": -550
                 }
               }
             },
@@ -4442,7 +4535,7 @@
             "rbi_proj": 0.46,
             "runs_proj": 0.45,
             "k_proj": 0.89,
-            "bb_proj": 0.54,
+            "bb_proj": 0.53,
             "hrr_proj": 1.85,
             "sb_proj": 0.014,
             "xba": 0.235,
@@ -4459,31 +4552,31 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 125
+                  "price": 130
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 115
+                  "price": 125
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -170
+                  "price": -175
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": -155
+                  "price": -165
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 1300
+                  "price": 1500
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 1600
+                  "price": 1700
                 },
                 "betrivers": {
                   "line": 0.5,
@@ -4513,29 +4606,29 @@
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 125
+                  "price": 130
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 117
+                  "price": 136
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 115
+                  "price": 125
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -170
+                  "price": -175
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -157
+                  "price": -182
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": -155
+                  "price": -165
                 }
               },
               "batter_hits_runs_rbis_over": {
@@ -4545,7 +4638,7 @@
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -105
+                  "price": 103
                 }
               },
               "batter_hits_runs_rbis_under": {
@@ -4555,13 +4648,13 @@
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -129
+                  "price": -137
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 270
+                  "price": 265
                 }
               },
               "batter_walks_under": {
@@ -4594,7 +4687,7 @@
             "hr_proj": 0.019,
             "rbi_proj": 0.4,
             "runs_proj": 0.35,
-            "k_proj": 1.32,
+            "k_proj": 1.31,
             "bb_proj": 0.43,
             "hrr_proj": 1.83,
             "sb_proj": 0.007,
@@ -4616,7 +4709,7 @@
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": 165
+                  "price": 180
                 }
               },
               "batter_hits_under": {
@@ -4626,33 +4719,33 @@
                 },
                 "betmgm": {
                   "line": 0.5,
-                  "price": -225
+                  "price": -250
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 625
+                  "price": 750
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 740
+                  "price": 570
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 700
+                  "price": 750
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 390
+                  "price": 370
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -600
+                  "price": -575
                 }
               },
               "batter_hits_runs_rbis_over": {
@@ -4662,7 +4755,7 @@
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 120
+                  "price": 134
                 }
               },
               "batter_hits_runs_rbis_under": {
@@ -4672,19 +4765,19 @@
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -162
+                  "price": -179
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 320
+                  "price": 310
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -500
+                  "price": -475
                 }
               }
             },
@@ -4701,7 +4794,7 @@
             "hr_proj": 0.0,
             "rbi_proj": 0.41,
             "runs_proj": 0.32,
-            "k_proj": 0.81,
+            "k_proj": 0.8,
             "bb_proj": 0.41,
             "hrr_proj": 1.52,
             "sb_proj": 0.014,
@@ -4719,13 +4812,13 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 135
+                  "price": 140
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -185
+                  "price": -190
                 }
               },
               "batter_home_runs_over": {
@@ -4735,11 +4828,11 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 2400
+                  "price": 1150
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 1800
+                  "price": 2000
                 }
               },
               "batter_rbis_over": {
@@ -4757,41 +4850,41 @@
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 135
+                  "price": 140
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 130
+                  "price": 137
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -185
+                  "price": -190
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -176
+                  "price": -190
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 110
+                  "price": 115
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 105
+                  "price": 118
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -150
+                  "price": -155
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -139
+                  "price": -157
                 }
               },
               "batter_walks_over": {
@@ -4830,7 +4923,7 @@
             "hr_proj": 0.048,
             "rbi_proj": 0.52,
             "runs_proj": 0.37,
-            "k_proj": 0.8,
+            "k_proj": 0.79,
             "bb_proj": 0.45,
             "hrr_proj": 1.83,
             "sb_proj": 0.07,
@@ -4848,25 +4941,23 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 170
+                  "price": 180
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -230
-                }
-              },
-              "batter_home_runs_under": {
-                "prophetx": {
-                  "line": 0.5,
-                  "price": -1900
+                  "price": -245
                 }
               },
               "batter_home_runs_over": {
+                "williamhill_us": {
+                  "line": 0.5,
+                  "price": 1500
+                },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 1600
+                  "price": 1500
                 }
               },
               "batter_rbis_over": {
@@ -4878,19 +4969,27 @@
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -900
+                  "price": -1000
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 140
+                  "price": 150
+                },
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": 144
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -195
+                  "price": -205
+                },
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": -197
                 }
               },
               "batter_walks_over": {
@@ -4947,15 +5046,23 @@
                 }
               },
               "batter_home_runs_over": {
+                "williamhill_us": {
+                  "line": 0.5,
+                  "price": 1300
+                },
+                "prophetx": {
+                  "line": 0.5,
+                  "price": 740
+                },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 1050
+                  "price": 1600
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 650
+                  "price": 600
                 }
               },
               "batter_rbis_under": {
@@ -4968,36 +5075,52 @@
                 "draftkings": {
                   "line": 1.5,
                   "price": 250
+                },
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": 245
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
                   "price": -350
+                },
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": -360
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
                   "price": 195
+                },
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": 187
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -270
+                  "price": -265
+                },
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": -265
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 340
+                  "price": 350
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -525
+                  "price": -550
                 }
               }
             },
@@ -5035,10 +5158,10 @@
             "hr_proj": 0.024,
             "rbi_proj": 0.38,
             "runs_proj": 0.58,
-            "k_proj": 1.17,
+            "k_proj": 1.16,
             "bb_proj": 0.23,
             "hrr_proj": 2.2,
-            "sb_proj": 0.102,
+            "sb_proj": 0.101,
             "xba": 0.281,
             "xslg": 0.538,
             "xwoba": 0.269,
@@ -5064,7 +5187,7 @@
             "rbi_proj": 0.52,
             "runs_proj": 0.7,
             "k_proj": 0.78,
-            "bb_proj": 0.47,
+            "bb_proj": 0.48,
             "hrr_proj": 2.65,
             "sb_proj": 0.007,
             "xba": 0.332,
@@ -5081,107 +5204,71 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -125
-                },
-                "betmgm": {
-                  "line": 0.5,
-                  "price": -115
+                  "price": 145
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -110
-                },
-                "betmgm": {
-                  "line": 0.5,
-                  "price": -115
+                  "price": -195
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 340
+                  "price": 700
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 380
+                  "price": 670
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 360
+                  "price": 510
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 205
-                },
-                "betmgm": {
-                  "line": 0.5,
-                  "price": 200
+                  "price": 330
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -295
-                },
-                "betmgm": {
-                  "line": 0.5,
-                  "price": -275
-                }
-              },
-              "batter_total_bases_over": {
-                "williamhill_us": {
-                  "line": 0.5,
-                  "price": -127
-                },
-                "betmgm": {
-                  "line": 0.5,
-                  "price": -115
-                }
-              },
-              "batter_total_bases_under": {
-                "williamhill_us": {
-                  "line": 0.5,
-                  "price": -106
-                },
-                "betmgm": {
-                  "line": 0.5,
-                  "price": -115
+                  "price": -500
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -170
+                  "price": 110
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -173
+                  "price": 109
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 125
+                  "price": -145
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 128
+                  "price": -145
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
-                  "line": 0.5,
-                  "price": 160
+                  "line": 1.5,
+                  "price": 270
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
-                  "line": 0.5,
-                  "price": -230
+                  "line": 1.5,
+                  "price": -400
                 }
               }
             },
@@ -5208,8 +5295,8 @@
             "hr_proj": 0.016,
             "rbi_proj": 0.47,
             "runs_proj": 0.58,
-            "k_proj": 0.46,
-            "bb_proj": 0.43,
+            "k_proj": 0.45,
+            "bb_proj": 0.44,
             "hrr_proj": 1.93,
             "sb_proj": 0.0,
             "xba": 0.21,
@@ -5226,115 +5313,87 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 115
-                },
-                "betmgm": {
-                  "line": 1.5,
-                  "price": 105
+                  "price": 210
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -155
-                },
-                "betmgm": {
-                  "line": 1.5,
-                  "price": -140
+                  "price": -290
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 950
-                },
-                "prophetx": {
-                  "line": 0.5,
-                  "price": 900
+                  "price": 2000
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 700
+                  "price": 1050
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 320
-                },
-                "betmgm": {
-                  "line": 1.5,
-                  "price": 260
+                  "price": 500
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -500
-                },
-                "betmgm": {
-                  "line": 1.5,
-                  "price": -375
+                  "price": -900
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 115
+                  "price": 210
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 109
-                },
-                "betmgm": {
-                  "line": 2.5,
-                  "price": 105
+                  "price": 200
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -155
+                  "price": -290
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -145
-                },
-                "betmgm": {
-                  "line": 2.5,
-                  "price": -140
+                  "price": -290
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": -115
+                  "price": 160
                 },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": -118
+                  "price": 161
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": -120
+                  "price": -220
                 },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": -113
+                  "price": -225
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 270
+                  "price": 390
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -400
+                  "price": -600
                 }
               }
             },
@@ -5397,47 +5456,47 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 115
+                  "price": 110
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 110
+                  "price": 105
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -160
+                  "price": -145
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": -150
+                  "price": -140
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 7000
+                  "price": 8500
                 },
                 "betrivers": {
                   "line": 1.5,
-                  "price": 1150
+                  "price": 1100
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 370
+                  "price": 450
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": 310
+                  "price": 300
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -575
+                  "price": -750
                 },
                 "betmgm": {
                   "line": 2.5,
@@ -5447,61 +5506,61 @@
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": 115
+                  "price": 110
                 },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": 111
+                  "price": 107
                 },
                 "betmgm": {
                   "line": 4.5,
-                  "price": 110
+                  "price": 105
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": -160
+                  "price": -145
                 },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": -148
+                  "price": -141
                 },
                 "betmgm": {
                   "line": 4.5,
-                  "price": -150
+                  "price": -145
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": -110
-                },
-                "williamhill_us": {
-                  "line": 4.5,
-                  "price": -114
-                }
-              },
-              "batter_hits_runs_rbis_under": {
-                "draftkings": {
-                  "line": 4.5,
-                  "price": -125
+                  "price": -115
                 },
                 "williamhill_us": {
                   "line": 4.5,
                   "price": -117
                 }
               },
+              "batter_hits_runs_rbis_under": {
+                "draftkings": {
+                  "line": 4.5,
+                  "price": -115
+                },
+                "williamhill_us": {
+                  "line": 4.5,
+                  "price": -114
+                }
+              },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 350
+                  "price": 370
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -550
+                  "price": -575
                 }
               }
             },
@@ -5564,21 +5623,21 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 125
+                  "price": 120
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 120
+                  "price": 115
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -170
+                  "price": -165
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": -160
+                  "price": -155
                 }
               },
               "batter_home_runs_over": {
@@ -5588,91 +5647,91 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 900
+                  "price": 750
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 950
+                  "price": 900
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 350
+                  "price": 425
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": 290
+                  "price": 320
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -550
+                  "price": -650
                 },
                 "betmgm": {
                   "line": 2.5,
-                  "price": -450
+                  "price": -500
                 }
               },
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 3.5,
-                  "price": 125
+                  "price": 120
                 },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": 122
+                  "price": 119
                 },
                 "betmgm": {
                   "line": 3.5,
-                  "price": 120
+                  "price": 115
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 3.5,
-                  "price": -170
+                  "price": -165
                 },
                 "williamhill_us": {
                   "line": 3.5,
-                  "price": -162
+                  "price": -159
                 },
                 "betmgm": {
                   "line": 3.5,
-                  "price": -160
+                  "price": -155
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": 100
+                  "price": -105
                 },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": -104
+                  "price": -105
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 4.5,
-                  "price": -135
+                  "price": -130
                 },
                 "williamhill_us": {
                   "line": 4.5,
-                  "price": -129
+                  "price": -127
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 390
+                  "price": 370
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -600
+                  "price": -575
                 }
               }
             },
@@ -5717,7 +5776,7 @@
             "hr_proj": 0.01,
             "rbi_proj": 0.48,
             "runs_proj": 0.42,
-            "k_proj": 0.81,
+            "k_proj": 0.8,
             "bb_proj": 0.26,
             "hrr_proj": 1.92,
             "sb_proj": 0.0,
@@ -5735,21 +5794,21 @@
               "batter_hits_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 145
+                  "price": 130
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 135
+                  "price": 130
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -195
+                  "price": -175
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": -185
+                  "price": -175
                 }
               },
               "batter_home_runs_over": {
@@ -5759,21 +5818,21 @@
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 810
+                  "price": 570
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 950
+                  "price": 900
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 380
+                  "price": 390
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 320
+                  "price": 325
                 }
               },
               "batter_rbis_under": {
@@ -5789,49 +5848,49 @@
               "batter_total_bases_over": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": 145
+                  "price": 130
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": 140
+                  "price": 130
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": 135
+                  "price": 130
                 }
               },
               "batter_total_bases_under": {
                 "draftkings": {
                   "line": 1.5,
-                  "price": -195
+                  "price": -175
                 },
                 "williamhill_us": {
                   "line": 1.5,
-                  "price": -190
+                  "price": -176
                 },
                 "betmgm": {
                   "line": 1.5,
-                  "price": -185
+                  "price": -175
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": 110
+                  "price": 105
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": 110
+                  "price": 105
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
                   "line": 2.5,
-                  "price": -150
+                  "price": -140
                 },
                 "williamhill_us": {
                   "line": 2.5,
-                  "price": -148
+                  "price": -139
                 }
               },
               "batter_walks_over": {
@@ -5935,72 +5994,111 @@
             "prop_lines": {
               "batter_hits_over": {
                 "draftkings": {
-                  "line": 0.5,
-                  "price": -135
+                  "line": 1.5,
+                  "price": 120
                 }
               },
               "batter_hits_under": {
                 "draftkings": {
-                  "line": 0.5,
-                  "price": 100
+                  "line": 1.5,
+                  "price": -165
                 }
               },
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 850
+                  "price": 1500
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 850
+                  "price": 1200
                 }
               },
               "batter_rbis_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 390
+                  "price": 400
                 }
               },
               "batter_rbis_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -600
+                  "price": -650
+                }
+              },
+              "batter_total_bases_over": {
+                "draftkings": {
+                  "line": 2.5,
+                  "price": 120
+                },
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": 119
+                }
+              },
+              "batter_total_bases_under": {
+                "draftkings": {
+                  "line": 2.5,
+                  "price": -165
+                },
+                "williamhill_us": {
+                  "line": 2.5,
+                  "price": -159
                 }
               },
               "batter_hits_runs_rbis_over": {
                 "draftkings": {
-                  "line": 0.5,
-                  "price": -165
+                  "line": 1.5,
+                  "price": -105
                 },
                 "williamhill_us": {
-                  "line": 0.5,
-                  "price": -164
+                  "line": 1.5,
+                  "price": -106
                 }
               },
               "batter_hits_runs_rbis_under": {
                 "draftkings": {
-                  "line": 0.5,
-                  "price": 120
+                  "line": 1.5,
+                  "price": -130
                 },
                 "williamhill_us": {
-                  "line": 0.5,
-                  "price": 123
+                  "line": 1.5,
+                  "price": -125
                 }
               },
               "batter_walks_over": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": 390
+                  "price": 450
                 }
               },
               "batter_walks_under": {
                 "draftkings": {
                   "line": 0.5,
-                  "price": -650
+                  "price": -750
                 }
               }
             },
-            "edges": {}
+            "edges": {
+              "hits_under": {
+                "proj": 0.85,
+                "line": 1.5,
+                "diff": -0.65,
+                "edge_pct": -43.3,
+                "lean": "UNDER",
+                "flag": true,
+                "best_book": "draftkings"
+              },
+              "TB_under": {
+                "proj": 1.21,
+                "line": 2.5,
+                "diff": -1.29,
+                "edge_pct": -51.6,
+                "lean": "UNDER",
+                "flag": true,
+                "best_book": "draftkings"
+              }
+            }
           },
           {
             "name": "LaMonte Wade Jr.",
@@ -6031,15 +6129,15 @@
               "batter_home_runs_over": {
                 "williamhill_us": {
                   "line": 0.5,
-                  "price": 850
+                  "price": 1300
                 },
                 "prophetx": {
                   "line": 0.5,
-                  "price": 900
+                  "price": 1350
                 },
                 "betrivers": {
                   "line": 0.5,
-                  "price": 1100
+                  "price": 1500
                 }
               }
             },
@@ -6052,13 +6150,13 @@
           "player": "GAME",
           "type": "game_run_line",
           "proj_diff": -0.04,
-          "line": 4.5,
-          "cover_margin": -4.54,
-          "edge_pct": -100.9,
+          "line": 3.5,
+          "cover_margin": -3.54,
+          "edge_pct": -101.1,
           "lean": "HOME",
           "flag": true,
           "early_season": false,
-          "best_book": "PX"
+          "best_book": "BOV"
         },
         {
           "player": "Yordan Alvarez",
@@ -6157,6 +6255,22 @@
           "best_book": "draftkings"
         },
         {
+          "player": "Yainer Diaz",
+          "player_id": 673237,
+          "team": "HOU",
+          "position": "C",
+          "game": "CWS @ HOU",
+          "type": "TB_under",
+          "is_pitcher": false,
+          "proj": 1.21,
+          "line": 2.5,
+          "diff": -1.29,
+          "edge_pct": -51.6,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
           "player": "Jake Rogers",
           "player_id": 668670,
           "team": "CWS",
@@ -6186,7 +6300,7 @@
           "edge_pct": -50.7,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "betmgm"
+          "best_book": "draftkings"
         },
         {
           "player": "Isaac Paredes",
@@ -6203,18 +6317,6 @@
           "lean": "UNDER",
           "flag": true,
           "best_book": "draftkings"
-        },
-        {
-          "player": "GAME",
-          "type": "game_total",
-          "proj": 6.9,
-          "line": 13.5,
-          "diff": -6.6,
-          "edge_pct": -48.9,
-          "lean": "UNDER",
-          "flag": true,
-          "early_season": false,
-          "best_book": "PX"
         },
         {
           "player": "Daulton Varsho",
@@ -6281,6 +6383,34 @@
           "best_book": "draftkings"
         },
         {
+          "player": "GAME",
+          "type": "game_total",
+          "proj": 6.9,
+          "line": 12.5,
+          "diff": -5.6,
+          "edge_pct": -44.8,
+          "lean": "UNDER",
+          "flag": true,
+          "early_season": false,
+          "best_book": "PX"
+        },
+        {
+          "player": "Yainer Diaz",
+          "player_id": 673237,
+          "team": "HOU",
+          "position": "C",
+          "game": "CWS @ HOU",
+          "type": "hits_under",
+          "is_pitcher": false,
+          "proj": 0.85,
+          "line": 1.5,
+          "diff": -0.65,
+          "edge_pct": -43.3,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
           "player": "Jake Rogers",
           "player_id": 668670,
           "team": "CWS",
@@ -6300,13 +6430,13 @@
           "player": "GAME",
           "type": "game_moneyline",
           "proj_prob": 49.7,
-          "implied_prob": 8.3,
-          "prob_diff": 41.4,
+          "implied_prob": 7.7,
+          "prob_diff": 42.0,
           "lean": "AWAY",
           "flag": true,
           "early_season": false,
-          "price": 1100,
-          "best_book": "CZR"
+          "price": 1202,
+          "best_book": "PIN"
         },
         {
           "player": "Isaac Paredes",
@@ -6338,7 +6468,7 @@
           "edge_pct": -38.0,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "williamhill_us"
+          "best_book": "draftkings"
         },
         {
           "player": "Braden Montgomery",
@@ -6352,6 +6482,22 @@
           "line": 1.5,
           "diff": -0.56,
           "edge_pct": -37.3,
+          "lean": "UNDER",
+          "flag": true,
+          "best_book": "draftkings"
+        },
+        {
+          "player": "Sam Antonacci",
+          "player_id": 803011,
+          "team": "CWS",
+          "position": "LF",
+          "game": "CWS @ HOU",
+          "type": "HRR_under",
+          "is_pitcher": false,
+          "proj": 1.63,
+          "line": 2.5,
+          "diff": -0.87,
+          "edge_pct": -34.8,
           "lean": "UNDER",
           "flag": true,
           "best_book": "draftkings"
@@ -6412,10 +6558,10 @@
           "game": "CWS @ HOU",
           "type": "K_under",
           "is_pitcher": true,
-          "proj": 4.6,
+          "proj": 4.7,
           "line": 6.5,
-          "diff": -1.9,
-          "edge_pct": -29.2,
+          "diff": -1.8,
+          "edge_pct": -27.7,
           "lean": "UNDER",
           "flag": true,
           "best_book": "draftkings"
@@ -6474,9 +6620,9 @@
       "game_line_edges": {
         "total": {
           "proj": 6.9,
-          "line": 13.5,
-          "diff": -6.6,
-          "edge_pct": -48.9,
+          "line": 12.5,
+          "diff": -5.6,
+          "edge_pct": -44.8,
           "lean": "UNDER",
           "flag": true,
           "early_season": false,
@@ -6484,23 +6630,23 @@
         },
         "run_line": {
           "proj_diff": -0.04,
-          "line": 4.5,
-          "cover_margin": -4.54,
-          "edge_pct": -100.9,
+          "line": 3.5,
+          "cover_margin": -3.54,
+          "edge_pct": -101.1,
           "lean": "HOME",
           "flag": true,
           "early_season": false,
-          "best_book": "PX"
+          "best_book": "BOV"
         },
         "moneyline": {
           "proj_prob": 49.7,
-          "implied_prob": 8.3,
-          "prob_diff": 41.4,
+          "implied_prob": 7.7,
+          "prob_diff": 42.0,
           "lean": "AWAY",
           "flag": true,
           "early_season": false,
-          "price": 1100,
-          "best_book": "CZR"
+          "price": 1202,
+          "best_book": "PIN"
         }
       }
     },
@@ -6693,7 +6839,7 @@
               },
               "prophetx": {
                 "line": 16.5,
-                "price": 101
+                "price": 100
               },
               "draftkings": {
                 "line": 16.5,
@@ -6727,7 +6873,7 @@
               },
               "betmgm": {
                 "line": 2.5,
-                "price": 120
+                "price": 115
               }
             },
             "pitcher_earned_runs_under": {
@@ -6890,7 +7036,7 @@
               },
               "draftkings": {
                 "line": 4.5,
-                "price": 118
+                "price": 110
               },
               "betmgm": {
                 "line": 4.5,
@@ -6916,7 +7062,7 @@
               },
               "draftkings": {
                 "line": 4.5,
-                "price": -151
+                "price": -140
               },
               "betmgm": {
                 "line": 4.5,
@@ -6934,7 +7080,7 @@
               },
               "bovada": {
                 "line": 17.5,
-                "price": -110
+                "price": -115
               },
               "prophetx": {
                 "line": 17.5,
@@ -6942,7 +7088,7 @@
               },
               "draftkings": {
                 "line": 17.5,
-                "price": -105
+                "price": -110
               },
               "williamhill_us": {
                 "line": 17.5,
@@ -6968,7 +7114,7 @@
               },
               "bovada": {
                 "line": 17.5,
-                "price": -130
+                "price": -125
               },
               "prophetx": {
                 "line": 17.5,
@@ -6976,7 +7122,7 @@
               },
               "draftkings": {
                 "line": 17.5,
-                "price": -126
+                "price": -120
               },
               "williamhill_us": {
                 "line": 17.5,
@@ -7024,7 +7170,7 @@
               },
               "betmgm": {
                 "line": 2.5,
-                "price": -145
+                "price": -140
               }
             },
             "pitcher_walks_over": {
@@ -7048,7 +7194,7 @@
               },
               "prophetx": {
                 "line": 1.5,
-                "price": 100
+                "price": 102
               },
               "draftkings": {
                 "line": 1.5,
@@ -7281,7 +7427,7 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -109
+                "price": -108
               },
               "pinnacle": {
                 "line": 5.5,
@@ -7311,7 +7457,7 @@
               },
               "prophetx": {
                 "line": 17.5,
-                "price": 114
+                "price": 103
               },
               "pinnacle": {
                 "line": 17.5,
@@ -7345,7 +7491,7 @@
               },
               "prophetx": {
                 "line": 17.5,
-                "price": -124
+                "price": -125
               },
               "pinnacle": {
                 "line": 17.5,
@@ -7363,7 +7509,7 @@
               },
               "bovada": {
                 "line": 2.5,
-                "price": 120
+                "price": 140
               },
               "prophetx": {
                 "line": 2.5,
@@ -7381,11 +7527,11 @@
               },
               "bovada": {
                 "line": 2.5,
-                "price": -160
+                "price": -180
               },
               "prophetx": {
                 "line": 2.5,
-                "price": -184
+                "price": -156
               }
             },
             "pitcher_walks_over": {
@@ -7550,7 +7696,7 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -121
+                "price": -120
               },
               "pinnacle": {
                 "line": 5.5,
@@ -7632,7 +7778,7 @@
               },
               "bovada": {
                 "line": 2.5,
-                "price": 100
+                "price": 110
               },
               "prophetx": {
                 "line": 2.5,
@@ -7650,7 +7796,7 @@
               },
               "bovada": {
                 "line": 2.5,
-                "price": -140
+                "price": -150
               },
               "prophetx": {
                 "line": 2.5,
@@ -7860,7 +8006,7 @@
               },
               "fanduel": {
                 "line": 3.5,
-                "price": -130
+                "price": -115
               },
               "betmgm": {
                 "line": 3.5,
@@ -7868,7 +8014,7 @@
               },
               "bovada": {
                 "line": 3.5,
-                "price": -130
+                "price": -115
               },
               "prophetx": {
                 "line": 4.5,
@@ -7886,7 +8032,7 @@
               },
               "fanduel": {
                 "line": 3.5,
-                "price": 102
+                "price": -111
               },
               "betmgm": {
                 "line": 3.5,
@@ -7894,11 +8040,11 @@
               },
               "bovada": {
                 "line": 3.5,
-                "price": 100
+                "price": -115
               },
               "prophetx": {
                 "line": 4.5,
-                "price": -225
+                "price": -235
               },
               "pinnacle": {
                 "line": 3.5,
@@ -7975,8 +8121,8 @@
                 "price": -132
               },
               "betmgm": {
-                "line": 3.5,
-                "price": 120
+                "line": 2.5,
+                "price": -150
               },
               "bovada": {
                 "line": 3.5,
@@ -7984,7 +8130,7 @@
               },
               "prophetx": {
                 "line": 3.5,
-                "price": 117
+                "price": 122
               }
             },
             "pitcher_earned_runs_under": {
@@ -7993,8 +8139,8 @@
                 "price": -101
               },
               "betmgm": {
-                "line": 3.5,
-                "price": -165
+                "line": 2.5,
+                "price": 110
               },
               "bovada": {
                 "line": 3.5,
@@ -8002,7 +8148,7 @@
               },
               "prophetx": {
                 "line": 3.5,
-                "price": -330
+                "price": -190
               }
             },
             "pitcher_walks_over": {
@@ -8012,7 +8158,7 @@
               },
               "bovada": {
                 "line": 1.5,
-                "price": -105
+                "price": 100
               },
               "prophetx": {
                 "line": 1.5,
@@ -8026,7 +8172,7 @@
               },
               "bovada": {
                 "line": 1.5,
-                "price": -135
+                "price": -140
               },
               "prophetx": {
                 "line": 1.5,
@@ -8042,7 +8188,7 @@
               "edge_pct": -37.1,
               "lean": "UNDER",
               "flag": true,
-              "best_book": "betmgm"
+              "best_book": "bovada"
             }
           }
         },
@@ -8118,11 +8264,11 @@
             "pitcher_strikeouts_over": {
               "draftkings": {
                 "line": 4.5,
-                "price": -143
+                "price": -148
               },
               "fanduel": {
                 "line": 4.5,
-                "price": -128
+                "price": -140
               },
               "betmgm": {
                 "line": 5.5,
@@ -8130,7 +8276,7 @@
               },
               "bovada": {
                 "line": 4.5,
-                "price": -130
+                "price": -145
               },
               "prophetx": {
                 "line": 5.5,
@@ -8144,11 +8290,11 @@
             "pitcher_strikeouts_under": {
               "draftkings": {
                 "line": 4.5,
-                "price": 112
+                "price": 116
               },
               "fanduel": {
                 "line": 4.5,
-                "price": 100
+                "price": 110
               },
               "betmgm": {
                 "line": 5.5,
@@ -8156,11 +8302,11 @@
               },
               "bovada": {
                 "line": 4.5,
-                "price": 100
+                "price": 110
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -186
+                "price": -190
               },
               "pinnacle": {
                 "line": 5.5,
@@ -8169,12 +8315,12 @@
             },
             "pitcher_outs_over": {
               "draftkings": {
-                "line": 17.5,
-                "price": -171
+                "line": 18.5,
+                "price": 138
               },
               "williamhill_us": {
-                "line": 17.5,
-                "price": -160
+                "line": 18.5,
+                "price": 140
               },
               "fanduel": {
                 "line": 18.5,
@@ -8185,8 +8331,8 @@
                 "price": -175
               },
               "bovada": {
-                "line": 17.5,
-                "price": -165
+                "line": 18.5,
+                "price": 145
               },
               "prophetx": {
                 "line": 18.5,
@@ -8203,12 +8349,12 @@
             },
             "pitcher_outs_under": {
               "draftkings": {
-                "line": 17.5,
-                "price": 128
+                "line": 18.5,
+                "price": -186
               },
               "williamhill_us": {
-                "line": 17.5,
-                "price": 120
+                "line": 18.5,
+                "price": -195
               },
               "fanduel": {
                 "line": 18.5,
@@ -8219,8 +8365,8 @@
                 "price": 130
               },
               "bovada": {
-                "line": 17.5,
-                "price": 125
+                "line": 18.5,
+                "price": -190
               },
               "prophetx": {
                 "line": 18.5,
@@ -8238,7 +8384,7 @@
               },
               "betmgm": {
                 "line": 2.5,
-                "price": -135
+                "price": -125
               },
               "bovada": {
                 "line": 2.5,
@@ -8256,7 +8402,7 @@
               },
               "betmgm": {
                 "line": 2.5,
-                "price": 100
+                "price": -110
               },
               "bovada": {
                 "line": 2.5,
@@ -8337,7 +8483,7 @@
           "edge_pct": -37.1,
           "lean": "UNDER",
           "flag": true,
-          "best_book": "betmgm"
+          "best_book": "bovada"
         },
         {
           "player": "Michael Wacha",
@@ -8592,7 +8738,7 @@
               },
               "prophetx": {
                 "line": 1.5,
-                "price": -144
+                "price": -136
               },
               "betmgm": {
                 "line": 1.5,
@@ -8610,7 +8756,7 @@
               },
               "prophetx": {
                 "line": 1.5,
-                "price": 138
+                "price": 108
               },
               "betmgm": {
                 "line": 1.5,
@@ -8742,7 +8888,7 @@
               },
               "prophetx": {
                 "line": 3.5,
-                "price": 129
+                "price": 128
               },
               "betmgm": {
                 "line": 3.5,
@@ -8750,7 +8896,7 @@
               },
               "draftkings": {
                 "line": 3.5,
-                "price": 123
+                "price": 108
               },
               "pinnacle": {
                 "line": 3.5,
@@ -8768,7 +8914,7 @@
               },
               "prophetx": {
                 "line": 3.5,
-                "price": -142
+                "price": -134
               },
               "betmgm": {
                 "line": 3.5,
@@ -8776,7 +8922,7 @@
               },
               "draftkings": {
                 "line": 3.5,
-                "price": -157
+                "price": -138
               },
               "pinnacle": {
                 "line": 3.5,
@@ -8790,7 +8936,7 @@
               },
               "bovada": {
                 "line": 16.5,
-                "price": 100
+                "price": -110
               },
               "prophetx": {
                 "line": 16.5,
@@ -8802,7 +8948,7 @@
               },
               "draftkings": {
                 "line": 16.5,
-                "price": 101
+                "price": -107
               },
               "williamhill_us": {
                 "line": 16.5,
@@ -8824,11 +8970,11 @@
               },
               "bovada": {
                 "line": 16.5,
-                "price": -140
+                "price": -130
               },
               "prophetx": {
                 "line": 16.5,
-                "price": -330
+                "price": -103
               },
               "betmgm": {
                 "line": 16.5,
@@ -8836,7 +8982,7 @@
               },
               "draftkings": {
                 "line": 16.5,
-                "price": -134
+                "price": -124
               },
               "williamhill_us": {
                 "line": 16.5,
@@ -8872,7 +9018,7 @@
               },
               "prophetx": {
                 "line": 2.5,
-                "price": -117
+                "price": -170
               },
               "betmgm": {
                 "line": 2.5,
@@ -8904,7 +9050,7 @@
               },
               "prophetx": {
                 "line": 1.5,
-                "price": -194
+                "price": -200
               },
               "draftkings": {
                 "line": 1.5,
@@ -9119,7 +9265,7 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": 113
+                "price": 109
               },
               "bovada": {
                 "line": 5.5,
@@ -9145,7 +9291,7 @@
               },
               "prophetx": {
                 "line": 5.5,
-                "price": -127
+                "price": -125
               },
               "bovada": {
                 "line": 5.5,
@@ -9167,7 +9313,7 @@
             "pitcher_outs_over": {
               "prophetx": {
                 "line": 15.5,
-                "price": 134
+                "price": 126
               },
               "bovada": {
                 "line": 15.5,
@@ -9397,7 +9543,7 @@
               },
               "pinnacle": {
                 "line": 5.5,
-                "price": -124
+                "price": -131
               }
             },
             "pitcher_strikeouts_under": {
@@ -9423,7 +9569,7 @@
               },
               "pinnacle": {
                 "line": 5.5,
-                "price": -107
+                "price": -101
               }
             },
             "pitcher_outs_over": {
@@ -9437,7 +9583,7 @@
               },
               "williamhill_us": {
                 "line": 16.5,
-                "price": -118
+                "price": -113
               },
               "draftkings": {
                 "line": 16.5,
@@ -9463,7 +9609,7 @@
               },
               "williamhill_us": {
                 "line": 16.5,
-                "price": -113
+                "price": -118
               },
               "draftkings": {
                 "line": 16.5,
@@ -9477,7 +9623,7 @@
             "pitcher_earned_runs_over": {
               "prophetx": {
                 "line": 1.5,
-                "price": 136
+                "price": 138
               },
               "bovada": {
                 "line": 1.5,
@@ -9815,7 +9961,7 @@
               },
               "prophetx": {
                 "line": 4.5,
-                "price": 113
+                "price": 117
               },
               "pinnacle": {
                 "line": 4.5,
@@ -9829,7 +9975,7 @@
               },
               "williamhill_us": {
                 "line": 15.5,
-                "price": 107
+                "price": 104
               },
               "betmgm": {
                 "line": 15.5,
@@ -9845,7 +9991,7 @@
               },
               "prophetx": {
                 "line": 15.5,
-                "price": -104
+                "price": -101
               },
               "pinnacle": {
                 "line": 15.5,
@@ -9863,7 +10009,7 @@
               },
               "williamhill_us": {
                 "line": 15.5,
-                "price": -150
+                "price": -139
               },
               "betmgm": {
                 "line": 15.5,
@@ -9879,7 +10025,7 @@
               },
               "prophetx": {
                 "line": 15.5,
-                "price": -111
+                "price": -106
               },
               "pinnacle": {
                 "line": 15.5,
@@ -10115,7 +10261,7 @@
               },
               "prophetx": {
                 "line": 18.5,
-                "price": 105
+                "price": 108
               },
               "pinnacle": {
                 "line": 18.5,
