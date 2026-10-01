@@ -1,5 +1,9 @@
-// api/report/[...path].js
+// api/report/[token]/[sport]/[file].js
 // Endpoint:  bettorday-api.vercel.app/api/report/<token>/cfb/<file>
+//
+// One bracketed folder per segment, not a [...path] catch-all: this project
+// has no framework, and outside Next.js Vercel reads "[...path]" as ONE
+// segment (its route is ^/api/report/([^/]+)$), so a catch-all never matched.
 //
 // Serves the private weekly CFB Matchup Report so its HTML OPENS in the browser.
 // The report itself lives in Vercel Blob (published by CFB-Trench-Report's
@@ -65,14 +69,19 @@ export default async function handler(req, res) {
   const base = (process.env.REPORT_BLOB_BASE || '').replace(/\/+$/, '');
   if (!token || !/^https:\/\/[A-Za-z0-9.-]+$/.test(base)) return notFound(res);
 
-  // From the raw URL rather than req.query, so the catch-all's shape (string
-  // vs. array) does not matter.  Any '.' or '..' segment is refused outright,
-  // before URL parsing would quietly resolve it.
+  // Any '.' or '..' segment is refused outright, before anything resolves it.
   const raw = String(req.url).split('?')[0];
   if (/(^|\/)\.{1,2}(\/|$)/.test(raw)) return notFound(res);
-  const pathname = new URL(raw, 'http://local').pathname;
-  const parts = pathname.replace(/^\/api\/report\/?/, '').split('/');
-  if (parts.length !== 3) return notFound(res);
+  // Vercel hands the three segments over as query parameters; parse the path
+  // only when it does not (a direct call, as in local tests).
+  const q = req.query || {};
+  let parts = [q.token, q.sport, q.file];
+  if (parts.some((x) => x === undefined)) {
+    const pathname = new URL(raw, 'http://local').pathname;
+    parts = pathname.replace(/^\/api\/report\/?/, '').split('/');
+    if (parts.length !== 3) return notFound(res);
+  }
+  if (parts.some((x) => typeof x !== 'string')) return notFound(res);
   const [given, sport, file] = parts;
   if (!sameSecret(given, token) || sport !== 'cfb' || !FILE.test(file)) return notFound(res);
 
