@@ -3,14 +3,14 @@
   "version": 1,
   "season": 2026,
   "week": 6,
-  "published_at": "2026-10-15T18:41:38Z",
-  "data_as_of": "2026-10-15T18:41:19Z",
+  "published_at": "2026-10-15T18:56:43Z",
+  "data_as_of": "2026-10-15T18:56:23Z",
   "gate": {
     "numbers_published": true,
     "reason": null,
     "reason_label": null,
     "override": null,
-    "checked_at": "2026-10-15T18:41:38Z"
+    "checked_at": "2026-10-15T18:56:43Z"
   },
   "thresholds": {
     "edge_lead": 2.0,
@@ -21,8 +21,8 @@
     "state": "aging",
     "age_state": "observed",
     "values_as_of": "2026-10-13T17:31:49Z",
-    "age_hours": 49.17,
-    "age_label": "2.0 days",
+    "age_hours": 49.42,
+    "age_label": "2.1 days",
     "actionable": true,
     "max_age_hours": 72
   },
@@ -55,7 +55,7 @@
         "open_books": 14,
         "move": 0.0,
         "move_toward": null,
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": -1.02,
@@ -108,20 +108,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT15SEADEN",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 3058400.0,
-          "contracts_total": 3058400,
+          "notional_usd_total": 3112900.0,
+          "contracts_total": 3112900,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 206440.86,
-          "contracts_window": 206441,
-          "trades_window": 2206,
+          "notional_usd_window": 219679.71,
+          "contracts_window": 219680,
+          "trades_window": 2323,
           "markets_window": [
             "spreads",
             "totals",
@@ -129,37 +129,49 @@
           ]
         },
         "most_active_strike": {
-          "market": "h2h",
-          "ticker": "KXNFLGAME-26OCT15SEADEN-SEA",
-          "strike_home_margin": null,
+          "market": "spreads",
+          "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA3",
+          "strike_home_margin": -3.0,
           "strike_total": null,
-          "strike_text": "Seattle",
-          "notional_usd": 89717.7,
-          "contracts": 89718,
-          "trades": 993
+          "strike_text": "Seattle wins by over 2.5 points",
+          "notional_usd": 70861.56,
+          "contracts": 70862,
+          "trades": 325
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 44.0,
-          "away_percent": 57.0,
+          "away_percent": 56.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:41:19Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:56:27Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT15SEADEN-DEN",
           "away_ticker": "KXNFLGAME-26OCT15SEADEN-SEA"
         },
         "strikes": [
+          {
+            "market": "spreads",
+            "strike_home_margin": -3.0,
+            "strike_total": null,
+            "strike_text": "Seattle wins by over 2.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA3",
+            "contracts": 70862,
+            "notional_usd": 70861.56,
+            "trades": 325,
+            "first_trade_at": "2026-10-15T18:25:01Z",
+            "last_trade_at": "2026-10-15T18:54:56Z"
+          },
           {
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
             "strike_text": "Seattle",
             "ticker": "KXNFLGAME-26OCT15SEADEN-SEA",
-            "contracts": 89718,
-            "notional_usd": 89717.7,
-            "trades": 993,
-            "first_trade_at": "2026-10-15T18:10:01Z",
-            "last_trade_at": "2026-10-15T18:39:56Z"
+            "contracts": 69180,
+            "notional_usd": 69180.25,
+            "trades": 1045,
+            "first_trade_at": "2026-10-15T18:25:02Z",
+            "last_trade_at": "2026-10-15T18:54:59Z"
           },
           {
             "market": "h2h",
@@ -167,23 +179,11 @@
             "strike_total": null,
             "strike_text": "Denver",
             "ticker": "KXNFLGAME-26OCT15SEADEN-DEN",
-            "contracts": 44670,
-            "notional_usd": 44670.21,
-            "trades": 601,
-            "first_trade_at": "2026-10-15T18:10:02Z",
-            "last_trade_at": "2026-10-15T18:39:58Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": -3.0,
-            "strike_total": null,
-            "strike_text": "Seattle wins by over 2.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA3",
-            "contracts": 33125,
-            "notional_usd": 33124.73,
-            "trades": 319,
-            "first_trade_at": "2026-10-15T18:10:04Z",
-            "last_trade_at": "2026-10-15T18:39:58Z"
+            "contracts": 35504,
+            "notional_usd": 35503.77,
+            "trades": 652,
+            "first_trade_at": "2026-10-15T18:25:00Z",
+            "last_trade_at": "2026-10-15T18:54:57Z"
           },
           {
             "market": "totals",
@@ -191,11 +191,23 @@
             "strike_total": 40.5,
             "strike_text": "Over 40.5 points",
             "ticker": "KXNFLTOTAL-26OCT15SEADEN-41",
-            "contracts": 9324,
-            "notional_usd": 9324.46,
-            "trades": 117,
-            "first_trade_at": "2026-10-15T18:10:51Z",
-            "last_trade_at": "2026-10-15T18:39:59Z"
+            "contracts": 12679,
+            "notional_usd": 12679.29,
+            "trades": 128,
+            "first_trade_at": "2026-10-15T18:25:03Z",
+            "last_trade_at": "2026-10-15T18:54:49Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": -5.0,
+            "strike_total": null,
+            "strike_text": "Seattle wins by over 4.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA5",
+            "contracts": 7969,
+            "notional_usd": 7969.28,
+            "trades": 7,
+            "first_trade_at": "2026-10-15T18:30:28Z",
+            "last_trade_at": "2026-10-15T18:50:59Z"
           },
           {
             "market": "spreads",
@@ -203,23 +215,11 @@
             "strike_total": null,
             "strike_text": "Seattle wins by over 1.5 points",
             "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA2",
-            "contracts": 7362,
-            "notional_usd": 7361.56,
-            "trades": 14,
-            "first_trade_at": "2026-10-15T18:10:12Z",
-            "last_trade_at": "2026-10-15T18:37:04Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": 8.0,
-            "strike_total": null,
-            "strike_text": "Denver wins by over 7.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN8",
-            "contracts": 6120,
-            "notional_usd": 6119.81,
-            "trades": 9,
-            "first_trade_at": "2026-10-15T18:11:23Z",
-            "last_trade_at": "2026-10-15T18:38:39Z"
+            "contracts": 6379,
+            "notional_usd": 6378.81,
+            "trades": 7,
+            "first_trade_at": "2026-10-15T18:26:18Z",
+            "last_trade_at": "2026-10-15T18:47:26Z"
           },
           {
             "market": "spreads",
@@ -227,11 +227,11 @@
             "strike_total": null,
             "strike_text": "Seattle wins by over 3.5 points",
             "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA4",
-            "contracts": 5363,
-            "notional_usd": 5363.1,
-            "trades": 49,
-            "first_trade_at": "2026-10-15T18:11:15Z",
-            "last_trade_at": "2026-10-15T18:39:53Z"
+            "contracts": 4395,
+            "notional_usd": 4394.6,
+            "trades": 52,
+            "first_trade_at": "2026-10-15T18:25:39Z",
+            "last_trade_at": "2026-10-15T18:54:06Z"
           },
           {
             "market": "spreads",
@@ -239,35 +239,23 @@
             "strike_total": null,
             "strike_text": "Denver wins by over 2.5 points",
             "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN3",
-            "contracts": 3101,
-            "notional_usd": 3100.51,
-            "trades": 12,
-            "first_trade_at": "2026-10-15T18:10:12Z",
-            "last_trade_at": "2026-10-15T18:39:57Z"
+            "contracts": 2911,
+            "notional_usd": 2910.58,
+            "trades": 14,
+            "first_trade_at": "2026-10-15T18:36:20Z",
+            "last_trade_at": "2026-10-15T18:54:47Z"
           },
           {
             "market": "spreads",
-            "strike_home_margin": -7.0,
+            "strike_home_margin": -8.0,
             "strike_total": null,
-            "strike_text": "Seattle wins by over 6.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA7",
-            "contracts": 1048,
-            "notional_usd": 1047.84,
-            "trades": 17,
-            "first_trade_at": "2026-10-15T18:10:36Z",
-            "last_trade_at": "2026-10-15T18:36:02Z"
-          },
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 30.5,
-            "strike_text": "Over 30.5 points",
-            "ticker": "KXNFLTOTAL-26OCT15SEADEN-31",
-            "contracts": 667,
-            "notional_usd": 667.44,
+            "strike_text": "Seattle wins by over 7.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA8",
+            "contracts": 1869,
+            "notional_usd": 1869.49,
             "trades": 8,
-            "first_trade_at": "2026-10-15T18:10:26Z",
-            "last_trade_at": "2026-10-15T18:39:33Z"
+            "first_trade_at": "2026-10-15T18:33:04Z",
+            "last_trade_at": "2026-10-15T18:50:16Z"
           },
           {
             "market": "totals",
@@ -275,143 +263,35 @@
             "strike_total": 39.5,
             "strike_text": "Over 39.5 points",
             "ticker": "KXNFLTOTAL-26OCT15SEADEN-40",
-            "contracts": 624,
-            "notional_usd": 624.47,
-            "trades": 7,
-            "first_trade_at": "2026-10-15T18:10:02Z",
-            "last_trade_at": "2026-10-15T18:34:36Z"
+            "contracts": 1103,
+            "notional_usd": 1103.41,
+            "trades": 4,
+            "first_trade_at": "2026-10-15T18:34:36Z",
+            "last_trade_at": "2026-10-15T18:50:58Z"
           },
           {
             "market": "spreads",
-            "strike_home_margin": 4.0,
+            "strike_home_margin": -7.0,
             "strike_total": null,
-            "strike_text": "Denver wins by over 3.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN4",
-            "contracts": 620,
-            "notional_usd": 619.5,
-            "trades": 4,
-            "first_trade_at": "2026-10-15T18:21:43Z",
-            "last_trade_at": "2026-10-15T18:25:31Z"
-          },
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 41.5,
-            "strike_text": "Over 41.5 points",
-            "ticker": "KXNFLTOTAL-26OCT15SEADEN-42",
-            "contracts": 599,
-            "notional_usd": 598.59,
+            "strike_text": "Seattle wins by over 6.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA7",
+            "contracts": 1067,
+            "notional_usd": 1067.18,
             "trades": 18,
-            "first_trade_at": "2026-10-15T18:10:43Z",
-            "last_trade_at": "2026-10-15T18:39:26Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": -14.0,
-            "strike_total": null,
-            "strike_text": "Seattle wins by over 13.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA14",
-            "contracts": 586,
-            "notional_usd": 586.27,
-            "trades": 6,
-            "first_trade_at": "2026-10-15T18:13:00Z",
-            "last_trade_at": "2026-10-15T18:38:30Z"
+            "first_trade_at": "2026-10-15T18:26:26Z",
+            "last_trade_at": "2026-10-15T18:53:47Z"
           },
           {
             "market": "totals",
             "strike_home_margin": null,
-            "strike_total": 51.5,
-            "strike_text": "Over 51.5 points",
-            "ticker": "KXNFLTOTAL-26OCT15SEADEN-52",
-            "contracts": 562,
-            "notional_usd": 561.64,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:19:58Z",
-            "last_trade_at": "2026-10-15T18:31:13Z"
-          },
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 48.5,
-            "strike_text": "Over 48.5 points",
-            "ticker": "KXNFLTOTAL-26OCT15SEADEN-49",
-            "contracts": 554,
-            "notional_usd": 554.0,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:12:35Z",
-            "last_trade_at": "2026-10-15T18:31:13Z"
-          },
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 63.5,
-            "strike_text": "Over 63.5 points",
-            "ticker": "KXNFLTOTAL-26OCT15SEADEN-64",
-            "contracts": 547,
-            "notional_usd": 547.31,
-            "trades": 1,
-            "first_trade_at": "2026-10-15T18:24:55Z",
-            "last_trade_at": "2026-10-15T18:24:55Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": 5.0,
-            "strike_total": null,
-            "strike_text": "Denver wins by over 4.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN5",
-            "contracts": 469,
-            "notional_usd": 468.57,
-            "trades": 4,
-            "first_trade_at": "2026-10-15T18:17:05Z",
-            "last_trade_at": "2026-10-15T18:36:49Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": -10.0,
-            "strike_total": null,
-            "strike_text": "Seattle wins by over 9.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA10",
-            "contracts": 461,
-            "notional_usd": 461.29,
-            "trades": 7,
-            "first_trade_at": "2026-10-15T18:12:48Z",
-            "last_trade_at": "2026-10-15T18:39:57Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": 15.0,
-            "strike_total": null,
-            "strike_text": "Denver wins by over 14.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN15",
-            "contracts": 445,
-            "notional_usd": 444.93,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:15:29Z",
-            "last_trade_at": "2026-10-15T18:21:14Z"
-          },
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 33.5,
-            "strike_text": "Over 33.5 points",
-            "ticker": "KXNFLTOTAL-26OCT15SEADEN-34",
-            "contracts": 248,
-            "notional_usd": 247.83,
-            "trades": 5,
-            "first_trade_at": "2026-10-15T18:15:38Z",
-            "last_trade_at": "2026-10-15T18:39:42Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": -17.0,
-            "strike_total": null,
-            "strike_text": "Seattle wins by over 16.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA17",
-            "contracts": 79,
-            "notional_usd": 78.76,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:24:37Z",
-            "last_trade_at": "2026-10-15T18:36:12Z"
+            "strike_total": 30.5,
+            "strike_text": "Over 30.5 points",
+            "ticker": "KXNFLTOTAL-26OCT15SEADEN-31",
+            "contracts": 991,
+            "notional_usd": 990.59,
+            "trades": 10,
+            "first_trade_at": "2026-10-15T18:27:19Z",
+            "last_trade_at": "2026-10-15T18:51:28Z"
           },
           {
             "market": "spreads",
@@ -419,11 +299,95 @@
             "strike_total": null,
             "strike_text": "Seattle wins by over 5.5 points",
             "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA6",
-            "contracts": 50,
-            "notional_usd": 50.43,
+            "contracts": 735,
+            "notional_usd": 735.24,
+            "trades": 6,
+            "first_trade_at": "2026-10-15T18:29:12Z",
+            "last_trade_at": "2026-10-15T18:54:27Z"
+          },
+          {
+            "market": "totals",
+            "strike_home_margin": null,
+            "strike_total": 51.5,
+            "strike_text": "Over 51.5 points",
+            "ticker": "KXNFLTOTAL-26OCT15SEADEN-52",
+            "contracts": 726,
+            "notional_usd": 725.61,
+            "trades": 2,
+            "first_trade_at": "2026-10-15T18:31:13Z",
+            "last_trade_at": "2026-10-15T18:42:05Z"
+          },
+          {
+            "market": "totals",
+            "strike_home_margin": null,
+            "strike_total": 41.5,
+            "strike_text": "Over 41.5 points",
+            "ticker": "KXNFLTOTAL-26OCT15SEADEN-42",
+            "contracts": 649,
+            "notional_usd": 649.04,
+            "trades": 11,
+            "first_trade_at": "2026-10-15T18:26:16Z",
+            "last_trade_at": "2026-10-15T18:49:40Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": -10.0,
+            "strike_total": null,
+            "strike_text": "Seattle wins by over 9.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA10",
+            "contracts": 577,
+            "notional_usd": 576.98,
+            "trades": 8,
+            "first_trade_at": "2026-10-15T18:31:23Z",
+            "last_trade_at": "2026-10-15T18:50:55Z"
+          },
+          {
+            "market": "totals",
+            "strike_home_margin": null,
+            "strike_total": 36.5,
+            "strike_text": "Over 36.5 points",
+            "ticker": "KXNFLTOTAL-26OCT15SEADEN-37",
+            "contracts": 495,
+            "notional_usd": 495.03,
+            "trades": 4,
+            "first_trade_at": "2026-10-15T18:43:23Z",
+            "last_trade_at": "2026-10-15T18:50:46Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": 8.0,
+            "strike_total": null,
+            "strike_text": "Denver wins by over 7.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN8",
+            "contracts": 462,
+            "notional_usd": 462.0,
+            "trades": 5,
+            "first_trade_at": "2026-10-15T18:33:21Z",
+            "last_trade_at": "2026-10-15T18:46:40Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": 5.0,
+            "strike_total": null,
+            "strike_text": "Denver wins by over 4.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN5",
+            "contracts": 459,
+            "notional_usd": 458.72,
             "trades": 3,
-            "first_trade_at": "2026-10-15T18:14:37Z",
-            "last_trade_at": "2026-10-15T18:23:20Z"
+            "first_trade_at": "2026-10-15T18:25:20Z",
+            "last_trade_at": "2026-10-15T18:36:49Z"
+          },
+          {
+            "market": "totals",
+            "strike_home_margin": null,
+            "strike_total": 48.5,
+            "strike_text": "Over 48.5 points",
+            "ticker": "KXNFLTOTAL-26OCT15SEADEN-49",
+            "contracts": 421,
+            "notional_usd": 421.0,
+            "trades": 1,
+            "first_trade_at": "2026-10-15T18:31:13Z",
+            "last_trade_at": "2026-10-15T18:31:13Z"
           },
           {
             "market": "spreads",
@@ -431,11 +395,35 @@
             "strike_total": null,
             "strike_text": "Denver wins by over 6.5 points",
             "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN7",
-            "contracts": 40,
-            "notional_usd": 39.87,
+            "contracts": 59,
+            "notional_usd": 59.29,
+            "trades": 3,
+            "first_trade_at": "2026-10-15T18:49:22Z",
+            "last_trade_at": "2026-10-15T18:54:49Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": -14.0,
+            "strike_total": null,
+            "strike_text": "Seattle wins by over 13.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA14",
+            "contracts": 59,
+            "notional_usd": 58.94,
             "trades": 1,
-            "first_trade_at": "2026-10-15T18:24:01Z",
-            "last_trade_at": "2026-10-15T18:24:01Z"
+            "first_trade_at": "2026-10-15T18:38:30Z",
+            "last_trade_at": "2026-10-15T18:38:30Z"
+          },
+          {
+            "market": "totals",
+            "strike_home_margin": null,
+            "strike_total": 33.5,
+            "strike_text": "Over 33.5 points",
+            "ticker": "KXNFLTOTAL-26OCT15SEADEN-34",
+            "contracts": 56,
+            "notional_usd": 56.41,
+            "trades": 4,
+            "first_trade_at": "2026-10-15T18:30:12Z",
+            "last_trade_at": "2026-10-15T18:53:12Z"
           },
           {
             "market": "totals",
@@ -455,23 +443,35 @@
             "strike_total": null,
             "strike_text": "Denver wins by over 5.5 points",
             "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN6",
-            "contracts": 18,
-            "notional_usd": 17.61,
-            "trades": 1,
-            "first_trade_at": "2026-10-15T18:16:58Z",
-            "last_trade_at": "2026-10-15T18:16:58Z"
+            "contracts": 21,
+            "notional_usd": 21.11,
+            "trades": 2,
+            "first_trade_at": "2026-10-15T18:45:29Z",
+            "last_trade_at": "2026-10-15T18:47:57Z"
           },
           {
             "market": "spreads",
-            "strike_home_margin": 2.0,
+            "strike_home_margin": 4.0,
             "strike_total": null,
-            "strike_text": "Denver wins by over 1.5 points",
-            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN2",
-            "contracts": 16,
-            "notional_usd": 16.47,
+            "strike_text": "Denver wins by over 3.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-DEN4",
+            "contracts": 14,
+            "notional_usd": 14.18,
             "trades": 1,
-            "first_trade_at": "2026-10-15T18:10:03Z",
-            "last_trade_at": "2026-10-15T18:10:03Z"
+            "first_trade_at": "2026-10-15T18:25:31Z",
+            "last_trade_at": "2026-10-15T18:25:31Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": -17.0,
+            "strike_total": null,
+            "strike_text": "Seattle wins by over 16.5 points",
+            "ticker": "KXNFLSPREAD-26OCT15SEADEN-SEA17",
+            "contracts": 11,
+            "notional_usd": 11.39,
+            "trades": 1,
+            "first_trade_at": "2026-10-15T18:36:12Z",
+            "last_trade_at": "2026-10-15T18:36:12Z"
           }
         ]
       }
@@ -495,7 +495,7 @@
         "open_books": 14,
         "move": 0.0,
         "move_toward": null,
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 1.37,
@@ -521,20 +521,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18HOUJAC",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 211100.0,
-          "contracts_total": 211100,
+          "notional_usd_total": 214500.0,
+          "contracts_total": 214500,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 1306.89,
-          "contracts_window": 1307,
-          "trades_window": 39,
+          "notional_usd_window": 4767.41,
+          "contracts_window": 4767,
+          "trades_window": 53,
           "markets_window": [
             "spreads",
             "totals",
@@ -547,17 +547,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "Houston",
-          "notional_usd": 786.26,
-          "contracts": 786,
-          "trades": 24
+          "notional_usd": 3860.74,
+          "contracts": 3861,
+          "trades": 18
         },
         "h2h_implied": {
           "state": "observed",
-          "home_percent": 57.0,
-          "away_percent": 43.0,
+          "home_percent": 58.0,
+          "away_percent": 44.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:40:22Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:53:53Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18HOUJAC-JAC",
           "away_ticker": "KXNFLGAME-26OCT18HOUJAC-HOU"
         },
@@ -568,11 +568,11 @@
             "strike_total": null,
             "strike_text": "Houston",
             "ticker": "KXNFLGAME-26OCT18HOUJAC-HOU",
-            "contracts": 786,
-            "notional_usd": 786.26,
-            "trades": 24,
-            "first_trade_at": "2026-10-15T18:11:06Z",
-            "last_trade_at": "2026-10-15T18:37:41Z"
+            "contracts": 3861,
+            "notional_usd": 3860.74,
+            "trades": 18,
+            "first_trade_at": "2026-10-15T18:26:53Z",
+            "last_trade_at": "2026-10-15T18:45:05Z"
           },
           {
             "market": "h2h",
@@ -580,23 +580,11 @@
             "strike_total": null,
             "strike_text": "Jacksonville",
             "ticker": "KXNFLGAME-26OCT18HOUJAC-JAC",
-            "contracts": 472,
-            "notional_usd": 472.17,
-            "trades": 11,
-            "first_trade_at": "2026-10-15T18:14:22Z",
-            "last_trade_at": "2026-10-15T18:23:51Z"
-          },
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 42.5,
-            "strike_text": "Over 42.5 points",
-            "ticker": "KXNFLTOTAL-26OCT18HOUJAC-43",
-            "contracts": 48,
-            "notional_usd": 47.95,
-            "trades": 3,
-            "first_trade_at": "2026-10-15T18:23:22Z",
-            "last_trade_at": "2026-10-15T18:39:46Z"
+            "contracts": 409,
+            "notional_usd": 409.03,
+            "trades": 23,
+            "first_trade_at": "2026-10-15T18:26:17Z",
+            "last_trade_at": "2026-10-15T18:53:53Z"
           },
           {
             "market": "spreads",
@@ -604,11 +592,35 @@
             "strike_total": null,
             "strike_text": "Jacksonville wins by over 2.5 points",
             "ticker": "KXNFLSPREAD-26OCT18HOUJAC-JAC3",
-            "contracts": 1,
-            "notional_usd": 0.51,
-            "trades": 1,
-            "first_trade_at": "2026-10-15T18:12:06Z",
-            "last_trade_at": "2026-10-15T18:12:06Z"
+            "contracts": 259,
+            "notional_usd": 258.69,
+            "trades": 8,
+            "first_trade_at": "2026-10-15T18:25:22Z",
+            "last_trade_at": "2026-10-15T18:53:06Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": 8.0,
+            "strike_total": null,
+            "strike_text": "Jacksonville wins by over 7.5 points",
+            "ticker": "KXNFLSPREAD-26OCT18HOUJAC-JAC8",
+            "contracts": 200,
+            "notional_usd": 200.0,
+            "trades": 2,
+            "first_trade_at": "2026-10-15T18:48:36Z",
+            "last_trade_at": "2026-10-15T18:48:36Z"
+          },
+          {
+            "market": "totals",
+            "strike_home_margin": null,
+            "strike_total": 42.5,
+            "strike_text": "Over 42.5 points",
+            "ticker": "KXNFLTOTAL-26OCT18HOUJAC-43",
+            "contracts": 39,
+            "notional_usd": 38.95,
+            "trades": 2,
+            "first_trade_at": "2026-10-15T18:39:46Z",
+            "last_trade_at": "2026-10-15T18:39:46Z"
           }
         ]
       }
@@ -625,14 +637,14 @@
       "neutral_site": false,
       "venue": null,
       "consensus": {
-        "home_margin": -1.25,
-        "spread_home": 1.25,
+        "home_margin": -1.0,
+        "spread_home": 1.0,
         "books": 14,
         "opened_home_margin": -2.25,
         "open_books": 14,
-        "move": 1.0,
+        "move": 1.25,
         "move_toward": "ATL",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": -1.674,
@@ -737,41 +749,42 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18CHIATL",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 206500.0,
-          "contracts_total": 206500,
+          "notional_usd_total": 206700.0,
+          "contracts_total": 206700,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 719.62,
-          "contracts_window": 720,
-          "trades_window": 23,
+          "notional_usd_window": 462.64,
+          "contracts_window": 463,
+          "trades_window": 19,
           "markets_window": [
+            "spreads",
             "h2h"
           ]
         },
         "most_active_strike": {
           "market": "h2h",
-          "ticker": "KXNFLGAME-26OCT18CHIATL-ATL",
+          "ticker": "KXNFLGAME-26OCT18CHIATL-CHI",
           "strike_home_margin": null,
           "strike_total": null,
-          "strike_text": "Atlanta",
-          "notional_usd": 505.7,
-          "contracts": 506,
-          "trades": 12
+          "strike_text": "Chicago",
+          "notional_usd": 280.56,
+          "contracts": 281,
+          "trades": 7
         },
         "h2h_implied": {
           "state": "observed",
-          "home_percent": 49.0,
-          "away_percent": 52.0,
+          "home_percent": 48.0,
+          "away_percent": 51.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:40:41Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:50:49Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18CHIATL-ATL",
           "away_ticker": "KXNFLGAME-26OCT18CHIATL-CHI"
         },
@@ -780,25 +793,37 @@
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
-            "strike_text": "Atlanta",
-            "ticker": "KXNFLGAME-26OCT18CHIATL-ATL",
-            "contracts": 506,
-            "notional_usd": 505.7,
-            "trades": 12,
-            "first_trade_at": "2026-10-15T18:10:22Z",
-            "last_trade_at": "2026-10-15T18:36:58Z"
+            "strike_text": "Chicago",
+            "ticker": "KXNFLGAME-26OCT18CHIATL-CHI",
+            "contracts": 281,
+            "notional_usd": 280.56,
+            "trades": 7,
+            "first_trade_at": "2026-10-15T18:25:15Z",
+            "last_trade_at": "2026-10-15T18:41:32Z"
           },
           {
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
-            "strike_text": "Chicago",
-            "ticker": "KXNFLGAME-26OCT18CHIATL-CHI",
-            "contracts": 214,
-            "notional_usd": 213.92,
-            "trades": 11,
-            "first_trade_at": "2026-10-15T18:11:44Z",
-            "last_trade_at": "2026-10-15T18:33:46Z"
+            "strike_text": "Atlanta",
+            "ticker": "KXNFLGAME-26OCT18CHIATL-ATL",
+            "contracts": 129,
+            "notional_usd": 129.44,
+            "trades": 9,
+            "first_trade_at": "2026-10-15T18:27:12Z",
+            "last_trade_at": "2026-10-15T18:50:49Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": -2.0,
+            "strike_total": null,
+            "strike_text": "Chicago wins by over 1.5 points",
+            "ticker": "KXNFLSPREAD-26OCT18CHIATL-CHI2",
+            "contracts": 53,
+            "notional_usd": 52.64,
+            "trades": 3,
+            "first_trade_at": "2026-10-15T18:35:28Z",
+            "last_trade_at": "2026-10-15T18:44:53Z"
           }
         ]
       }
@@ -822,7 +847,7 @@
         "open_books": 14,
         "move": -0.25,
         "move_toward": "BAL",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": -8.177,
@@ -901,20 +926,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18BALCLE",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 314100.0,
-          "contracts_total": 314100,
+          "notional_usd_total": 314300.0,
+          "contracts_total": 314300,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 544.71,
-          "contracts_window": 545,
-          "trades_window": 22,
+          "notional_usd_window": 459.03,
+          "contracts_window": 459,
+          "trades_window": 17,
           "markets_window": [
             "h2h"
           ]
@@ -925,17 +950,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "Cleveland",
-          "notional_usd": 456.52,
-          "contracts": 457,
-          "trades": 12
+          "notional_usd": 285.66,
+          "contracts": 286,
+          "trades": 8
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 33.0,
           "away_percent": 67.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:40:35Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:56:26Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18BALCLE-CLE",
           "away_ticker": "KXNFLGAME-26OCT18BALCLE-BAL"
         },
@@ -946,11 +971,11 @@
             "strike_total": null,
             "strike_text": "Cleveland",
             "ticker": "KXNFLGAME-26OCT18BALCLE-CLE",
-            "contracts": 457,
-            "notional_usd": 456.52,
-            "trades": 12,
-            "first_trade_at": "2026-10-15T18:14:47Z",
-            "last_trade_at": "2026-10-15T18:38:43Z"
+            "contracts": 286,
+            "notional_usd": 285.66,
+            "trades": 8,
+            "first_trade_at": "2026-10-15T18:26:16Z",
+            "last_trade_at": "2026-10-15T18:47:05Z"
           },
           {
             "market": "h2h",
@@ -958,11 +983,11 @@
             "strike_total": null,
             "strike_text": "Baltimore",
             "ticker": "KXNFLGAME-26OCT18BALCLE-BAL",
-            "contracts": 88,
-            "notional_usd": 88.19,
-            "trades": 10,
-            "first_trade_at": "2026-10-15T18:18:33Z",
-            "last_trade_at": "2026-10-15T18:39:47Z"
+            "contracts": 173,
+            "notional_usd": 173.37,
+            "trades": 9,
+            "first_trade_at": "2026-10-15T18:25:07Z",
+            "last_trade_at": "2026-10-15T18:52:27Z"
           }
         ]
       }
@@ -986,7 +1011,7 @@
         "open_books": 14,
         "move": 0.5,
         "move_toward": "IND",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 6.218,
@@ -1039,10 +1064,10 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18TENIND",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
@@ -1050,9 +1075,9 @@
           "contracts_total": 285600,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 355.91,
-          "contracts_window": 356,
-          "trades_window": 9,
+          "notional_usd_window": 161.01,
+          "contracts_window": 161,
+          "trades_window": 6,
           "markets_window": [
             "h2h"
           ]
@@ -1063,17 +1088,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "Tennessee",
-          "notional_usd": 355.91,
-          "contracts": 356,
-          "trades": 9
+          "notional_usd": 161.01,
+          "contracts": 161,
+          "trades": 6
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 74.0,
           "away_percent": 26.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:35:25Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:50:25Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18TENIND-IND",
           "away_ticker": "KXNFLGAME-26OCT18TENIND-TEN"
         },
@@ -1084,11 +1109,11 @@
             "strike_total": null,
             "strike_text": "Tennessee",
             "ticker": "KXNFLGAME-26OCT18TENIND-TEN",
-            "contracts": 356,
-            "notional_usd": 355.91,
-            "trades": 9,
-            "first_trade_at": "2026-10-15T18:12:42Z",
-            "last_trade_at": "2026-10-15T18:35:25Z"
+            "contracts": 161,
+            "notional_usd": 161.01,
+            "trades": 6,
+            "first_trade_at": "2026-10-15T18:28:59Z",
+            "last_trade_at": "2026-10-15T18:50:25Z"
           }
         ]
       }
@@ -1112,7 +1137,7 @@
         "open_books": 14,
         "move": 0.0,
         "move_toward": null,
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 8.206,
@@ -1138,20 +1163,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18NYJNE",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 151900.0,
-          "contracts_total": 151900,
+          "notional_usd_total": 152000.0,
+          "contracts_total": 152000,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 773.7,
-          "contracts_window": 774,
-          "trades_window": 20,
+          "notional_usd_window": 305.11,
+          "contracts_window": 305,
+          "trades_window": 15,
           "markets_window": [
             "spreads",
             "h2h"
@@ -1163,8 +1188,8 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "New York J",
-          "notional_usd": 458.36,
-          "contracts": 458,
+          "notional_usd": 226.8,
+          "contracts": 227,
           "trades": 8
         },
         "h2h_implied": {
@@ -1172,8 +1197,8 @@
           "home_percent": 76.0,
           "away_percent": 25.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:41:04Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:55:36Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18NYJNE-NE",
           "away_ticker": "KXNFLGAME-26OCT18NYJNE-NYJ"
         },
@@ -1184,35 +1209,11 @@
             "strike_total": null,
             "strike_text": "New York J",
             "ticker": "KXNFLGAME-26OCT18NYJNE-NYJ",
-            "contracts": 458,
-            "notional_usd": 458.36,
+            "contracts": 227,
+            "notional_usd": 226.8,
             "trades": 8,
-            "first_trade_at": "2026-10-15T18:17:22Z",
-            "last_trade_at": "2026-10-15T18:35:53Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": 6.0,
-            "strike_total": null,
-            "strike_text": "New England wins by over 5.5 points",
-            "ticker": "KXNFLSPREAD-26OCT18NYJNE-NE6",
-            "contracts": 202,
-            "notional_usd": 201.65,
-            "trades": 1,
-            "first_trade_at": "2026-10-15T18:23:35Z",
-            "last_trade_at": "2026-10-15T18:23:35Z"
-          },
-          {
-            "market": "h2h",
-            "strike_home_margin": null,
-            "strike_total": null,
-            "strike_text": "New England",
-            "ticker": "KXNFLGAME-26OCT18NYJNE-NE",
-            "contracts": 69,
-            "notional_usd": 68.52,
-            "trades": 8,
-            "first_trade_at": "2026-10-15T18:15:35Z",
-            "last_trade_at": "2026-10-15T18:28:23Z"
+            "first_trade_at": "2026-10-15T18:34:51Z",
+            "last_trade_at": "2026-10-15T18:54:51Z"
           },
           {
             "market": "spreads",
@@ -1220,11 +1221,35 @@
             "strike_total": null,
             "strike_text": "New England wins by over 6.5 points",
             "ticker": "KXNFLSPREAD-26OCT18NYJNE-NE7",
-            "contracts": 45,
-            "notional_usd": 45.17,
-            "trades": 3,
-            "first_trade_at": "2026-10-15T18:17:10Z",
-            "last_trade_at": "2026-10-15T18:36:03Z"
+            "contracts": 43,
+            "notional_usd": 43.0,
+            "trades": 2,
+            "first_trade_at": "2026-10-15T18:36:03Z",
+            "last_trade_at": "2026-10-15T18:51:50Z"
+          },
+          {
+            "market": "h2h",
+            "strike_home_margin": null,
+            "strike_total": null,
+            "strike_text": "New England",
+            "ticker": "KXNFLGAME-26OCT18NYJNE-NE",
+            "contracts": 25,
+            "notional_usd": 25.06,
+            "trades": 4,
+            "first_trade_at": "2026-10-15T18:25:15Z",
+            "last_trade_at": "2026-10-15T18:51:35Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": 8.0,
+            "strike_total": null,
+            "strike_text": "New England wins by over 7.5 points",
+            "ticker": "KXNFLSPREAD-26OCT18NYJNE-NE8",
+            "contracts": 10,
+            "notional_usd": 10.25,
+            "trades": 1,
+            "first_trade_at": "2026-10-15T18:48:10Z",
+            "last_trade_at": "2026-10-15T18:48:10Z"
           }
         ]
       }
@@ -1248,7 +1273,7 @@
         "open_books": 14,
         "move": 0.0,
         "move_toward": null,
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 2.306,
@@ -1301,20 +1326,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18NONYG",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 201300.0,
-          "contracts_total": 201300,
+          "notional_usd_total": 201500.0,
+          "contracts_total": 201500,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 564.84,
-          "contracts_window": 565,
-          "trades_window": 14,
+          "notional_usd_window": 606.34,
+          "contracts_window": 606,
+          "trades_window": 11,
           "markets_window": [
             "h2h"
           ]
@@ -1325,17 +1350,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "New York G",
-          "notional_usd": 533.64,
-          "contracts": 534,
+          "notional_usd": 606.16,
+          "contracts": 606,
           "trades": 10
         },
         "h2h_implied": {
           "state": "observed",
-          "home_percent": 48.0,
+          "home_percent": 49.0,
           "away_percent": 51.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:35:27Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:50:50Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18NONYG-NYG",
           "away_ticker": "KXNFLGAME-26OCT18NONYG-NO"
         },
@@ -1346,11 +1371,11 @@
             "strike_total": null,
             "strike_text": "New York G",
             "ticker": "KXNFLGAME-26OCT18NONYG-NYG",
-            "contracts": 534,
-            "notional_usd": 533.64,
+            "contracts": 606,
+            "notional_usd": 606.16,
             "trades": 10,
-            "first_trade_at": "2026-10-15T18:10:16Z",
-            "last_trade_at": "2026-10-15T18:35:27Z"
+            "first_trade_at": "2026-10-15T18:27:10Z",
+            "last_trade_at": "2026-10-15T18:50:50Z"
           },
           {
             "market": "h2h",
@@ -1358,10 +1383,10 @@
             "strike_total": null,
             "strike_text": "New Orleans",
             "ticker": "KXNFLGAME-26OCT18NONYG-NO",
-            "contracts": 31,
-            "notional_usd": 31.2,
-            "trades": 4,
-            "first_trade_at": "2026-10-15T18:11:16Z",
+            "contracts": 0,
+            "notional_usd": 0.18,
+            "trades": 1,
+            "first_trade_at": "2026-10-15T18:32:31Z",
             "last_trade_at": "2026-10-15T18:32:31Z"
           }
         ]
@@ -1386,7 +1411,7 @@
         "open_books": 14,
         "move": -5.0,
         "move_toward": "CAR",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 1.858,
@@ -1517,20 +1542,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18CARPHI",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 1659500.0,
-          "contracts_total": 1659500,
+          "notional_usd_total": 1665900.0,
+          "contracts_total": 1665900,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 23333.53,
-          "contracts_window": 23334,
-          "trades_window": 219,
+          "notional_usd_window": 24979.25,
+          "contracts_window": 24979,
+          "trades_window": 211,
           "markets_window": [
             "spreads",
             "h2h"
@@ -1542,17 +1567,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "Carolina",
-          "notional_usd": 12803.78,
-          "contracts": 12804,
-          "trades": 95
+          "notional_usd": 14258.84,
+          "contracts": 14259,
+          "trades": 87
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 37.0,
           "away_percent": 64.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:41:34Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:56:18Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18CARPHI-PHI",
           "away_ticker": "KXNFLGAME-26OCT18CARPHI-CAR"
         },
@@ -1563,11 +1588,11 @@
             "strike_total": null,
             "strike_text": "Carolina",
             "ticker": "KXNFLGAME-26OCT18CARPHI-CAR",
-            "contracts": 12804,
-            "notional_usd": 12803.78,
-            "trades": 95,
-            "first_trade_at": "2026-10-15T18:10:04Z",
-            "last_trade_at": "2026-10-15T18:39:46Z"
+            "contracts": 14259,
+            "notional_usd": 14258.84,
+            "trades": 87,
+            "first_trade_at": "2026-10-15T18:25:35Z",
+            "last_trade_at": "2026-10-15T18:54:58Z"
           },
           {
             "market": "h2h",
@@ -1575,11 +1600,11 @@
             "strike_total": null,
             "strike_text": "Philadelphia",
             "ticker": "KXNFLGAME-26OCT18CARPHI-PHI",
-            "contracts": 4580,
-            "notional_usd": 4579.78,
-            "trades": 81,
-            "first_trade_at": "2026-10-15T18:11:18Z",
-            "last_trade_at": "2026-10-15T18:38:37Z"
+            "contracts": 4556,
+            "notional_usd": 4556.31,
+            "trades": 73,
+            "first_trade_at": "2026-10-15T18:25:17Z",
+            "last_trade_at": "2026-10-15T18:54:54Z"
           },
           {
             "market": "spreads",
@@ -1587,11 +1612,23 @@
             "strike_total": null,
             "strike_text": "Carolina wins by over 3.5 points",
             "ticker": "KXNFLSPREAD-26OCT18CARPHI-CAR4",
-            "contracts": 3529,
-            "notional_usd": 3529.37,
-            "trades": 31,
-            "first_trade_at": "2026-10-15T18:10:02Z",
-            "last_trade_at": "2026-10-15T18:39:25Z"
+            "contracts": 3190,
+            "notional_usd": 3190.02,
+            "trades": 28,
+            "first_trade_at": "2026-10-15T18:26:27Z",
+            "last_trade_at": "2026-10-15T18:54:47Z"
+          },
+          {
+            "market": "spreads",
+            "strike_home_margin": 2.0,
+            "strike_total": null,
+            "strike_text": "Philadelphia wins by over 1.5 points",
+            "ticker": "KXNFLSPREAD-26OCT18CARPHI-PHI2",
+            "contracts": 1613,
+            "notional_usd": 1612.87,
+            "trades": 14,
+            "first_trade_at": "2026-10-15T18:29:00Z",
+            "last_trade_at": "2026-10-15T18:41:57Z"
           },
           {
             "market": "spreads",
@@ -1611,11 +1648,11 @@
             "strike_total": null,
             "strike_text": "Carolina wins by over 2.5 points",
             "ticker": "KXNFLSPREAD-26OCT18CARPHI-CAR3",
-            "contracts": 993,
-            "notional_usd": 992.61,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:11:12Z",
-            "last_trade_at": "2026-10-15T18:18:50Z"
+            "contracts": 199,
+            "notional_usd": 198.68,
+            "trades": 4,
+            "first_trade_at": "2026-10-15T18:25:06Z",
+            "last_trade_at": "2026-10-15T18:53:16Z"
           },
           {
             "market": "spreads",
@@ -1623,23 +1660,11 @@
             "strike_total": null,
             "strike_text": "Carolina wins by over 6.5 points",
             "ticker": "KXNFLSPREAD-26OCT18CARPHI-CAR7",
-            "contracts": 419,
-            "notional_usd": 418.99,
-            "trades": 7,
-            "first_trade_at": "2026-10-15T18:17:22Z",
+            "contracts": 163,
+            "notional_usd": 162.53,
+            "trades": 3,
+            "first_trade_at": "2026-10-15T18:25:13Z",
             "last_trade_at": "2026-10-15T18:33:49Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": -5.0,
-            "strike_total": null,
-            "strike_text": "Carolina wins by over 4.5 points",
-            "ticker": "KXNFLSPREAD-26OCT18CARPHI-CAR5",
-            "contracts": 9,
-            "notional_usd": 9.0,
-            "trades": 1,
-            "first_trade_at": "2026-10-15T18:13:42Z",
-            "last_trade_at": "2026-10-15T18:13:42Z"
           }
         ]
       }
@@ -1663,7 +1688,7 @@
         "open_books": 14,
         "move": 0.0,
         "move_toward": null,
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": -2.462,
@@ -1703,20 +1728,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18PITTB",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 91300.0,
-          "contracts_total": 91300,
+          "notional_usd_total": 91500.0,
+          "contracts_total": 91500,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 350.93,
-          "contracts_window": 351,
-          "trades_window": 3,
+          "notional_usd_window": 574.79,
+          "contracts_window": 575,
+          "trades_window": 13,
           "markets_window": [
             "h2h"
           ]
@@ -1727,17 +1752,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "Tampa Bay",
-          "notional_usd": 350.93,
-          "contracts": 351,
-          "trades": 3
+          "notional_usd": 394.29,
+          "contracts": 394,
+          "trades": 5
         },
         "h2h_implied": {
           "state": "observed",
-          "home_percent": 44.0,
-          "away_percent": 56.0,
+          "home_percent": 43.0,
+          "away_percent": 57.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:39:15Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:48:19Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18PITTB-TB",
           "away_ticker": "KXNFLGAME-26OCT18PITTB-PIT"
         },
@@ -1748,11 +1773,23 @@
             "strike_total": null,
             "strike_text": "Tampa Bay",
             "ticker": "KXNFLGAME-26OCT18PITTB-TB",
-            "contracts": 351,
-            "notional_usd": 350.93,
-            "trades": 3,
-            "first_trade_at": "2026-10-15T18:19:02Z",
-            "last_trade_at": "2026-10-15T18:39:15Z"
+            "contracts": 394,
+            "notional_usd": 394.29,
+            "trades": 5,
+            "first_trade_at": "2026-10-15T18:31:34Z",
+            "last_trade_at": "2026-10-15T18:48:19Z"
+          },
+          {
+            "market": "h2h",
+            "strike_home_margin": null,
+            "strike_total": null,
+            "strike_text": "Pittsburgh",
+            "ticker": "KXNFLGAME-26OCT18PITTB-PIT",
+            "contracts": 180,
+            "notional_usd": 180.5,
+            "trades": 8,
+            "first_trade_at": "2026-10-15T18:25:27Z",
+            "last_trade_at": "2026-10-15T18:46:48Z"
           }
         ]
       }
@@ -1776,7 +1813,7 @@
         "open_books": 14,
         "move": 0.5,
         "move_toward": "LA",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 12.656,
@@ -1816,22 +1853,21 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18ARILAR",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 317400.0,
-          "contracts_total": 317400,
+          "notional_usd_total": 317600.0,
+          "contracts_total": 317600,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 1300.25,
-          "contracts_window": 1300,
-          "trades_window": 15,
+          "notional_usd_window": 376.66,
+          "contracts_window": 377,
+          "trades_window": 7,
           "markets_window": [
-            "spreads",
             "h2h"
           ]
         },
@@ -1841,17 +1877,17 @@
           "strike_home_margin": null,
           "strike_total": null,
           "strike_text": "Arizona",
-          "notional_usd": 839.18,
-          "contracts": 839,
-          "trades": 6
+          "notional_usd": 344.14,
+          "contracts": 344,
+          "trades": 4
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 88.0,
           "away_percent": 13.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:35:58Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:55:49Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18ARILAR-LAR",
           "away_ticker": "KXNFLGAME-26OCT18ARILAR-ARI"
         },
@@ -1862,23 +1898,11 @@
             "strike_total": null,
             "strike_text": "Arizona",
             "ticker": "KXNFLGAME-26OCT18ARILAR-ARI",
-            "contracts": 839,
-            "notional_usd": 839.18,
-            "trades": 6,
-            "first_trade_at": "2026-10-15T18:17:28Z",
-            "last_trade_at": "2026-10-15T18:35:58Z"
-          },
-          {
-            "market": "spreads",
-            "strike_home_margin": 13.0,
-            "strike_total": null,
-            "strike_text": "Los Angeles R wins by over 12.5 points",
-            "ticker": "KXNFLSPREAD-26OCT18ARILAR-LAR13",
-            "contracts": 398,
-            "notional_usd": 398.15,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:20:55Z",
-            "last_trade_at": "2026-10-15T18:22:46Z"
+            "contracts": 344,
+            "notional_usd": 344.14,
+            "trades": 4,
+            "first_trade_at": "2026-10-15T18:29:17Z",
+            "last_trade_at": "2026-10-15T18:48:58Z"
           },
           {
             "market": "h2h",
@@ -1886,10 +1910,10 @@
             "strike_total": null,
             "strike_text": "Los Angeles R",
             "ticker": "KXNFLGAME-26OCT18ARILAR-LAR",
-            "contracts": 63,
-            "notional_usd": 62.92,
-            "trades": 7,
-            "first_trade_at": "2026-10-15T18:11:35Z",
+            "contracts": 33,
+            "notional_usd": 32.52,
+            "trades": 3,
+            "first_trade_at": "2026-10-15T18:26:13Z",
             "last_trade_at": "2026-10-15T18:33:08Z"
           }
         ]
@@ -1914,7 +1938,7 @@
         "open_books": 14,
         "move": 0.5,
         "move_toward": "KC",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 6.933,
@@ -1954,41 +1978,41 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18LACKC",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 321500.0,
-          "contracts_total": 321500,
+          "notional_usd_total": 321600.0,
+          "contracts_total": 321600,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 1849.1,
-          "contracts_window": 1849,
-          "trades_window": 45,
+          "notional_usd_window": 591.33,
+          "contracts_window": 591,
+          "trades_window": 28,
           "markets_window": [
             "h2h"
           ]
         },
         "most_active_strike": {
           "market": "h2h",
-          "ticker": "KXNFLGAME-26OCT18LACKC-LAC",
+          "ticker": "KXNFLGAME-26OCT18LACKC-KC",
           "strike_home_margin": null,
           "strike_total": null,
-          "strike_text": "Los Angeles C",
-          "notional_usd": 1457.9,
-          "contracts": 1458,
-          "trades": 20
+          "strike_text": "Kansas City",
+          "notional_usd": 381.1,
+          "contracts": 381,
+          "trades": 21
         },
         "h2h_implied": {
           "state": "observed",
-          "home_percent": 79.0,
+          "home_percent": 78.0,
           "away_percent": 21.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:39:57Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:50:15Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18LACKC-KC",
           "away_ticker": "KXNFLGAME-26OCT18LACKC-LAC"
         },
@@ -1997,25 +2021,25 @@
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
-            "strike_text": "Los Angeles C",
-            "ticker": "KXNFLGAME-26OCT18LACKC-LAC",
-            "contracts": 1458,
-            "notional_usd": 1457.9,
-            "trades": 20,
-            "first_trade_at": "2026-10-15T18:12:45Z",
-            "last_trade_at": "2026-10-15T18:39:57Z"
+            "strike_text": "Kansas City",
+            "ticker": "KXNFLGAME-26OCT18LACKC-KC",
+            "contracts": 381,
+            "notional_usd": 381.1,
+            "trades": 21,
+            "first_trade_at": "2026-10-15T18:25:44Z",
+            "last_trade_at": "2026-10-15T18:50:15Z"
           },
           {
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
-            "strike_text": "Kansas City",
-            "ticker": "KXNFLGAME-26OCT18LACKC-KC",
-            "contracts": 391,
-            "notional_usd": 391.2,
-            "trades": 25,
-            "first_trade_at": "2026-10-15T18:10:58Z",
-            "last_trade_at": "2026-10-15T18:36:42Z"
+            "strike_text": "Los Angeles C",
+            "ticker": "KXNFLGAME-26OCT18LACKC-LAC",
+            "contracts": 210,
+            "notional_usd": 210.23,
+            "trades": 7,
+            "first_trade_at": "2026-10-15T18:31:40Z",
+            "last_trade_at": "2026-10-15T18:39:57Z"
           }
         ]
       }
@@ -2039,7 +2063,7 @@
         "open_books": 14,
         "move": 0.75,
         "move_toward": "LV",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": -5.738,
@@ -2079,69 +2103,56 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18BUFLV",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 203300.0,
-          "contracts_total": 203300,
+          "notional_usd_total": 203600.0,
+          "contracts_total": 203600,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 896.99,
-          "contracts_window": 897,
-          "trades_window": 20,
+          "notional_usd_window": 170.65,
+          "contracts_window": 171,
+          "trades_window": 11,
           "markets_window": [
-            "spreads",
             "h2h"
           ]
         },
         "most_active_strike": {
-          "market": "spreads",
-          "ticker": "KXNFLSPREAD-26OCT18BUFLV-BUF5",
-          "strike_home_margin": -5.0,
+          "market": "h2h",
+          "ticker": "KXNFLGAME-26OCT18BUFLV-LV",
+          "strike_home_margin": null,
           "strike_total": null,
-          "strike_text": "Buffalo wins by over 4.5 points",
-          "notional_usd": 385.18,
-          "contracts": 385,
-          "trades": 2
+          "strike_text": "Las Vegas",
+          "notional_usd": 169.22,
+          "contracts": 169,
+          "trades": 10
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 33.0,
           "away_percent": 68.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:39:06Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:55:09Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18BUFLV-LV",
           "away_ticker": "KXNFLGAME-26OCT18BUFLV-BUF"
         },
         "strikes": [
-          {
-            "market": "spreads",
-            "strike_home_margin": -5.0,
-            "strike_total": null,
-            "strike_text": "Buffalo wins by over 4.5 points",
-            "ticker": "KXNFLSPREAD-26OCT18BUFLV-BUF5",
-            "contracts": 385,
-            "notional_usd": 385.18,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:16:13Z",
-            "last_trade_at": "2026-10-15T18:21:46Z"
-          },
           {
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
             "strike_text": "Las Vegas",
             "ticker": "KXNFLGAME-26OCT18BUFLV-LV",
-            "contracts": 283,
-            "notional_usd": 283.34,
-            "trades": 9,
-            "first_trade_at": "2026-10-15T18:10:33Z",
-            "last_trade_at": "2026-10-15T18:39:06Z"
+            "contracts": 169,
+            "notional_usd": 169.22,
+            "trades": 10,
+            "first_trade_at": "2026-10-15T18:25:18Z",
+            "last_trade_at": "2026-10-15T18:50:25Z"
           },
           {
             "market": "h2h",
@@ -2149,10 +2160,10 @@
             "strike_total": null,
             "strike_text": "Buffalo",
             "ticker": "KXNFLGAME-26OCT18BUFLV-BUF",
-            "contracts": 228,
-            "notional_usd": 228.47,
-            "trades": 9,
-            "first_trade_at": "2026-10-15T18:10:24Z",
+            "contracts": 1,
+            "notional_usd": 1.43,
+            "trades": 1,
+            "first_trade_at": "2026-10-15T18:25:11Z",
             "last_trade_at": "2026-10-15T18:25:11Z"
           }
         ]
@@ -2177,7 +2188,7 @@
         "open_books": 14,
         "move": 2.25,
         "move_toward": "GB",
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 1.076,
@@ -2217,20 +2228,20 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT18DALGB",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 268800.0,
-          "contracts_total": 268800,
+          "notional_usd_total": 269100.0,
+          "contracts_total": 269100,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 1438.77,
-          "contracts_window": 1439,
-          "trades_window": 36,
+          "notional_usd_window": 1219.53,
+          "contracts_window": 1220,
+          "trades_window": 32,
           "markets_window": [
             "totals",
             "h2h"
@@ -2242,17 +2253,17 @@
           "strike_home_margin": null,
           "strike_total": 53.5,
           "strike_text": "Over 53.5 points",
-          "notional_usd": 531.39,
-          "contracts": 531,
-          "trades": 2
+          "notional_usd": 483.09,
+          "contracts": 483,
+          "trades": 1
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 53.0,
           "away_percent": 48.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:40:43Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:55:02Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT18DALGB-GB",
           "away_ticker": "KXNFLGAME-26OCT18DALGB-DAL"
         },
@@ -2263,10 +2274,10 @@
             "strike_total": 53.5,
             "strike_text": "Over 53.5 points",
             "ticker": "KXNFLTOTAL-26OCT18DALGB-54",
-            "contracts": 531,
-            "notional_usd": 531.39,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:18:54Z",
+            "contracts": 483,
+            "notional_usd": 483.09,
+            "trades": 1,
+            "first_trade_at": "2026-10-15T18:33:35Z",
             "last_trade_at": "2026-10-15T18:33:35Z"
           },
           {
@@ -2275,11 +2286,11 @@
             "strike_total": null,
             "strike_text": "Green Bay",
             "ticker": "KXNFLGAME-26OCT18DALGB-GB",
-            "contracts": 515,
-            "notional_usd": 514.51,
-            "trades": 19,
-            "first_trade_at": "2026-10-15T18:10:23Z",
-            "last_trade_at": "2026-10-15T18:39:50Z"
+            "contracts": 473,
+            "notional_usd": 472.8,
+            "trades": 16,
+            "first_trade_at": "2026-10-15T18:25:36Z",
+            "last_trade_at": "2026-10-15T18:54:56Z"
           },
           {
             "market": "h2h",
@@ -2287,11 +2298,11 @@
             "strike_total": null,
             "strike_text": "Dallas",
             "ticker": "KXNFLGAME-26OCT18DALGB-DAL",
-            "contracts": 393,
-            "notional_usd": 392.87,
+            "contracts": 264,
+            "notional_usd": 263.64,
             "trades": 15,
-            "first_trade_at": "2026-10-15T18:12:59Z",
-            "last_trade_at": "2026-10-15T18:38:05Z"
+            "first_trade_at": "2026-10-15T18:26:07Z",
+            "last_trade_at": "2026-10-15T18:53:16Z"
           }
         ]
       }
@@ -2315,7 +2326,7 @@
         "open_books": 14,
         "move": 0.0,
         "move_toward": null,
-        "observed_at": "2026-10-15T18:41:19Z"
+        "observed_at": "2026-10-15T18:56:23Z"
       },
       "bd_number": {
         "home_margin": 9.15,
@@ -2368,81 +2379,69 @@
         "status": "ok",
         "event_ticker": "KXNFLSPREAD-26OCT19WASSF",
         "link_method": "ticker_parse",
-        "observed_at": "2026-10-15T18:41:38Z",
+        "observed_at": "2026-10-15T18:56:43Z",
         "window": {
-          "from": "2026-10-15T18:10:00Z",
-          "to": "2026-10-15T18:40:00Z",
+          "from": "2026-10-15T18:25:00Z",
+          "to": "2026-10-15T18:55:00Z",
           "minutes": 30.0
         },
         "volume": {
-          "notional_usd_total": 179800.0,
-          "contracts_total": 179800,
+          "notional_usd_total": 180200.0,
+          "contracts_total": 180200,
           "trades_total": null,
           "total_scope": "moneyline",
-          "notional_usd_window": 510.58,
-          "contracts_window": 511,
-          "trades_window": 13,
+          "notional_usd_window": 494.64,
+          "contracts_window": 495,
+          "trades_window": 19,
           "markets_window": [
             "totals",
             "h2h"
           ]
         },
         "most_active_strike": {
-          "market": "totals",
-          "ticker": "KXNFLTOTAL-26OCT19WASSF-51",
+          "market": "h2h",
+          "ticker": "KXNFLGAME-26OCT19WASSF-SF",
           "strike_home_margin": null,
-          "strike_total": 50.5,
-          "strike_text": "Over 50.5 points",
-          "notional_usd": 279.0,
-          "contracts": 279,
-          "trades": 2
+          "strike_total": null,
+          "strike_text": "San Francisco",
+          "notional_usd": 479.64,
+          "contracts": 480,
+          "trades": 17
         },
         "h2h_implied": {
           "state": "observed",
           "home_percent": 78.0,
           "away_percent": 22.0,
           "basis": "last_trade",
-          "priced_at": "2026-10-15T18:40:47Z",
-          "observed_at": "2026-10-15T18:41:38Z",
+          "priced_at": "2026-10-15T18:53:03Z",
+          "observed_at": "2026-10-15T18:56:43Z",
           "home_ticker": "KXNFLGAME-26OCT19WASSF-SF",
           "away_ticker": "KXNFLGAME-26OCT19WASSF-WAS"
         },
         "strikes": [
-          {
-            "market": "totals",
-            "strike_home_margin": null,
-            "strike_total": 50.5,
-            "strike_text": "Over 50.5 points",
-            "ticker": "KXNFLTOTAL-26OCT19WASSF-51",
-            "contracts": 279,
-            "notional_usd": 279.0,
-            "trades": 2,
-            "first_trade_at": "2026-10-15T18:11:52Z",
-            "last_trade_at": "2026-10-15T18:11:52Z"
-          },
           {
             "market": "h2h",
             "strike_home_margin": null,
             "strike_total": null,
             "strike_text": "San Francisco",
             "ticker": "KXNFLGAME-26OCT19WASSF-SF",
-            "contracts": 223,
-            "notional_usd": 223.33,
-            "trades": 10,
-            "first_trade_at": "2026-10-15T18:13:14Z",
-            "last_trade_at": "2026-10-15T18:34:48Z"
+            "contracts": 480,
+            "notional_usd": 479.64,
+            "trades": 17,
+            "first_trade_at": "2026-10-15T18:25:54Z",
+            "last_trade_at": "2026-10-15T18:53:03Z"
           },
           {
-            "market": "h2h",
+            "market": "totals",
             "strike_home_margin": null,
-            "strike_total": null,
-            "strike_text": "Washington",
-            "ticker": "KXNFLGAME-26OCT19WASSF-WAS",
-            "contracts": 8,
-            "notional_usd": 8.25,
-            "trades": 1,
-            "first_trade_at": "2026-10-15T18:14:31Z",
-            "last_trade_at": "2026-10-15T18:14:31Z"
+            "strike_total": 50.5,
+            "strike_text": "Over 50.5 points",
+            "ticker": "KXNFLTOTAL-26OCT19WASSF-51",
+            "contracts": 15,
+            "notional_usd": 15.0,
+            "trades": 2,
+            "first_trade_at": "2026-10-15T18:54:00Z",
+            "last_trade_at": "2026-10-15T18:54:00Z"
           }
         ]
       }
