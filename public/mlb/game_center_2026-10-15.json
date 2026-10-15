@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "generated_at": "2026-10-15T19:39:10.570790Z",
+  "generated_at": "2026-10-15T19:58:18.111642Z",
   "total_games": 2,
   "season_blend": {
     "current": 1.0,
@@ -82,7 +82,7 @@
       "game_pk": 849818,
       "game_date": "2026-10-15",
       "game_time": "2026-10-15T17:00:00Z",
-      "status": "Live",
+      "status": "Final",
       "venue": "Progressive Field",
       "park_factors": {
         "hr": 93,
@@ -302,8 +302,37 @@
             "chase_rate": 30.1,
             "babip": 0.11,
             "data_source": "statcast+season",
-            "prop_lines": {},
-            "edges": {}
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 105
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -135
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 2000
+                }
+              }
+            },
+            "edges": {
+              "HRR_over": {
+                "proj": 2.11,
+                "line": 1.5,
+                "diff": 0.61,
+                "edge_pct": 40.7,
+                "lean": "OVER",
+                "flag": true,
+                "best_book": "betmgm"
+              }
+            }
           },
           {
             "name": "Junior Caminero",
@@ -330,8 +359,47 @@
             "chase_rate": 34.4,
             "babip": 0.154,
             "data_source": "statcast+season",
-            "prop_lines": {},
-            "edges": {}
+            "prop_lines": {
+              "batter_home_runs_over": {
+                "williamhill_us": {
+                  "line": 1.5,
+                  "price": 6000
+                }
+              },
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 100
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -135
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 2000
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 1350
+                }
+              }
+            },
+            "edges": {
+              "HRR_over": {
+                "proj": 2.14,
+                "line": 1.5,
+                "diff": 0.64,
+                "edge_pct": 42.7,
+                "lean": "OVER",
+                "flag": true,
+                "best_book": "betmgm"
+              }
+            }
           },
           {
             "name": "Victor Mesa Jr.",
@@ -359,10 +427,32 @@
             "babip": 0.116,
             "data_source": "statcast+season",
             "prop_lines": {
-              "batter_home_runs_over": {
-                "williamhill_us": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 110
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -145
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
                   "line": 0.5,
-                  "price": 1500
+                  "price": 1100
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 625
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -1600
                 }
               }
             },
@@ -393,7 +483,42 @@
             "chase_rate": 39.0,
             "babip": 0.231,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_home_runs_over": {
+                "williamhill_us": {
+                  "line": 0.5,
+                  "price": 2600
+                }
+              },
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -110
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -118
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 250
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 185
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -275
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -421,7 +546,20 @@
             "chase_rate": 20.7,
             "babip": 0.162,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -185
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 140
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -449,7 +587,36 @@
             "chase_rate": 37.1,
             "babip": 0.178,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 120
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -155
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 580
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 375
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -700
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -505,7 +672,36 @@
             "chase_rate": 31.9,
             "babip": 0.16,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -135
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 105
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 680
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 475
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -1000
+                }
+              }
+            },
             "edges": {}
           }
         ],
@@ -535,7 +731,42 @@
             "chase_rate": 14.7,
             "babip": 0.204,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_home_runs_over": {
+                "williamhill_us": {
+                  "line": 0.5,
+                  "price": 1500
+                }
+              },
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 105
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -140
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 580
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 900
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -10000
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -591,8 +822,47 @@
             "chase_rate": 19.7,
             "babip": 0.177,
             "data_source": "statcast+season",
-            "prop_lines": {},
-            "edges": {}
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 100
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -135
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 750
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 950
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -10000
+                }
+              }
+            },
+            "edges": {
+              "HRR_over": {
+                "proj": 2.02,
+                "line": 1.5,
+                "diff": 0.52,
+                "edge_pct": 34.7,
+                "lean": "OVER",
+                "flag": true,
+                "best_book": "betmgm"
+              }
+            }
           },
           {
             "name": "Jo Adell",
@@ -619,7 +889,36 @@
             "chase_rate": 32.0,
             "babip": 0.17,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 110
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -145
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 1000
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 950
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -10000
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -647,7 +946,20 @@
             "chase_rate": 27.1,
             "babip": 0.143,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": 130
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 1.5,
+                  "price": -175
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -703,7 +1015,26 @@
             "chase_rate": 27.4,
             "babip": 0.132,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -150
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 115
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 1500
+                }
+              }
+            },
             "edges": {}
           },
           {
@@ -732,10 +1063,32 @@
             "babip": 0.174,
             "data_source": "statcast+season",
             "prop_lines": {
-              "batter_home_runs_under": {
-                "prophetx": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
                   "line": 0.5,
-                  "price": 10000
+                  "price": -120
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -105
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 800
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 650
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -2000
                 }
               }
             },
@@ -766,7 +1119,36 @@
             "chase_rate": 27.9,
             "babip": 0.141,
             "data_source": "statcast+season",
-            "prop_lines": {},
+            "prop_lines": {
+              "batter_hits_runs_rbis_over": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -155
+                }
+              },
+              "batter_hits_runs_rbis_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 115
+                }
+              },
+              "batter_stolen_bases_over": {
+                "fanduel": {
+                  "line": 0.5,
+                  "price": 630
+                },
+                "betmgm": {
+                  "line": 0.5,
+                  "price": 725
+                }
+              },
+              "batter_stolen_bases_under": {
+                "betmgm": {
+                  "line": 0.5,
+                  "price": -2500
+                }
+              }
+            },
             "edges": {}
           }
         ]
@@ -782,19 +1164,67 @@
           "lean": "AWAY",
           "flag": true,
           "early_season": false,
-          "best_book": "CZR"
+          "best_book": "BOV"
+        },
+        {
+          "player": "Junior Caminero",
+          "player_id": 691406,
+          "team": "TB",
+          "position": "3B",
+          "game": "TB @ CLE",
+          "type": "HRR_over",
+          "is_pitcher": false,
+          "proj": 2.14,
+          "line": 1.5,
+          "diff": 0.64,
+          "edge_pct": 42.7,
+          "lean": "OVER",
+          "flag": true,
+          "best_book": "betmgm"
+        },
+        {
+          "player": "Jonathan Aranda",
+          "player_id": 666018,
+          "team": "TB",
+          "position": "1B",
+          "game": "TB @ CLE",
+          "type": "HRR_over",
+          "is_pitcher": false,
+          "proj": 2.11,
+          "line": 1.5,
+          "diff": 0.61,
+          "edge_pct": 40.7,
+          "lean": "OVER",
+          "flag": true,
+          "best_book": "betmgm"
+        },
+        {
+          "player": "Chase DeLauter",
+          "player_id": 800050,
+          "team": "CLE",
+          "position": "RF",
+          "game": "TB @ CLE",
+          "type": "HRR_over",
+          "is_pitcher": false,
+          "proj": 2.02,
+          "line": 1.5,
+          "diff": 0.52,
+          "edge_pct": 34.7,
+          "lean": "OVER",
+          "flag": true,
+          "best_book": "betmgm"
         },
         {
           "player": "GAME",
-          "type": "game_moneyline",
-          "proj_prob": 49.4,
-          "implied_prob": 3.1,
-          "prob_diff": 46.3,
-          "lean": "AWAY",
+          "type": "game_total",
+          "proj": 5.55,
+          "line": 7.0,
+          "diff": -1.45,
+          "edge_pct": -20.7,
+          "lean": "UNDER",
           "flag": true,
           "early_season": false,
-          "price": 3100,
-          "best_book": "PX"
+          "best_book": "LV"
         }
       ],
       "game_score": {
@@ -816,6 +1246,16 @@
         "data_quality": "full"
       },
       "game_line_edges": {
+        "total": {
+          "proj": 5.55,
+          "line": 7.0,
+          "diff": -1.45,
+          "edge_pct": -20.7,
+          "lean": "UNDER",
+          "flag": true,
+          "early_season": false,
+          "best_book": "LV"
+        },
         "run_line": {
           "proj_diff": -0.07,
           "line": -1.5,
@@ -824,17 +1264,7 @@
           "lean": "AWAY",
           "flag": true,
           "early_season": false,
-          "best_book": "CZR"
-        },
-        "moneyline": {
-          "proj_prob": 49.4,
-          "implied_prob": 3.1,
-          "prob_diff": 46.3,
-          "lean": "AWAY",
-          "flag": true,
-          "early_season": false,
-          "price": 3100,
-          "best_book": "PX"
+          "best_book": "BOV"
         }
       }
     },
@@ -941,7 +1371,7 @@
               },
               "prophetx": {
                 "line": 8.5,
-                "price": 134
+                "price": 136
               }
             },
             "pitcher_outs_under": {
@@ -1044,11 +1474,11 @@
               },
               "fanduel": {
                 "line": 5.5,
-                "price": -154
+                "price": -150
               },
               "bovada": {
                 "line": 5.5,
-                "price": -160
+                "price": -150
               },
               "prophetx": {
                 "line": 6.5,
@@ -1070,11 +1500,11 @@
               },
               "fanduel": {
                 "line": 5.5,
-                "price": 120
+                "price": 118
               },
               "bovada": {
                 "line": 5.5,
-                "price": 120
+                "price": 115
               },
               "prophetx": {
                 "line": 6.5,
@@ -1088,7 +1518,7 @@
             "pitcher_outs_over": {
               "draftkings": {
                 "line": 14.5,
-                "price": -150
+                "price": -152
               },
               "betmgm": {
                 "line": 14.5,
@@ -1108,7 +1538,7 @@
               },
               "prophetx": {
                 "line": 14.5,
-                "price": -152
+                "price": -150
               },
               "betrivers": {
                 "line": 14.5,
@@ -1118,7 +1548,7 @@
             "pitcher_outs_under": {
               "draftkings": {
                 "line": 14.5,
-                "price": 113
+                "price": 114
               },
               "betmgm": {
                 "line": 14.5,
@@ -1152,7 +1582,7 @@
               },
               "prophetx": {
                 "line": 1.5,
-                "price": -148
+                "price": -150
               }
             },
             "pitcher_earned_runs_under": {
@@ -1172,25 +1602,25 @@
             "pitcher_walks_over": {
               "draftkings": {
                 "line": 2.5,
-                "price": 152
+                "price": 140
               },
               "bovada": {
                 "line": 2.5,
-                "price": 150
+                "price": 145
               },
               "prophetx": {
                 "line": 2.5,
-                "price": 150
+                "price": 146
               }
             },
             "pitcher_walks_under": {
               "draftkings": {
                 "line": 2.5,
-                "price": -203
+                "price": -187
               },
               "bovada": {
                 "line": 2.5,
-                "price": -200
+                "price": -190
               },
               "prophetx": {
                 "line": 1.5,
