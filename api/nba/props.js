@@ -15,9 +15,13 @@
 // every book's line, then to the lower), the median over/under prices of the
 // books at that line (taken on implied probability), the count of those books,
 // and as_of = the OLDEST of their update times, so the stamp never flatters.
+// Only current books count (the staleness rule in _shared.js, 2026-10-19).
+//
+// A player whose listed team is neither side of this game (the upstream's
+// roster can lag a move) gets team null rather than a wrong team.
 
 import {
-  EXCLUDED_BOOKS, upstream, upstreamAll, headers, send, fail, num, newest, implied, median, medianPrice,
+  EXCLUDED_BOOKS, upstream, upstreamAll, headers, send, fail, num, newest, implied, median, medianPrice, current, oldest,
 } from './_shared.js';
 
 const MARKETS = ['points', 'rebounds', 'assists', 'threes', 'points_rebounds_assists'];
@@ -35,12 +39,8 @@ function modal(points) {
   return tied.reduce((best, x) => (Math.abs(x - m) < Math.abs(best - m) ? x : best), tied[0]);
 }
 
-function oldest(isos) {
-  const s = isos.filter(Boolean).sort();
-  return s.length ? s[0] : null;
-}
-
-function consensus(rows) {
+function consensus(all) {
+  const rows = current(all);   // the staleness rule, _shared.js
   const line = modal(rows.map(r => r.line));
   if (line === null) return null;
   const at = rows.filter(r => r.line === line);
@@ -65,6 +65,8 @@ export default async function handler(req, res) {
 
   try {
     const d = await upstream('/v2/odds/player_props', [['game_id', String(gameId)]]);
+    const g = (await upstream(`/v1/games/${gameId}`)).data || {};
+    const sides = new Set([g.home_team && g.home_team.abbreviation, g.visitor_team && g.visitor_team.abbreviation].filter(Boolean));
 
     // (player, market, book) -> main line
     const best = new Map();
@@ -100,7 +102,7 @@ export default async function handler(req, res) {
         players.set(player_id, {
           player_id,
           name: p ? `${p.first_name} ${p.last_name}`.trim() : null,
-          team: p && p.team ? p.team.abbreviation : null,
+          team: p && p.team && sides.has(p.team.abbreviation) ? p.team.abbreviation : null,
           markets: {},
         });
       }

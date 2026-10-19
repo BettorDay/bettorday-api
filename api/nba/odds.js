@@ -15,9 +15,11 @@
 // the consensus is always a point some book actually hangs and has prices.
 // Moneyline: the median of each side across books that post both.  Every
 // median price is taken on implied probability and converted back.
+// Only current books count, and the stamp is the oldest of them (the
+// staleness rule in _shared.js, 2026-10-19).
 
 import {
-  EXCLUDED_BOOKS, upstreamAll, headers, send, fail, num, median, medianPrice, newest, todayET,
+  EXCLUDED_BOOKS, upstreamAll, headers, send, fail, num, median, medianPrice, current, oldest, todayET,
 } from './_shared.js';
 
 const MAX_DAYS = 8;
@@ -52,7 +54,8 @@ function modal(points) {
   return tied.reduce((best, x) => (Math.abs(x - m) < Math.abs(best - m) ? x : best), tied[0]);
 }
 
-function consensus(books) {
+function consensus(all) {
+  const books = current(all);   // the staleness rule, _shared.js
   const sp = modal(books.map(b => b.spread_home));
   const spB = books.filter(b => sp !== null && b.spread_home === sp);
   const tot = modal(books.map(b => b.total));
@@ -70,7 +73,7 @@ function consensus(books) {
     ml_home: medianPrice(mlB.map(b => b.ml_home)),
     ml_away: medianPrice(mlB.map(b => b.ml_away)),
     ml_books: mlB.length,
-    as_of: newest([...spB, ...totB, ...mlB].map(b => b.as_of)),
+    as_of: oldest([...spB, ...totB, ...mlB].map(b => b.as_of)),
   };
 }
 

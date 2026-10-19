@@ -76,6 +76,22 @@ export function median(xs) {
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 }
 
+// Staleness rule (Scott, 2026-10-19): only CURRENT books count in a consensus
+// and its book count -- a book whose row is older than FRESH_MIN minutes drops
+// out (it still appears in the per-book list with its own time) -- and the
+// consensus is stamped with the OLDEST remaining book, so the stamp never
+// overstates freshness.  If no book is current, every book counts and the
+// (old) stamp lets the page flag it stale.
+export const FRESH_MIN = 30;
+export function current(rows, now = Date.now()) {
+  const f = rows.filter(r => r.as_of && now - Date.parse(r.as_of) <= FRESH_MIN * 60000);
+  return f.length ? f : rows;
+}
+export function oldest(isos) {
+  const s = isos.filter(Boolean).sort();
+  return s.length ? s[0] : null;
+}
+
 export function newest(isos) {
   const s = isos.filter(Boolean).sort();
   return s.length ? s[s.length - 1] : null;
