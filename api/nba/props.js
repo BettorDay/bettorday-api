@@ -9,12 +9,49 @@
 // other (a tie goes to the lower line).  The vendor becomes `book`, deep links
 // are dropped, prediction markets are excluded.  Edge-cached for 5 minutes;
 // each line carries the upstream's update time as `as_of`.
+//
+// Consensus per player and prop (the Gate A rule, as odds.js): the modal line
+// across books' main lines (a tie goes to the tied line nearest the median of
+// every book's line, then to the lower), the median over/under prices of the
+// books at that line (taken on implied probability), the count of those books,
+// and as_of = the OLDEST of their update times, so the stamp never flatters.
 
 import {
-  EXCLUDED_BOOKS, upstream, upstreamAll, headers, send, fail, num, newest, implied,
+  EXCLUDED_BOOKS, upstream, upstreamAll, headers, send, fail, num, newest, implied, median, medianPrice,
 } from './_shared.js';
 
 const MARKETS = ['points', 'rebounds', 'assists', 'threes', 'points_rebounds_assists'];
+
+// Same rule as odds.js's modal().
+function modal(points) {
+  const xs = points.filter(x => x !== null);
+  if (!xs.length) return null;
+  const counts = new Map();
+  for (const x of xs) counts.set(x, (counts.get(x) || 0) + 1);
+  const top = Math.max(...counts.values());
+  const tied = [...counts.keys()].filter(k => counts.get(k) === top).sort((a, b) => a - b);
+  if (tied.length === 1) return tied[0];
+  const m = median(xs);
+  return tied.reduce((best, x) => (Math.abs(x - m) < Math.abs(best - m) ? x : best), tied[0]);
+}
+
+function oldest(isos) {
+  const s = isos.filter(Boolean).sort();
+  return s.length ? s[0] : null;
+}
+
+function consensus(rows) {
+  const line = modal(rows.map(r => r.line));
+  if (line === null) return null;
+  const at = rows.filter(r => r.line === line);
+  return {
+    line,
+    over: medianPrice(at.map(r => r.over)),
+    under: medianPrice(at.map(r => r.under)),
+    books: at.length,
+    as_of: oldest(at.map(r => r.as_of)),
+  };
+}
 
 function gap(row) {
   const o = implied(row.over), u = implied(row.under);
@@ -70,7 +107,12 @@ export default async function handler(req, res) {
       (players.get(player_id).markets[market] ||= []).push(row);
     }
     for (const pl of players.values()) {
-      for (const m of Object.keys(pl.markets)) pl.markets[m].sort((a, b) => a.book.localeCompare(b.book));
+      pl.consensus = {};
+      for (const m of Object.keys(pl.markets)) {
+        pl.markets[m].sort((a, b) => a.book.localeCompare(b.book));
+        const c = consensus(pl.markets[m]);
+        if (c) pl.consensus[m] = c;
+      }
     }
 
     const list = [...players.values()].sort((a, b) =>
@@ -82,6 +124,7 @@ export default async function handler(req, res) {
       generated_utc: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
       cache_seconds: 300,
       as_of: newest([...best.values()].map(v => v.row.as_of)),
+      markets_order: MARKETS,
       players: list,
     });
   } catch (err) {
