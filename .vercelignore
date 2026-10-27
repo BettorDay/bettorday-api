@@ -1,0 +1,5 @@
+# Keep dated archives out of each deployment. Git history is the archive;
+# members read mlb/latest.json, and /api/mlb/games?date=<any> falls back to it.
+# Before this, these files were ~145 of each deploy's ~157 MB.
+public/mlb/game_center_*.json
+public/mlb/ballparkpal_*.json
