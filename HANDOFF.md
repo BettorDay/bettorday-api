@@ -48,8 +48,8 @@ retention of one year.
 
 | Lever | Status | Measured effect |
 |---|---|---|
-| Retention policy (Settings → Security) | approved 10/26; Scott sets | _fill in: storage before/after_ |
-| Build machine Standard, Elastic off; On-Demand Concurrent Builds off | approved 10/26; Scott sets | _fill in: build CPU-hours/day before/after_ |
+| Retention policy (Settings → Security) | **set by Scott 10/27**: Canceled 1 day, Errored 1 week, Pre-Production 1 week, Production 1 day | _storage before/after: Scott sends Usage ~10/29_ |
+| Build machine Standard, Elastic off; On-Demand Concurrent Builds off | **set by Scott 10/27** | _build hours before/after: Scott sends Usage ~10/29_. Per Vercel pricing, Standard builds are unbilled with Elastic and on-demand both off; the Git branch queue now skips superseded commits |
 | A: `.vercelignore` drops dated MLB archives | **live 10/27 00:05 UTC** (`373e00e`) | payload 157 MB / 383 files → 12.4 MB / 108 files (−92%). Build 0.42 min median → 0.35–0.37 min; still bills as 1 min, so the gain is storage, not build hours |
 | C: heartbeat trim | after the Fri key swap | ~48 commits/day are timestamp-only heartbeats |
 | D: collector batching | after the Fri key swap | one push per 10 min across feeds ≈ 437 → ~142/day (simulated) |
@@ -91,3 +91,10 @@ switch from `fs` reads to Blob fetches. Feeds can be up to ~60 s stale
 Oct 13, is half-answered by cost — NHL is 55% of all deploys. Decide the NHL
 feed's cadence alongside the Blob move, which makes cadence free of deploy
 cost.
+
+## Next touch of `api/`
+
+`api/dnt.js` is the retired D&T tombstone (410 for every request). It still
+compiles on every build. Delete it the next time `api/` is edited for another
+reason (Scott, 2026-10-27), and drop its section from `CLAUDE.md` if that file
+is committed by then.
