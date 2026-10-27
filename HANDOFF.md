@@ -29,6 +29,13 @@ multiplies by the machine's vCPUs. ~10k builds × 1 min × 4 vCPU (Elastic was
 assigning Standard) matches the usage page's 632 h for the period. So the build
 bill is *count × rounding × machine size*, not slow builds.
 
+Build logs (Scott, 2026-10-27) confirm it: `Build machine configuration: 4 cores,
+8 GB`. Of a 24 s build, **16.3 s is cloning** the repo and `vercel build` takes
+~1 s. After lever A: clone 15.4 s, 21 s total, "Removed 275 ignored files".
+`.vercelignore` removes files *after* the clone, so clone time only shrinks
+when the dated archives leave the deployed tree (the Blob migration). Watch
+it anyway: a clone past 60 s bills 2 minutes per build.
+
 **Storage driver: dated MLB archives.** Each deploy carried 157 MB in 383
 files; 207 `public/mlb/game_center_<date>.json` files were 145 MB of it.
 Nothing member-facing reads them (the MLB tool reads `mlb/latest.json`).
