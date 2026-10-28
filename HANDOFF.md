@@ -5,7 +5,7 @@ Keep it current as levers land. This repo is public, so dollar figures stay out
 of it; they are on the Vercel Usage page. The key-rotation record below lives
 here too, because the proxy is this project's code; key values never go in it.
 
-## Odds API key rotation — swap Fri 11/6 (slid one week, Scott 2026-10-28)
+## Odds API key rotation — swap Fri 11/6, 8:00 AM EST (slid one week, Scott 2026-10-28)
 
 The live Odds API key is inlined in six public tool pages. The fix is a
 server-side proxy here (`api/odds/`, env `ODDS_API_KEY`), then the pages move
@@ -17,36 +17,76 @@ sitting. The plan was approved 2026-10-26; this section is now its record.
 
 | Day | What | Who |
 |---|---|---|
-| **Mon 11/2** | Morning: set `ODDS_API_KEY` in this project to the **current** key. Then push the proxy and curl-verify it, flip the six pages, push app main (PWA goes live) and cut + upload the rotation OTA | env + upload: Scott. Everything else: Claude |
-| **Tue 11/3** | Ghost re-pastes alongside the normal Tuesday work: odds (with the NBA deep link), nfl, ncaaf, mlb, web-nfl-hq, web-cfb-hq (with the pure-live note), web-nba-hq. Check each in view-source: `the-odds-api` count is 0 | Scott |
+| **Mon 11/2** | Monday runbook below: env var, then proxy push + verify, page flips (PWA live), MLB scrub, then cut + upload the rotation OTA | env + upload: Scott. Everything else: Claude |
+| **Tue 11/3** | Ghost re-pastes alongside the normal Tuesday work: odds (with the NBA deep link), nfl, ncaaf, mlb, web-nfl-hq, web-cfb-hq, web-nba-hq. CFB HQ and NBA HQ were re-pasted for 1.1.43 on 10/28; they change again, so re-paste both. Check each in view-source: `the-odds-api` count is 0 | Scott |
 | **Tue–Thu** | Soak. Check Capgo adoption of the rotation OTA and Odds API usage daily | both |
 | **Thu 11/5** | Staging (below). In the evening, read Capgo adoption: go if ≥ ~90%, else the whole swap moves | both |
-| **Fri 11/6** | Swap, 9:00–9:45 AM ET, **but see the DST conflict below**. Same ordered checklist as before | Scott, then Claude verifies |
+| **Fri 11/6** | **Swap 8:00–8:45 AM EST, go/no-go 7:55** (Scott, 2026-10-28). Same ordered checklist | Scott, then Claude verifies |
 
-**⚠️ DST conflict in the Friday window (open; Scott decides).** DST ends Sun
-11/1. GitHub crons run on UTC, so on 11/6 every key-using run fires an hour
-earlier on the ET clock than it did on 10/30. The original 9:00–9:45 EDT window
-was 13:00–13:45 UTC. 9:00–9:45 **EST** is 14:00–14:45 UTC. That slot has:
-- NBA props shadow at 9:00 and 9:30 (GitHub `0,30 14-23`). It also publishes the
-  member-facing `nba_periods_latest.json`.
-- MLB at 9:00 and 9:30, if the World Series is still running. The schedule is
-  commented out the day after the final game (`bettorday-mlb-pipeline/HANDOFF.md`).
-- NBA 1Q and NHL 1P +4h backups, plus NHL props, at 9:47. That is two minutes
-  after the window closes.
+**Why 8:00 EST, not 9:00 (decided 2026-10-28).** DST ends Sun 11/1 and GitHub
+crons run on UTC, so every key-using run fires an hour earlier on the ET clock.
+8:00–8:45 EST is 13:00–13:45 UTC, the same quiet slot as the original
+9:00–9:45 EDT. Friday 11/6 in EST:
+- 5:47 / 7:47 / 9:47: NBA 1Q + NHL 1P main and backups. The backups do nothing
+  if the main run published.
+- **9:00: hard stop.** The NBA props shadow fires at 9:00 and 9:30 (GitHub
+  `0,30 14-23`). It also publishes the member-facing `nba_periods_latest.json`.
+- 9:00 onward, every 30 min: MLB, only if the World Series is still on.
+- 9:47: NHL props.
+- 3:17 PM: NFL props.
 
-The same quiet slot as originally planned is **8:00–8:45 AM EST**, with the
-go/no-go at 7:55, after the 7:47 backups. This is the recommendation. The
-cron-job.org trigger for the NBA shadow keeps its own timezone. Check it in its
-dashboard either way.
+The alternative, 9:35–9:55, was rejected because the NHL props run and both
++4h backups fire at 9:47, inside it. The cron-job.org NBA ladder job is set to
+America/New_York, so it stays at 10:00 AM ET. Scott checks its next-execution
+times after Sunday.
+
+**World Series watch.** The day after the final game, the MLB schedule is
+commented out (`bettorday-mlb-pipeline/HANDOFF.md`). That takes MLB out of
+Friday's picture, and its secret then goes unproven until spring. Update the
+secret anyway. Coordinate the shutdown when the Series ends.
+
+**Monday 11/2 runbook (the code is built and tested, 2026-10-28; local only):**
+
+| Branch | Repo (worktree) | What |
+|---|---|---|
+| `odds-proxy` | bettorday-api (`repos/bettorday-api-oddsproxy`) | `api/odds/{board,scores,event}.js` + `_shared.js`; deletes the `api/dnt.js` tombstone |
+| `odds-proxy-pages` | bettorday-app (`repos/bettorday-app-oddsproxy`) | the six pages flipped; the odds `?sport=` deep link, NBA HQ Line shop link (both twins), `forwardSearch` on `/odds` |
+| `scrub-odds-fallback` | bettorday-mlb-pipeline (`repos/bettorday-mlb-pipeline-scrub`) | no hardcoded key fallback; CLOUD_SETUP stops printing the key |
+
+1. **Scott:** set `ODDS_API_KEY` in this project to the **current** key, in
+   every scope you want (Production at least). Note the scopes for Friday. No
+   redeploy is needed: step 2's push deploys with it. Tell Claude when it's saved.
+2. **Claude:** rebase `odds-proxy` on main and push. When the deploy is Ready, curl
+   the three endpoints once each: 200, `{as_of,data}`, CORS `*`, no key or vendor
+   name in the body, and `x-vercel-cache: HIT` on a repeat. Also check that an
+   unknown parameter gets a 400. This costs about 3 + 2 + ~20 credits.
+3. **Claude:** rebase `odds-proxy-pages` and push app main, which puts the PWA
+   live. Load the PWA's odds, nfl, ncaaf and mlb pages and check for lines and the
+   "Lines as of" stamp. The proxy has to be live first: pushing the pages before
+   step 2 blanks odds on the PWA.
+4. **Claude:** push `scrub-odds-fallback` over SSH. The secret already exists, so
+   the next MLB run still works.
+5. **Claude:** claim the next OTA number in `bettorday-app/WORKLIST.md`
+   (**1.1.44** unless someone takes it first), copy `.env` in, build and check
+   `dist/`: no key, no `the-odds-api`, no "Ghost API not configured". Then commit
+   the cut.
+6. **Scott:** upload it (`npx @capgo/cli bundle upload -c production`) and
+   confirm the version in Capgo. The adoption clock starts here.
+
+How the pages were checked (2026-10-28): headless Chrome, with each page's old
+version run against an upstream mock and its new version against the real proxy
+handlers, on one fixture with ProphetX and Novig priced off-market. The visible
+text is identical on the initial load and on every click-through path. That
+proves each page's `onlyBooks` filter keeps its consensus to its own books.
 
 **Friday checklist, in order** (new key on the clipboard, never in chat):
 
 | # | Step | Done when |
 |---|---|---|
-| 0 | Go/no-go: today's NBA 1Q and NHL 1P runs are finished green in Actions | both green |
-| 1 | Regenerate in the Odds API dashboard. The old key dies now; the proxy serves cached lines and then a `no-store` 502 until step 2 | new key copied |
+| 0 | 7:55 go/no-go: today's NBA 1Q and NHL 1P runs are finished green in Actions | both green |
+| 1 | Regenerate in the Odds API dashboard. The old key dies now. Until step 2 the edge serves cached lines, then the proxy returns a `no-store` 502 | new key copied |
 | 2 | This project: edit `ODDS_API_KEY` in every scope it's in, then Deployments → latest Production → **Redeploy** | Ready |
-| 3 | Apps Script: Script Property `ODDS_API_KEY` → Save (no redeploy once Thursday staging is done) | saved |
+| 3 | Apps Script: Script Property `ODDS_API_KEY` → Save (no redeploy, after Thursday staging) | saved |
 | 4 | GitHub secret `ODDS_API_KEY`: bettorday-mlb-pipeline, NFL-Trench-Report, NBA-HQ, NHL-HQ | all four "Updated now" |
 | 5 | `printf %s "$NEW" \| shasum -a 256 \| cut -c1-16` → send Claude only the fingerprint | sent |
 
@@ -54,38 +94,33 @@ Then: Claude curls each proxy endpoint (200, fresh `as_of`, no key in the
 body) and pushes the new `ODDS_EXPECT` to NBA-HQ `secrets_check`. Scott runs
 `curl -s -o /dev/null -w "%{http_code}\n" "https://api.the-odds-api.com/v4/sports/?apiKey=$OLD"`
 and expects 401, and 200 with `$NEW`. Each repo's next natural run proves its
-secret. Times are EST if the window moves to 8:00: NBA props shadow 9:00, NHL
-props 9:47, MLB 9:00 (if still in season; otherwise its secret is unproven
-until spring), NFL props 3:17 PM. Struck: the chatbot (deleted).
+secret: NBA props shadow 9:00, NHL props 9:47, MLB 9:00 (if still in season),
+NFL props 3:17 PM. Struck: the chatbot (deleted).
 
 **Thursday 11/5 staging (Scott):**
-- Apps Script: if the key is a constant in `Code.gs`, move it to Script
-  Property `ODDS_API_KEY` (still the old key). Then Deploy → Manage
-  deployments → Edit → New version, and watch `Cache_Games` timestamps keep
-  moving. **Still open from 10/26: is it a constant or a property?** Send the
-  lines around it (key redacted) and Claude writes the change. This can be done
-  any day before Thursday; earlier is better.
-- Note which Vercel scopes hold `ODDS_API_KEY` (Production/Preview/Development).
+- **Apps Script (the key is a constant in `Code.gs`, Scott 2026-10-28):**
+  1. Project Settings → Script Properties → add `ODDS_API_KEY` = the **old** key.
+  2. Replace the constant's line with
+     `const ODDS_API_KEY = PropertiesService.getScriptProperties().getProperty('ODDS_API_KEY');`.
+     Keep the constant's existing name, so no call site changes.
+  3. Save, then Deploy → Manage deployments → Edit → **New version** (same
+     `/exec` URL).
+  4. Confirm `Cache_Games` timestamps keep moving.
+
+  After this, Friday's step 3 is a property edit. It can be done any day before
+  Thursday; earlier is better.
+- Confirm the Vercel scopes noted Monday.
 - Open tabs: Odds API dashboard; this project's env vars and Deployments; Apps
   Script Script Properties; the four repos' `settings/secrets/actions`; NBA-HQ
   and NHL-HQ Actions.
 
-**State as of 2026-10-28 (nothing has rotted, because nothing was built):**
-- **The proxy does not exist yet.** There is no branch or commit for it in any
-  repo. The 10/27 build day never ran, because the plan sat at approval. It
-  has to be written and tested locally **before Monday morning**, so that
-  Monday is push-and-verify. It ships with the `api/dnt.js` tombstone deletion
-  (see "Next touch of `api/`").
+**State as of 2026-10-28:**
 - Key inventory, re-run on every repo's `origin/main`: unchanged from 10/26.
-  The six pages, plus `resolveApiKey` in nfl/ncaaf, plus the hardcoded fallback
-  in `bettorday-mlb-pipeline/mlb_pipeline.py:50` and `CLOUD_SETUP.md:56`
-  (scrubbed Monday). There are no new consumers.
-- The rotation OTA is **not 1.1.39**: 1.1.39–1.1.42 shipped since. It takes
-  the next free number in `bettorday-app/WORKLIST.md`, claimed Monday before
-  building. It carries the page flips, the odds `?sport=` deep link
-  (+ `forwardSearch` on `/odds` in `App.tsx`), and branch
-  `cfb-board-pure-live-note` (`59e16c6`). By Scott's call that branch rides the
-  next OTA and paste round; it merges cleanly onto today's main.
+  With the three branches applied, `git grep` finds the key in no tracked file
+  in bettorday-app or bettorday-mlb-pipeline.
+- **1.1.43 was cut on 10/28** (NBA HQ Matchup blend + the CFB pure-live note,
+  `5fd6a5d`). The CFB note no longer rides the rotation OTA. The rotation
+  branches are rebased on top of it.
 - Capgo adoption restarts from Monday's OTA. The window to Thursday evening is
   about 3.5 days, against about 2.5 in the original plan.
 
@@ -187,4 +222,6 @@ cost.
 `api/dnt.js` is the retired D&T tombstone (410 for every request). It still
 compiles on every build. Delete it the next time `api/` is edited for another
 reason (Scott, 2026-10-27), and drop its section from `CLAUDE.md` if that file
-is committed by then.
+is committed by then. **Done on branch `odds-proxy`** (the proxy is that next
+edit), so it lands Monday 11/2. `CLAUDE.md` is still untracked in the main
+checkout, and its "Retired proxy" section should go when it is committed.
