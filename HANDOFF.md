@@ -67,7 +67,7 @@ secret anyway. Coordinate the shutdown when the Series ends.
 4. **Claude:** push `scrub-odds-fallback` over SSH. The secret already exists, so
    the next MLB run still works.
 5. **Claude:** claim the next OTA number in `bettorday-app/WORKLIST.md`
-   (**1.1.44** unless someone takes it first), copy `.env` in, build and check
+   (**1.1.45** unless someone takes it first), copy `.env` in, build and check
    `dist/`: no key, no `the-odds-api`, no "Ghost API not configured". Then commit
    the cut.
 6. **Scott:** upload it (`npx @capgo/cli bundle upload -c production`) and
@@ -121,6 +121,11 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
 - **1.1.43 was cut on 10/28** (NBA HQ Matchup blend + the CFB pure-live note,
   `5fd6a5d`). The CFB note no longer rides the rotation OTA. The rotation
   branches are rebased on top of it.
+- **1.1.44 was cut on 10/30, content only** (sports nav + CBB HQ placeholder,
+  MLB offseason, in-season picks record; app `6a991b4`), so the rotation OTA
+  is 1.1.45. `odds-proxy-pages` still merges cleanly onto app main after those
+  merges (`git merge-tree`, 10/30). Step 3's rebase picks them up; nothing else
+  in this runbook changes.
 - Capgo adoption restarts from Monday's OTA. The window to Thursday evening is
   about 3.5 days, against about 2.5 in the original plan.
 
