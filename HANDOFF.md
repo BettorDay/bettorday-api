@@ -114,6 +114,29 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
   Script Script Properties; the four repos' `settings/secrets/actions`; NBA-HQ
   and NHL-HQ Actions.
 
+**Day 1 done, Mon 11/2 (steps 1–6 complete):**
+- Step 1 (Scott): `ODDS_API_KEY` = the current key, set in **all environments**
+  (Production, Preview, Development). Friday's step 2 edits all three.
+- Step 2: `odds-proxy` rebased and pushed (`753cd3d54`); Vercel green. Board,
+  scores and event each 200 `{as_of,data}`, CORS `*`, `HIT` on repeat, 400 on an
+  unknown parameter and on an unknown sport, no key or vendor name in any body.
+  Key check: the key inlined in app `origin/main` fingerprints to
+  `20c7fb0b06f70251`. One proxy board miss moved that key's `x-requests-used`
+  by exactly 3, so the env value is that key (no Vercel CLI auth to hash it
+  directly). 8 credits total. `basketball_ncaab` is live on board (116 games),
+  which is CBB HQ's critical path.
+- Step 3: `odds-proxy-pages` merged into app main and pushed (`8b24e1c`, with
+  `e627134` riding). The PWA was checked headless: odds (incl. `?sport=`
+  ncaab/nba), nfl and ncaaf show lines and "Lines as of". MLB shows its
+  offseason card.
+- Step 4: `scrub-odds-fallback` pushed (bettorday-mlb-pipeline `c8aaaaf`).
+- Step 5: 1.1.45 claimed (`49d0054`), cut (`7058758`), built with `.env`.
+  No key, no `the-odds-api` and no Ghost fallback in `dist`.
+- Step 6 (Scott): uploaded to Capgo production 11/2 9:01 AM PT (no
+  auto-bump), confirmed live on device. **The adoption clock starts here.**
+- Next: Tue 11/3, the seven Ghost re-pastes. Thu 11/5, staging and the
+  adoption read.
+
 **State as of 2026-10-28:**
 - Key inventory, re-run on every repo's `origin/main`: unchanged from 10/26.
   With the three branches applied, `git grep` finds the key in no tracked file
