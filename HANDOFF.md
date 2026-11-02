@@ -103,6 +103,10 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
   2. Replace the constant's line with
      `const ODDS_API_KEY = PropertiesService.getScriptProperties().getProperty('ODDS_API_KEY');`.
      Keep the constant's existing name, so no call site changes.
+     **Same edit:** verify `?action=games_all` joins `SPORT#n` rows; if not, fix
+     it in the same edit. (Since 11/2 a sport over one 50,000-char cell spills
+     into `SPORT#2`…, e.g. `NCAAB#2`; `/api/form-games` merges them, but this
+     `/exec` path is the form's fallback. One `Code.gs` touch, both fixes.)
   3. Save, then Deploy → Manage deployments → Edit → **New version** (same
      `/exec` URL).
   4. Confirm `Cache_Games` timestamps keep moving.
