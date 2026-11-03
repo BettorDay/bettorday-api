@@ -169,9 +169,11 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
 - **`web-nba-hq` → `/nba-hq/`: re-pasted and verified by Scott** from
   `3b6dd0e`, verbatim, with the Line shop link to `/odds/?sport=basketball_nba`.
   0 hits logged in.
-- **Open: `nfl`** (the NFL odds tool, not NFL HQ). No Ghost page for it shows
-  in the page sitemap (`/nfl/` is a 404). Whether it needs a paste is not
-  confirmed yet.
+- **`nfl` (the NFL odds tool, not NFL HQ): n/a.** Scott confirmed in Ghost
+  admin's Pages list that no Ghost page for it exists (`/nfl/` is a 404).
+- **Re-pastes: 7 of 7 accounted for (2026-11-03).** Verified: `web-cfb-hq`,
+  `odds`, `web-nfl-hq`, `web-nba-hq`. n/a: `ncaaf`, `mlb`, `nfl`.
+  Next: Thu 11/5, staging and the adoption read.
 
 **State as of 2026-10-28:**
 - Key inventory, re-run on every repo's `origin/main`: unchanged from 10/26.
