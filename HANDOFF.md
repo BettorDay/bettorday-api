@@ -152,7 +152,20 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
   soak or on swap day. The commit is queued for **the first OTA after the Fri
   11/6 swap**, not before, so nothing moves the 1.1.45 adoption read (Scott,
   2026-11-03).
-- The other six re-pastes: not recorded here yet.
+  Re-confirmed by Scott in the afternoon, **logged in**: 0 hits.
+- **Logged-out checks prove nothing on the HQ pages.** Ghost serves `/nfl-hq/`,
+  `/nba-hq/` and `/college-football-hq/` members-only to logged-out visitors
+  (~111 KB with no page body), so those show 0 hits either way. Check them in
+  view-source **logged in**. `/odds/` is public, so a logged-out check counts
+  there.
+- **`odds` → `/odds/`: re-pasted and verified by Scott**, 0 hits logged out
+  (it showed 1 before the paste). App `origin/main` `3b6dd0e`
+  `public/tools/odds.html`, verbatim, with the `?sport=` deep link.
+- **`/nhl-hq/`: 0 hits logged in (Scott).** NHL HQ never used the key, so it
+  was rightly left off the rotation list. Nothing to paste.
+- Remaining: `web-nfl-hq` (still has the old hit logged in, before its
+  paste), `web-nba-hq`, then `nfl`, `ncaaf`, `mlb` (their Ghost
+  destinations are not confirmed yet).
 
 **State as of 2026-10-28:**
 - Key inventory, re-run on every repo's `origin/main`: unchanged from 10/26.
