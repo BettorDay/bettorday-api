@@ -141,6 +141,19 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
 - Next: Tue 11/3, the seven Ghost re-pastes. Thu 11/5, staging and the
   adoption read.
 
+**Tue 11/3, re-pastes:**
+- **`web-cfb-hq`: re-pasted and verified live by Scott**, 0 `the-odds-api` hits
+  in view-source. **It is not the repo copy.** It is app `origin/main`'s
+  `public/tools/web-cfb-hq.html` (`3b6dd0e`) plus a static CFB results
+  scorecard card in the Trench Report tab (anchor and content:
+  `CFB-Trench-Report/HANDOFF.md`, "Ghost `web-cfb-hq` carries a static
+  scorecard card"). **Any re-paste of `web-cfb-hq` from the repo before the
+  card is committed wipes it**, so do not re-paste it from the repo during the
+  soak or on swap day. The commit is queued for **the first OTA after the Fri
+  11/6 swap**, not before, so nothing moves the 1.1.45 adoption read (Scott,
+  2026-11-03).
+- The other six re-pastes: not recorded here yet.
+
 **State as of 2026-10-28:**
 - Key inventory, re-run on every repo's `origin/main`: unchanged from 10/26.
   With the three branches applied, `git grep` finds the key in no tracked file
