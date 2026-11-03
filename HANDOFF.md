@@ -163,9 +163,15 @@ NFL props 3:17 PM. Struck: the chatbot (deleted).
   `public/tools/odds.html`, verbatim, with the `?sport=` deep link.
 - **`/nhl-hq/`: 0 hits logged in (Scott).** NHL HQ never used the key, so it
   was rightly left off the rotation list. Nothing to paste.
-- Remaining: `web-nfl-hq` (still has the old hit logged in, before its
-  paste), `web-nba-hq`, then `nfl`, `ncaaf`, `mlb` (their Ghost
-  destinations are not confirmed yet).
+- **`web-nfl-hq` → `/nfl-hq/`: re-pasted and verified by Scott** from `3b6dd0e`, verbatim.
+  It had the old hit logged in before the paste; 0 hits logged in after.
+- **`ncaaf` and `mlb`: no re-paste needed (Scott, 2026-11-03).** n/a.
+- **`web-nba-hq` → `/nba-hq/`: re-pasted and verified by Scott** from
+  `3b6dd0e`, verbatim, with the Line shop link to `/odds/?sport=basketball_nba`.
+  0 hits logged in.
+- **Open: `nfl`** (the NFL odds tool, not NFL HQ). No Ghost page for it shows
+  in the page sitemap (`/nfl/` is a 404). Whether it needs a paste is not
+  confirmed yet.
 
 **State as of 2026-10-28:**
 - Key inventory, re-run on every repo's `origin/main`: unchanged from 10/26.
