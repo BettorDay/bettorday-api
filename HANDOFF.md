@@ -97,6 +97,61 @@ and expects 401, and 200 with `$NEW`. Each repo's next natural run proves its
 secret: NBA props shadow 9:00, NHL props 9:47, MLB 9:00 (if still in season),
 NFL props 3:17 PM. Struck: the chatbot (deleted).
 
+**Fri 11/6: the swap moved to 7:35 PM PT (03:35 UTC), Scott's call.** Staging
+finished at 10:10 AM PT, after the 8:00–8:45 EST window. All afternoon, key-using
+jobs fire every 30 min (NBA props shadow, MLB), plus NFL props at 12:17 PT and
+NHL props at 12:47 and 2:47 PT. The last shadow run is 03:30 UTC and the next
+key-using job is MLB at 04:00 UTC. Capgo read 100% on 1.1.45 (go).
+- `?action=games_all` (deployed `/exec`), checked 11:13 AM PT: all 8 sports
+  match `/api/form-games` exactly, trigger timestamps current. No sport was
+  over the 50,000-char cell that day (NCAAF largest at ~40k), so the live
+  response could not exercise the join.
+- **`SPORT#n` join: PROVEN by code read, 11/6. Monday's staging item is
+  closed.** `getCachedGames_` in `Code.gs` (pasted by Scott) takes
+  `String(r[0]).split('#')[0]` as the sport, `JSON.parse`s each row's cell on
+  its own, and `concat`s a chunk's games onto the sport's first row;
+  `sportFilter` compares the base label, so a filtered read also gets its
+  chunks. This needs every `SPORT#n` cell to be a complete JSON array, not a
+  slice of one string. The 11/2 spill confirms that: `/api/form-games` also
+  parses row by row and recorded "92 games in `NCAAB`, 48 more in `NCAAB#2`".
+  Not seen in the paste, and taken on evidence: the function's tail (cut off
+  in the copy; presumably `return out`) and `doGet` routing `games_all` here.
+  The live response's `{SPORT:{games,updated}}` shape is this function's
+  `out`. Two differences from `/api/form-games`, neither a defect for the
+  form: a corrupt row becomes `[]` instead of being skipped, and `updated` is
+  the first row's stamp, not the oldest.
+
+**Tonight's order (Scott, 11/6). It replaces steps 2–4 of the Friday checklist
+above.** The Apps Script property moves up so the 10-minute `refreshGameCache`
+trigger never runs on a dead key:
+1. Regenerate at The Odds API (the old key dies now).
+2. Apps Script: Script Property `ODDS_API_KEY` → Save.
+3. Vercel: edit `ODDS_API_KEY` in Production, Preview and Development, then
+   Redeploy the latest Production deployment → Ready.
+4. GitHub secret `ODDS_API_KEY`: bettorday-mlb-pipeline, NFL-Trench-Report,
+   NBA-HQ, NHL-HQ.
+5. Fingerprint to Claude (`printf %s "$NEW" | shasum -a 256 | cut -c1-16`).
+   Claude curls the proxy, pushes the new `ODDS_EXPECT` to NBA-HQ
+   `.github/workflows/secrets_check.yml` (currently `20c7fb0b06f70251`, the old
+   key), and Scott runs the old-key 401 / new-key 200 check.
+
+**Post-rotation cleanup (queued, not before the swap verifies):**
+- **`refreshGameCache` pacing/retry (Apps Script).** The morning trigger run on
+  11/6 got a 429 and a 502 from the Odds API and blanked two sports in
+  `Cache_Games` for ten minutes before self-healing. Look at the pacing between
+  sports and whether an error should keep the previous row instead of
+  writing an empty one.
+- **Disable the MLB schedule** (`bettorday-mlb-pipeline/.github/workflows/mlb_pipeline.yml`).
+  Its crons still fire every 30 min on a finished season (seen 11/6). The World
+  Series watch above called for this. Update its secret tonight anyway.
+- **Submission form: re-confirm a built bet's line after a refresh** (app repo,
+  `submission-site/index.html`; not urgent, queued 11/7). F5 refetches the games
+  list when an idle tab regains focus, but a bet built before the tab went idle
+  keeps the line it was built with. That is how row 44 (Air Force +3.5) got LINE 5.5.
+  Fix: on refresh, compare the built bet's line and price with the fresh
+  cache, and make the contributor confirm a change before submit. Background:
+  app `grader/LOG.md`, "Air Force resolved".
+
 **Thursday 11/5 staging (Scott):**
 - **Apps Script (the key is a constant in `Code.gs`, Scott 2026-10-28):**
   1. Project Settings → Script Properties → add `ODDS_API_KEY` = the **old** key.
