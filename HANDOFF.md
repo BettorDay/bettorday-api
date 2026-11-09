@@ -135,6 +135,34 @@ trigger never runs on a dead key:
    `.github/workflows/secrets_check.yml` (currently `20c7fb0b06f70251`, the old
    key), and Scott runs the old-key 401 / new-key 200 check.
 
+**SWAP DONE Mon 11/9, 2:15–2:35 PM PT (22:15–22:35 UTC). Friday 7:35 PM did not
+happen.** The window fit between the 22:00 runs and the 22:30 NBA shadow.
+- **Order as run:** regenerate → Apps Script property → Vercel (all three scopes, then
+  Redeploy) → GitHub secrets, done while Vercel built: line-archive first, then
+  NBA-HQ, NHL-HQ, CBB-HQ (**new** secret), bettorday-mlb-pipeline, NFL-Trench-Report.
+- **Two consumers missing from the 11/6 list:**
+  - `bettorday-line-archive` (`collect-odds.yml`): same account, same key. The
+    collector is a 55-minute loop with `cancel-in-progress`, so it is always mid-run
+    and keeps the secret it started with. Fix: update the secret, then Actions →
+    Run workflow with **mode `loop`** (the dispatch default is `once`). The new run
+    preempts the old. The gap is only in the archive: a 401 logs and skips, and the
+    NFL/NHL HQ feeds keep the last lines.
+  - `CBB-HQ`: the secret was created as planned in SCOPING.
+- CFB-Trench-Report has no Odds API consumer, so it has no secret to change. MLB had
+  not fired since 6:39 AM. Its secret is updated but unproven until spring.
+- **Verified:**
+  - Proxy: `board`, `scores` and `event` all 200, with a fresh `as_of`, CORS `*` and
+    no key in the body. The 32-hex strings in the body are event ids.
+  - Old key: **401**. It was recovered from app git history by its fingerprint
+    `20c7fb0b06f70251`, and only the status was printed.
+  - New key: 200 (Scott).
+  - Fingerprint checks: `ODDS_EXPECT` = `9d0f3388242644d5`, and
+    `odds_matches_live_key: true` at 22:34Z in both NBA-HQ (`92e369d`) and CBB-HQ
+    (`be41acc`, which gained the check). The first fingerprint sent, `07de…`, came
+    from the wrong clipboard contents. Its mismatch was caught by these checks.
+  - Natural runs: NBA shadow 22:30 committed. line-archive NHL feed "content changed"
+    at 22:23 and 22:28. Still open: NHL props 22:47, NFL props Thu 18:17 UTC.
+
 **Post-rotation cleanup (queued, not before the swap verifies):**
 - **`refreshGameCache` pacing/retry (Apps Script).** The morning trigger run on
   11/6 got a 429 and a 502 from the Odds API and blanked two sports in
